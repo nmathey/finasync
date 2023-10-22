@@ -9,7 +9,7 @@ If you don't already have an account, here is a referral link to sign up: https:
 :warning: Use at your own risk. I'm not responsible if you trash your account. :warning:
 (I'm not a dev so forgive the quick and dirty style ;))
   
-If you want to donate/support me, any ERC20 tokens or coins transfer to the following Ethereum/Gnosis/Polygon address are welcome: 0xEFf0d54e391C6097CdF24A3Fc450988Ebd9a91F7
+If you want to "buy me a coffee", any ERC20 tokens or coins transfer to the following Ethereum/Gnosis/Polygon address are welcome: 0xEFf0d54e391C6097CdF24A3Fc450988Ebd9a91F7
 
 ## BIG thanks!
 
@@ -18,6 +18,7 @@ This won't be possible without:
 * The great work of @lasconic for his Finary Unofficial API wrapper (https://github.com/lasconic/finary_uapi)
 * The great work of RealT Community API (https://api.realt.community/)
 * Exchange Rate API (https://www.exchangerate-api.com)
+* The great idea from @MadeInPierre author of Finalynx, bringing an alternative for your Finary portefolio views and much more (https://github.com/MadeInPierre/finalynx)
 
 ## Current integrated platform
 

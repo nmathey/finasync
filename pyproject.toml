@@ -9,7 +9,7 @@ include = [{ path = "finalynx/finary_api/**/*" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-finary-uapi = "^0.1.7"
+finary-uapi = "^0.1.8"
 docopt = "^0.6.2"
 requests = "^2.30.0"
 

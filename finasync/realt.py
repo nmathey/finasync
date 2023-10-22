@@ -155,5 +155,14 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             token_details = get_realt_token_details(key)
             print("add token "+ myRealT_rentals[key]['name'])
             print(token_details)
-
+            #propertyType
+            #1 = Single Family
+            #2 = Multi Family
+            #3 = Duplex
+            #4 = Condominium
+            #6 = Mixed-Used
+            #8 = Quadplex
+            #9 = Commercial
+            #10 = SFR Portfolio
+            
     return myFinary_realT

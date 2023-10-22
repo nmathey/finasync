@@ -22,7 +22,7 @@ def convert_currency(amount, from_currency, to_currency):
                 "data": {}
             }
 
-    # Fetch latest exchange rates if local cache > 1 week
+    # Fetch latest exchange rates only if local cache > 1 week
     if float(Exchange_OfflineRates["info"]["last_sync"]) < datetime.timestamp(Now_Time - timedelta(weeks=1)):
         response = requests.get(EXCHANGE_RATES_API_URI + to_currency)
         Exchange_OfflineRates["info"]["last_sync"] = str(datetime.timestamp(Now_Time))

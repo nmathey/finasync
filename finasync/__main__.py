@@ -4,7 +4,6 @@ Usage:
     finasync signin [MFA_CODE]
     finasync me
     finasync realt rent
-    finasync rate
 """
 import json
 import sys
@@ -45,9 +44,6 @@ def main() -> int:  # pragma: nocover
         elif args["realt"]:
             if args["rent"]:
                 result = sync_realt_rent(session, os.environ['MYREALT_WALLET_ADDRESS'])
-                #result = cache_realt_api_tokens_details("fc347b09-preprod-1631-87bf-67fa4b673e39")
-        elif args['rate']:
-            print(convert_currency(100, "USD", "EUR"))
     if result:
         print(json.dumps(result, indent=4))
 

@@ -12,8 +12,6 @@ from finary_uapi.user_real_estates import get_user_real_estates, delete_user_rea
 
 from .constants import GNOSIS_API_TOKENLIST_URI, REALT_API_TOKENLIST_URI, REALT_OFFLINE_TOKENS_LIST
 
-
-
 def cache_realt_api_tokens_details(realt_api_key):
     MyRealT_API_Header = {
         'Accept': '*/*',
@@ -34,7 +32,7 @@ def cache_realt_api_tokens_details(realt_api_key):
                 "data": {}
             }
 
-    # Update offlineTokensList if more than 1 week old
+    # Update offlineTokensList from RealT API only if more than 1 week old
     if float(RealT_OfflineTokensList["info"]["last_sync"]) < datetime.timestamp(Now_Time - timedelta(weeks=1)):
         TokensListReq = requests.get(
                     REALT_API_TOKENLIST_URI,
@@ -52,7 +50,6 @@ def cache_realt_api_tokens_details(realt_api_key):
                         'netRentMonthPerToken': item.get('netRentMonthPerToken'),
                         'currency': item.get('currency'),
                         'rentStartDate': item.get('rentStartDate'),
-                        #squareMeter = squareFeet*0.09290304 but can be null from API
                         'squareFeet': item.get('squareFeet'),
                         'totalTokens': item.get('totalTokens'),
                         'totalInvestment': item.get('totalInvestment'),
@@ -139,11 +136,8 @@ def sync_realt_rent(session: requests.Session, wallet_address):
 
     #Get current RealT rent from wallet
     myRealT_rentals = json.loads(get_realt_rentals_blockchain(wallet_address))
-    
-    #Cache RealT tokens details from RealT API if last sync > 7 days
 
-    #If finary RealT rentals not in RealT wallet
-    #   Delete 
+    #If finary RealT rentals not in RealT wallet then delete otherwise update
     for key in myFinary_realT:
         if key not in myRealT_rentals:
             print("delete_user_real_estates(myFinary_realT[key]['finary_id'])")
@@ -156,12 +150,10 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             #       ownership_percentage= number of token own / total number of token
             #       monthly_rent = monthly rent per token * number of token own  
             #   )
-    print ("Done Finary<-RealT")
     
-    #If Realt tokein wallet not in Finary
+    #If Realt token in wallet not in Finary then add
     for key in myRealT_rentals:
         if key not in myFinary_realT:
             print("add token "+ myRealT_rentals[key]['name'])
-    print ("Done RealT<-Finary")
 
     return myFinary_realT

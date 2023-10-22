@@ -12,12 +12,7 @@ from finary_uapi.user_real_estates import get_user_real_estates, delete_user_rea
 
 from .constants import GNOSIS_API_TOKENLIST_URI, REALT_API_TOKENLIST_URI, REALT_OFFLINE_TOKENS_LIST
 
-def cache_realt_api_tokens_details(realt_api_key):
-    MyRealT_API_Header = {
-        'Accept': '*/*',
-        'X-AUTH-REALT-TOKEN': realt_api_key
-    }
-
+def get_realt_token_details(realt_token_contractAdress):
     Now_Time = datetime.today()
     RealT_OfflineTokensList_Path = Path(REALT_OFFLINE_TOKENS_LIST)
     RealT_OfflineTokensList_Path.touch(exist_ok=True)
@@ -34,6 +29,11 @@ def cache_realt_api_tokens_details(realt_api_key):
 
     # Update offlineTokensList from RealT API only if more than 1 week old
     if float(RealT_OfflineTokensList["info"]["last_sync"]) < datetime.timestamp(Now_Time - timedelta(weeks=1)):
+        MyRealT_API_Header = {
+            'Accept': '*/*',
+            'X-AUTH-REALT-TOKEN': os.environ['MYREALT_API_KEY']
+        }
+
         TokensListReq = requests.get(
                     REALT_API_TOKENLIST_URI,
                     headers=MyRealT_API_Header
@@ -72,13 +72,10 @@ def cache_realt_api_tokens_details(realt_api_key):
             )
 
         RealT_OfflineTokensList['info']['last_sync'] = str(datetime.timestamp(Now_Time))
-    else:
-        print("Cached RealT API Tokens details updated less than 7 days ago. Not refreshing it.")
+        with open(RealT_OfflineTokensList_Path, 'w') as outfile:
+            json.dump(RealT_OfflineTokensList, outfile, indent=4)
 
-    with open(RealT_OfflineTokensList_Path, 'w') as outfile:
-        json.dump(RealT_OfflineTokensList, outfile, indent=4)
-
-    return 0
+    return RealT_OfflineTokensList['data'][realt_token_contractAdress]
 
 def get_realt_rentals_finary(session: requests.Session):
     myFinary_real_estates = get_user_real_estates(session)
@@ -142,8 +139,9 @@ def sync_realt_rent(session: requests.Session, wallet_address):
         if key not in myRealT_rentals:
             print("delete_user_real_estates(myFinary_realT[key]['finary_id'])")
         else:
-            print("get token details from RealT API")
+            token_details = get_realt_token_details(key)
             print("update_user_real_estates('*ToDetails*')")
+            print(token_details)
             #   Update (
             #       buying_price = buying_price + current token value * (number of token own - current ownership_percentage * total number of token)
             #       user_estimated_value=current token value * number of token own
@@ -154,6 +152,8 @@ def sync_realt_rent(session: requests.Session, wallet_address):
     #If Realt token in wallet not in Finary then add
     for key in myRealT_rentals:
         if key not in myFinary_realT:
+            token_details = get_realt_token_details(key)
             print("add token "+ myRealT_rentals[key]['name'])
+            print(token_details)
 
     return myFinary_realT

@@ -1,0 +1,167 @@
+import requests
+import re
+import json
+import time
+import os
+from pathlib import Path
+from datetime import datetime, timedelta
+from json.decoder import JSONDecodeError
+
+from finary_uapi.constants import API_ROOT
+from finary_uapi.user_real_estates import get_user_real_estates, delete_user_real_estates, update_user_real_estates, add_user_real_estates
+
+from .constants import GNOSIS_API_TOKENLIST_URI, REALT_API_TOKENLIST_URI, REALT_OFFLINE_TOKENS_LIST
+
+
+
+def cache_realt_api_tokens_details(realt_api_key):
+    MyRealT_API_Header = {
+        'Accept': '*/*',
+        'X-AUTH-REALT-TOKEN': realt_api_key
+    }
+
+    Now_Time = datetime.today()
+    RealT_OfflineTokensList_Path = Path(REALT_OFFLINE_TOKENS_LIST)
+    RealT_OfflineTokensList_Path.touch(exist_ok=True)
+    with open(RealT_OfflineTokensList_Path) as json_file:
+        try:
+            RealT_OfflineTokensList = json.load(json_file)
+        except JSONDecodeError:
+            RealT_OfflineTokensList = {
+                "info": {
+                    "last_sync": str(datetime.timestamp(Now_Time - timedelta(weeks=2)))
+                },
+                "data": {}
+            }
+
+    # Update offlineTokensList if more than 1 week old
+    if float(RealT_OfflineTokensList["info"]["last_sync"]) < datetime.timestamp(Now_Time - timedelta(weeks=1)):
+        TokensListReq = requests.get(
+                    REALT_API_TOKENLIST_URI,
+                    headers=MyRealT_API_Header
+                )
+
+        TokensList = TokensListReq.json()
+        for item in TokensList:
+            RealT_OfflineTokensList['data'].update(
+                {
+                    item.get('uuid').lower(): {
+                        'fullName': item.get('fullName'),
+                        'shortName': item.get('shortName'),
+                        'tokenPrice': item.get('tokenPrice'),
+                        'netRentMonthPerToken': item.get('netRentMonthPerToken'),
+                        'currency': item.get('currency'),
+                        'rentStartDate': item.get('rentStartDate'),
+                        #squareMeter = squareFeet*0.09290304 but can be null from API
+                        'squareFeet': item.get('squareFeet'),
+                        'totalTokens': item.get('totalTokens'),
+                        'totalInvestment': item.get('totalInvestment'),
+                        'grossRentMonth': item.get('grossRentMont'),
+                        'propertyManagement': item.get('propertyManagement'),
+                        'realtPlatform': item.get('realtPlaform'),
+                        'insurance': item.get('insurance'),
+                        'propertyTaxes': item.get('propertyTaxes'),
+                        'propertyMaintenanceMonthly': item.get('propertyMaintenanceMonthly'),
+                        'utilities': item.get('utilities'),
+                        'netRentMonth': item.get('netRentMonth'),
+                        'netRentMonthPerToken': item.get('netRentMonthPerToken'),
+                        'coordinate': item.get('coordinate'),
+                        'propertyType': item.get('propertyType'),
+                        'rentStartDate': item.get('rentStartDate'),
+                        'rentalType': item.get('rentalType'),
+                        'productType': item.get('productType'),
+                    }
+                }
+            )
+
+        RealT_OfflineTokensList['info']['last_sync'] = str(datetime.timestamp(Now_Time))
+    else:
+        print("Cached RealT API Tokens details updated less than 7 days ago. Not refreshing it.")
+
+    with open(RealT_OfflineTokensList_Path, 'w') as outfile:
+        json.dump(RealT_OfflineTokensList, outfile, indent=4)
+
+    return 0
+
+def get_realt_rentals_finary(session: requests.Session):
+    myFinary_real_estates = get_user_real_estates(session)
+    myFinary_real_estates = list(filter(lambda x: re.match('^RealT -',x["description"]),myFinary_real_estates["result"]))
+    myFinary_realT = {}
+    for item in myFinary_real_estates:
+        contractAddress = re.findall(r'0x.+', str(item.get('description')))
+        name = re.findall(r'- (.*) -', str(item.get('description')))
+        myFinary_realT.update(
+            {
+                contractAddress[0].lower():{
+                    'name':name[0],
+                    'contractAddress': contractAddress[0].lower(),
+                     'finary_id': item.get('id')
+                }
+            }
+        )
+
+    return json.dumps(myFinary_realT)
+
+def get_realt_rentals_blockchain(wallet_address):
+    myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)
+    myRealT_rentals = {}
+    for item in myWallet["result"]:
+        if re.match(r'^REALTOKEN', str(item.get('symbol')),re.IGNORECASE):
+            myRealT_rentals.update(
+                {
+                    item['contractAddress'].lower():{
+                        'name': item['symbol'],
+                        'balance': float(item['balance'])/ pow(10, int(item['decimals'])),
+                        'contractAddress': item['contractAddress'].lower()
+                    }
+                }
+            )
+        elif re.match(r'^armmREALT', str(item.get('symbol'))):
+            time.sleep(1)
+            original_contract_address = requests.get(GNOSIS_API_TOKENLIST_URI + item['contractAddress']).json()
+            original_contract_address = list(filter(lambda x: re.match('^REALTOKEN',x["symbol"]),original_contract_address['result']))
+            original_contract_address = str(original_contract_address[0]["contractAddress"])
+            myRealT_rentals.update(
+                {
+                    original_contract_address.lower():{
+                        'name': item['symbol'],
+                        'balance': float(item['balance'])/ pow(10, int(item['decimals'])),
+                        'contractAddress': original_contract_address.lower()
+                    }
+                }
+            )
+
+    return json.dumps(myRealT_rentals)
+
+def sync_realt_rent(session: requests.Session, wallet_address):
+    # Get current Finary RealT rent portfolio
+    myFinary_realT = json.loads(get_realt_rentals_finary(session))
+
+    #Get current RealT rent from wallet
+    myRealT_rentals = json.loads(get_realt_rentals_blockchain(wallet_address))
+    
+    #Cache RealT tokens details from RealT API if last sync > 7 days
+
+    #If finary RealT rentals not in RealT wallet
+    #   Delete 
+    for key in myFinary_realT:
+        if key not in myRealT_rentals:
+            print("delete_user_real_estates(myFinary_realT[key]['finary_id'])")
+        else:
+            print("get token details from RealT API")
+            print("update_user_real_estates('*ToDetails*')")
+            #   Update (
+            #       buying_price = buying_price + current token value * (number of token own - current ownership_percentage * total number of token)
+            #       user_estimated_value=current token value * number of token own
+            #       ownership_percentage= number of token own / total number of token
+            #       monthly_rent = monthly rent per token * number of token own  
+            #   )
+    print ("Done Finary<-RealT")
+    
+    #If Realt tokein wallet not in Finary
+    for key in myRealT_rentals:
+        if key not in myFinary_realT:
+            print("add token "+ myRealT_rentals[key]['name'])
+    print ("Done RealT<-Finary")
+
+    return myFinary_realT

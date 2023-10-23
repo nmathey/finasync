@@ -11,6 +11,7 @@ from finary_uapi.constants import API_ROOT
 from finary_uapi.user_real_estates import get_user_real_estates, delete_user_real_estates, update_user_real_estates, add_user_real_estates
 
 from .constants import GNOSIS_API_TOKENLIST_URI, REALT_API_TOKENLIST_URI, REALT_OFFLINE_TOKENS_LIST
+from .utils import convert_currency
 
 def get_realt_token_details(realt_token_contractAdress):
     Now_Time = datetime.today()
@@ -89,7 +90,11 @@ def get_realt_rentals_finary(session: requests.Session):
                 contractAddress[0].lower():{
                     'name':name[0],
                     'contractAddress': contractAddress[0].lower(),
-                     'finary_id': item.get('id')
+                    'finary_id': item.get('id'),
+                    'category': item.get('category'),
+                    'description': item.get('description'),
+                    'buying_price': item.get('buying_price'),
+                    'ownership_percentage': item.get('ownership_percentage')
                 }
             }
         )
@@ -127,6 +132,16 @@ def get_realt_rentals_blockchain(wallet_address):
 
     return json.dumps(myRealT_rentals)
 
+def get_building_type(realT_propertyType):
+    #building type: house, building, apartment, land, commercial, parking_box, or other
+    #propertyType from RealT -> 1 = Single Family | 2 = Multi Family | 3 = Duplex | 4 = Condominium | 6 = Mixed-Used | 8 = Quadplex | 9 = Commercial |10 = SFR Portfolio
+    building_type = "other"
+    if realT_propertyType == 1: building_type = "house"
+    elif realT_propertyType == 2 or realT_propertyType == 3 or realT_propertyType == 8: building_type = "building"
+    elif realT_propertyType == 4 or realT_propertyType == 9: building_type = "commercial"
+    
+    return building_type
+
 def sync_realt_rent(session: requests.Session, wallet_address):
     # Get current Finary RealT rent portfolio
     myFinary_realT = json.loads(get_realt_rentals_finary(session))
@@ -137,32 +152,40 @@ def sync_realt_rent(session: requests.Session, wallet_address):
     #If finary RealT rentals not in RealT wallet then delete otherwise update
     for key in myFinary_realT:
         if key not in myRealT_rentals:
-            print("delete_user_real_estates(myFinary_realT[key]['finary_id'])")
+            delete_user_real_estates(session, myFinary_realT[key]['finary_id'])
         else:
             token_details = get_realt_token_details(key)
-            print("update_user_real_estates('*ToDetails*')")
+            update_user_real_estates(session, 
+                myFinary_realT[key]['finary_id'], # asset_id
+                "rent", # category
+                (token_details['totalTokens'] * convert_currency(token_details['tokenPrice'], token_details['currency'], "EUR")), # user_estimated_value (in EUR) = current token value * total number of token
+                myFinary_realT[key]['description'], # description
+                (myFinary_realT[key]['buying_price']), # buying_price
+                ((myRealT_rentals[key]['balance'] / token_details['totalTokens']) * 100), # ownership_percentage = number of token own / total number of token
+                (convert_currency(token_details['netRentMonth'], token_details['currency'], "EUR")) # monthly_rent (total)
+            )
             print(token_details)
-            #   Update (
-            #       buying_price = buying_price + current token value * (number of token own - current ownership_percentage * total number of token)
-            #       user_estimated_value=current token value * number of token own
-            #       ownership_percentage= number of token own / total number of token
-            #       monthly_rent = monthly rent per token * number of token own  
-            #   )
     
     #If Realt token in wallet not in Finary then add
     for key in myRealT_rentals:
         if key not in myFinary_realT:
             token_details = get_realt_token_details(key)
-            print("add token "+ myRealT_rentals[key]['name'])
-            print(token_details)
-            #propertyType
-            #1 = Single Family
-            #2 = Multi Family
-            #3 = Duplex
-            #4 = Condominium
-            #6 = Mixed-Used
-            #8 = Quadplex
-            #9 = Commercial
-            #10 = SFR Portfolio
+            category = "rent" #'rent' for RealT rental property
+            add_user_real_estates(
+                session,
+                category, 
+                (token_details['fullName'].replace(" Holdings", "")), #address, #use to get the place ID from address
+                (token_details['totalTokens'] * convert_currency(token_details['tokenPrice'], token_details['currency'], "EUR")), # user_estimated_value (in EUR) = current token value * total number of token
+                "RealT - " + token_details['fullName'] + " - " + key, #description
+                round((token_details['squareFeet'] * 0.092903), 0), #surface in sqm (RealT provide in sqft)
+                (token_details['totalTokens'] * convert_currency(token_details['tokenPrice'], token_details['currency'], "EUR")), #using market value at the time of the property addition in Finary portfolio (might ignore previous revaluation)
+                get_building_type(token_details['propertyType']),
+                ((myRealT_rentals[key]['balance'] / token_details['totalTokens']) * 100), #ownership percentage
+                0, #monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                (convert_currency(token_details['netRentMonth'], token_details['currency'], "EUR")), #monthly rent (total) in Euro (mandatory for rent category)
+                0, #yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                ("annual" if token_details['rentalType'] == "long_term" else "seasonal"), #rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
+                "nue" #rental type: "nue" for RealT rental property (mandatory for rent category)
+            )
             
-    return myFinary_realT
+    return 0

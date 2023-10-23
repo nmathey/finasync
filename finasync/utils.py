@@ -32,7 +32,7 @@ def convert_currency(amount, from_currency, to_currency):
     if 'rates' in data:
         rates = data['rates']
         if from_currency in rates and to_currency in rates:
-            converted_amount = amount * rates[from_currency]
+            converted_amount = amount / rates[from_currency]
         else:
             raise ValueError("Invalid currency!")
     else:

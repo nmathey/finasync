@@ -44,9 +44,10 @@ def main() -> int:  # pragma: nocover
             result = get_user_me(session)
         elif args["realt"]:
             if args["rent"]:
-                result = sync_realt_rent(session, os.environ['MYREALT_WALLET_ADDRESS'])
-            elif args['token']:
-                result = get_realt_token_details("0x3e98281a3dc794799159732d5a488e6cea645c37")
+                result = sync_realt_rent(
+                    session, 
+                    os.environ['MYREALT_WALLET_ADDRESS']
+                )
     if result:
         print(json.dumps(result, indent=4))
 

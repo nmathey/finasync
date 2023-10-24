@@ -1,4 +1,9 @@
 
+<p align="center">
+	<img src=https://github.com/nmathey/finasync/assets/20896232/cb6b9f01-ac82-49ba-863f-905ee1809237 />
+</p>
+
+
 # Finary unofficial portfolio sync tool
 
 A simple tool to sync your Finary portfolio values with sources platforms not yet officially integrated by Finary teams.

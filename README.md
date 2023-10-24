@@ -1,7 +1,7 @@
 
 # Finary unofficial portfolio sync tool
 
-A simple tool to get an automatic (or semi-automatic) way to sync your portfolio values with Finary while the source platform is not yet officially integrated by Finary teams.
+A simple tool to sync your portfolio values with Finary while the source platform is not yet officially integrated by Finary teams.
 
 Finary is a real time portfolio & stocks tracker. It supports precious metals, real estates, cryptos, stocks and a lot more.
 If you don't already have an account, here is a referral link to sign up: https://finary.com/referral/7aeff70ac86f973c6c1e

@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "finasync"
 version = "0.1.0"
-description = ""
+description = "A simple tool to sync your Finary portfolio values with sources platforms not yet officially integrated."
 authors = ["Nicolas Mathey <nicolas@mathey.fr>"]
 readme = "README.md"
 packages = [{include = "finasync"}]

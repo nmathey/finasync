@@ -1,4 +1,9 @@
 
+<p align="center">
+	<img src=https://github.com/nmathey/finasync/assets/20896232/cb6b9f01-ac82-49ba-863f-905ee1809237 />
+</p>
+
+
 # Finary unofficial portfolio sync tool
 
 A simple tool to sync your Finary portfolio values with sources platforms not yet officially integrated by Finary teams.
@@ -25,12 +30,13 @@ Once you clone this repo, you need to install its dependencies:
 ```bash
 cd finasync
 poetry install
+poetry update
 ```
 Copy paste the my_info.json.tpl file to my_info.json and file your Finary username and password (at least), and other personal data.
 
-Run `python -m finasync signin`
+Run `poetry run python -m finasync signin`
 
-Try `python -m finasync me`
+Try `poetry run python -m finasync me`
 
 If you get errors about being unauthorized, you need to signin again.
 
@@ -50,7 +56,7 @@ Current working scope (tried to keep it simple for now):
 - 	update properties values and monthly rent
 
 Usage (once signin):
-	`python -m finasync realt rent`
+	`poetry run python -m finasync realt rent`
 
 It will sync your RealT portfolio hosted on the blockchain to your Finary account.
 

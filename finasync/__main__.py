@@ -4,7 +4,6 @@ Usage:
     finasync signin [MFA_CODE]
     finasync me
     finasync realt rent
-    finasync realt token
 """
 import json
 import sys

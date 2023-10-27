@@ -50,6 +50,9 @@ RealT is a pionner in Real Estate applied to Web3.0 and very focus on its commun
 Made possible thanks to RealT Community API (https://api.realt.community/) so you need an API Key to get full RealT token details.
 Here is the form to get one: [Grant API access token](https://docs.google.com/forms/d/e/1FAIpQLSf20z9fooLlq7tJTrUM4ESRlGRaqXun1wHLz5UscsF2xkdhfg/viewform)
 
+Known limitation:
+Values forced exchanged to EUR - see [issue#2](https://github.com/nmathey/finasync/issues/2) 
+
 Current working scope (tried to keep it simple for now):
 - 	rentals properties only for now
 - 	add/delete rentals own properties in Finary real estate rent category

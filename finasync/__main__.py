@@ -4,6 +4,7 @@ Usage:
     finasync signin [MFA_CODE]
     finasync me
     finasync realt rent
+    finasync realt rent deleteall
 """
 import json
 import sys
@@ -43,10 +44,13 @@ def main() -> int:  # pragma: nocover
             result = get_user_me(session)
         elif args["realt"]:
             if args["rent"]:
-                result = sync_realt_rent(
-                    session, 
-                    os.environ['MYREALT_WALLET_ADDRESS']
-                )
+                if args["deleteall"]:
+                    result = delete_all_realt_rentals_finary(session)
+                else:
+                    result = sync_realt_rent(
+                        session, 
+                        os.environ['MYREALT_WALLET_ADDRESS']
+                    )
     if result:
         print(json.dumps(result, indent=4))
 

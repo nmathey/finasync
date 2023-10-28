@@ -78,6 +78,7 @@ def get_realt_token_details(realt_token_contractAdress):
 
     return RealT_OfflineTokensList['data'][realt_token_contractAdress]
 
+
 def get_realt_rentals_finary(session: requests.Session):
     myFinary_real_estates = get_user_real_estates(session)
     myFinary_real_estates = list(filter(lambda x: re.match('^RealT -',x["description"]),myFinary_real_estates["result"]))
@@ -132,6 +133,7 @@ def get_realt_rentals_blockchain(wallet_address):
 
     return json.dumps(myRealT_rentals)
 
+
 def get_building_type(realT_propertyType):
     #building type: house, building, apartment, land, commercial, parking_box, or other
     #propertyType from RealT -> 1 = Single Family | 2 = Multi Family | 3 = Duplex | 4 = Condominium | 6 = Mixed-Used | 8 = Quadplex | 9 = Commercial |10 = SFR Portfolio
@@ -141,6 +143,7 @@ def get_building_type(realT_propertyType):
     elif realT_propertyType == 4 or realT_propertyType == 9: building_type = "commercial"
     
     return building_type
+
 
 def sync_realt_rent(session: requests.Session, wallet_address):
     # Get current Finary RealT rent portfolio
@@ -188,4 +191,12 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 "nue" #rental type: "nue" for RealT rental property (mandatory for rent category)
             )
             
+    return 0
+
+
+    def delete_all_realt_rentals_finary(session: requests.Session):
+        # Get current Finary RealT rent portfolio
+        myFinary_realT = json.loads(get_realt_rentals_finary(session))
+        for key in myFinary_realT:
+            delete_user_real_estates(session, myFinary_realT[key]['finary_id'])
     return 0

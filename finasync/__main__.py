@@ -20,6 +20,7 @@ from finary_uapi.user_me import get_user_me, get_user_me_institution_connections
 from .realt import sync_realt_rent, get_realt_token_details
 from .utils import convert_currency
 
+
 def main() -> int:  # pragma: nocover
     """Main entry point."""
     import logging
@@ -29,10 +30,10 @@ def main() -> int:  # pragma: nocover
     # load secrets from my_info.json to os.env
     myInfo_file = open("my_info.json", "r")
     myInfo = json.load(myInfo_file)
-    os.environ['FINARY_EMAIL'] = myInfo['FINARY_EMAIL']
-    os.environ['FINARY_PASSWORD'] = myInfo['FINARY_PASSWORD']
-    os.environ['MYREALT_API_KEY'] = myInfo['MYREALT_API_KEY']
-    os.environ['MYREALT_WALLET_ADDRESS'] = myInfo['MYREALT_WALLET_ADDRESS']
+    os.environ["FINARY_EMAIL"] = myInfo["FINARY_EMAIL"]
+    os.environ["FINARY_PASSWORD"] = myInfo["FINARY_PASSWORD"]
+    os.environ["MYREALT_API_KEY"] = myInfo["MYREALT_API_KEY"]
+    os.environ["MYREALT_WALLET_ADDRESS"] = myInfo["MYREALT_WALLET_ADDRESS"]
 
     args = docopt(__doc__)
     result = ""
@@ -48,8 +49,7 @@ def main() -> int:  # pragma: nocover
                     result = delete_all_realt_rentals_finary(session)
                 else:
                     result = sync_realt_rent(
-                        session, 
-                        os.environ['MYREALT_WALLET_ADDRESS']
+                        session, os.environ["MYREALT_WALLET_ADDRESS"]
                     )
     if result:
         print(json.dumps(result, indent=4))

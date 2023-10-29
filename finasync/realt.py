@@ -268,6 +268,7 @@ def delete_all_realt_rentals_finary(session: requests.Session):
     # Get current Finary RealT rent portfolio
     myFinary_realT = json.loads(get_realt_rentals_finary(session))
     for key in myFinary_realT:
-        delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
+        #print("delete " + str(myFinary_realT[key].get('finary_id')))
+        delete_user_real_estates(session, myFinary_realT[key].get('finary_id'))
         
     return 0

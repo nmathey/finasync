@@ -7,7 +7,6 @@ from pathlib import Path
 from datetime import datetime, timedelta
 from json.decoder import JSONDecodeError
 
-from finary_uapi.constants import API_ROOT
 from finary_uapi.user_real_estates import (
     get_user_real_estates,
     delete_user_real_estates,
@@ -59,7 +58,6 @@ def get_realt_token_details(realt_token_contractAdress):
                         "fullName": item.get("fullName"),
                         "shortName": item.get("shortName"),
                         "tokenPrice": item.get("tokenPrice"),
-                        "netRentMonthPerToken": item.get("netRentMonthPerToken"),
                         "currency": item.get("currency"),
                         "rentStartDate": item.get("rentStartDate"),
                         "squareFeet": item.get("squareFeet"),
@@ -78,7 +76,6 @@ def get_realt_token_details(realt_token_contractAdress):
                         "netRentMonthPerToken": item.get("netRentMonthPerToken"),
                         "coordinate": item.get("coordinate"),
                         "propertyType": item.get("propertyType"),
-                        "rentStartDate": item.get("rentStartDate"),
                         "rentalType": item.get("rentalType"),
                         "productType": item.get("productType"),
                     }
@@ -219,7 +216,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
     for key in myRealT_rentals:
         if key not in myFinary_realT:
             token_details = get_realt_token_details(key)
-            category = "rent"  #'rent' for RealT rental property
+            category = "rent"  # 'rent' for RealT rental property
             add_user_real_estates(
                 session,
                 category,
@@ -264,11 +261,11 @@ def sync_realt_rent(session: requests.Session, wallet_address):
 
     return 0
 
+
 def delete_all_realt_rentals_finary(session: requests.Session):
     # Get current Finary RealT rent portfolio
     myFinary_realT = json.loads(get_realt_rentals_finary(session))
     for key in myFinary_realT:
-        #print("delete " + str(myFinary_realT[key].get('finary_id')))
-        delete_user_real_estates(session, myFinary_realT[key].get('finary_id'))
-        
+        delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
+
     return 0

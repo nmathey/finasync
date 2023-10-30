@@ -9,9 +9,9 @@ include = [{ path = "finalynx/finary_api/**/*" }]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-finary-uapi = "^0.1.8"
 docopt = "^0.6.2"
 requests = "^2.30.0"
+finary-uapi = { git = "https://github.com/lasconic/finary_uapi.git" }
 
 [build-system]
 requires = ["poetry-core"]

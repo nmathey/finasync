@@ -14,11 +14,9 @@ from docopt import docopt
 
 from finary_uapi.auth import prepare_session
 from finary_uapi.signin import signin
-from finary_uapi.user_me import get_user_me, get_user_me_institution_connections
+from finary_uapi.user_me import get_user_me
 
-
-from .realt import sync_realt_rent
-from .utils import convert_currency
+from .realt import sync_realt_rent, delete_all_realt_rentals_finary
 
 
 def main() -> int:  # pragma: nocover

@@ -62,7 +62,7 @@ def get_realt_token_details(realt_token_contractAdress):
                         "netRentMonthPerToken": item.get("netRentMonthPerToken"),
                         "currency": item.get("currency"),
                         "rentStartDate": item.get("rentStartDate"),
-                        "squareFeet": squareFeet,
+                        "squareFeet": item.get("squareFeet"),
                         "totalTokens": item.get("totalTokens"),
                         "totalInvestment": item.get("totalInvestment"),
                         "grossRentMonth": item.get("grossRentMont"),

@@ -219,7 +219,13 @@ def sync_realt_rent(session: requests.Session, wallet_address):
     for key in myRealT_rentals:
         if key not in myFinary_realT:
             token_details = get_realt_token_details(key)
+            # Handling null value recieved from API
+            squareFeet = 1
+            print(item.get("squareFeet"))
+            if token_details["squareFeet"] != 0 or is not None: squareFeet = token_details["squareFeet"]
+            
             category = "rent"  #'rent' for RealT rental property
+            
             add_user_real_estates(
                 session,
                 category,
@@ -234,7 +240,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 ),  # user_estimated_value (in EUR) = current token value * total number of token
                 "RealT - " + token_details["fullName"] + " - " + key,  # description
                 round(
-                    (token_details["squareFeet"] * 0.092903), 0
+                    (squareFeet * 0.092903), 0
                 ),  # surface in sqm (RealT provide in sqft)
                 (
                     token_details["totalTokens"]

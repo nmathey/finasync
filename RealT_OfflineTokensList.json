@@ -1,6 +1,6 @@
 {
     "info": {
-        "last_sync": "1697919816.584295"
+        "last_sync": "1698626794.293443"
     },
     "data": {
         "0xe5f7ef61443fc36ae040650aa585b0395aef77c8": {
@@ -4064,7 +4064,7 @@
                 "timezone_type": 3,
                 "timezone": "UTC"
             },
-            "squareFeet": null,
+            "squareFeet": 0,
             "totalTokens": 18000,
             "totalInvestment": 916200,
             "grossRentMonth": null,
@@ -4274,7 +4274,7 @@
                 "timezone_type": 3,
                 "timezone": "UTC"
             },
-            "squareFeet": null,
+            "squareFeet": 0,
             "totalTokens": 8200,
             "totalInvestment": 402210,
             "grossRentMonth": null,
@@ -4394,7 +4394,7 @@
                 "timezone_type": 3,
                 "timezone": "UTC"
             },
-            "squareFeet": null,
+            "squareFeet": 0,
             "totalTokens": 10000,
             "totalInvestment": 516700,
             "grossRentMonth": null,
@@ -5354,7 +5354,7 @@
                 "timezone_type": 3,
                 "timezone": "UTC"
             },
-            "squareFeet": null,
+            "squareFeet": 0,
             "totalTokens": 6500,
             "totalInvestment": 337805,
             "grossRentMonth": null,
@@ -7266,7 +7266,7 @@
         "0x4b293baa4703c5e7d480498bf3ccd8dc3d1297cd": {
             "fullName": "S 10147 Somerset Ave, Detroit, MI 48224",
             "shortName": "S 10147 Somerset",
-            "tokenPrice": 50.21,
+            "tokenPrice": 52.58,
             "netRentMonthPerToken": 0.44074074074074,
             "currency": "USD",
             "rentStartDate": {
@@ -7276,7 +7276,7 @@
             },
             "squareFeet": 1162,
             "totalTokens": 1248,
-            "totalInvestment": 67783.5,
+            "totalInvestment": 70980,
             "grossRentMonth": null,
             "propertyManagement": 72,
             "realtPlatform": null,
@@ -7296,7 +7296,7 @@
         "0xc6a9ad5f687b832636e8a946be5f5f213dd563fa": {
             "fullName": "D 10147 Somerset Ave, Detroit, MI 48224",
             "shortName": "D 10147 Somerset",
-            "tokenPrice": 50.21,
+            "tokenPrice": 52.58,
             "netRentMonthPerToken": 0.44074074074074,
             "currency": "USD",
             "rentStartDate": {
@@ -7306,7 +7306,7 @@
             },
             "squareFeet": 1162,
             "totalTokens": 102,
-            "totalInvestment": 67783.5,
+            "totalInvestment": 70980,
             "grossRentMonth": null,
             "propertyManagement": 72,
             "realtPlatform": null,
@@ -7596,7 +7596,7 @@
         "0x304bee450c2d116696d8b442981e7a300dfdf1cb": {
             "fullName": "S 11965 Lakepointe St, Detroit, MI 48224",
             "shortName": "S 11965 Lakepointe",
-            "tokenPrice": 51.41,
+            "tokenPrice": 54.25,
             "netRentMonthPerToken": 0.43423076923077,
             "currency": "USD",
             "rentStartDate": {
@@ -7606,7 +7606,7 @@
             },
             "squareFeet": 1223,
             "totalTokens": 1195,
-            "totalInvestment": 66833,
+            "totalInvestment": 70530,
             "grossRentMonth": null,
             "propertyManagement": 70,
             "realtPlatform": null,
@@ -7626,7 +7626,7 @@
         "0xf63b6b88ccc49825db9b2c6710a3b4513adb58c3": {
             "fullName": "D 11965 Lakepointe St, Detroit, MI 48224",
             "shortName": "D 11965 Lakepointe",
-            "tokenPrice": 51.41,
+            "tokenPrice": 54.25,
             "netRentMonthPerToken": 0.43423076923077,
             "currency": "USD",
             "rentStartDate": {
@@ -7636,7 +7636,7 @@
             },
             "squareFeet": 1223,
             "totalTokens": 105,
-            "totalInvestment": 66833,
+            "totalInvestment": 70530,
             "grossRentMonth": null,
             "propertyManagement": 70,
             "realtPlatform": null,
@@ -7806,7 +7806,7 @@
         "0xb80173756781960761aa59c9eeebe191f049f4c8": {
             "fullName": "S 19391 Grandview St, Detroit, MI 48219",
             "shortName": "S 19391 Grandview",
-            "tokenPrice": 50.19,
+            "tokenPrice": 52.96,
             "netRentMonthPerToken": 0.43076923076923,
             "currency": "USD",
             "rentStartDate": {
@@ -7816,7 +7816,7 @@
             },
             "squareFeet": 796,
             "totalTokens": 1300,
-            "totalInvestment": 65247,
+            "totalInvestment": 68850,
             "grossRentMonth": null,
             "propertyManagement": 72.8,
             "realtPlatform": null,
@@ -7926,7 +7926,7 @@
         "0xf549b95362e6062999bdfe6c61e75e4547b8116d": {
             "fullName": "S 11117 Worden St, Detroit, MI 48224",
             "shortName": "S 11117 Worden",
-            "tokenPrice": 48.03,
+            "tokenPrice": 50.44,
             "netRentMonthPerToken": 0.41538461538462,
             "currency": "USD",
             "rentStartDate": {
@@ -7936,7 +7936,7 @@
             },
             "squareFeet": 824,
             "totalTokens": 1192,
-            "totalInvestment": 62439,
+            "totalInvestment": 65570,
             "grossRentMonth": null,
             "propertyManagement": 72,
             "realtPlatform": null,
@@ -7986,7 +7986,7 @@
         "0x9eea197bf77fd70f485f25e606b731ce3c510b2c": {
             "fullName": "D 11117 Worden St, Detroit, MI 48224",
             "shortName": "D 11117 Worden",
-            "tokenPrice": 48.03,
+            "tokenPrice": 50.44,
             "netRentMonthPerToken": 0.41538461538462,
             "currency": "USD",
             "rentStartDate": {
@@ -7996,7 +7996,7 @@
             },
             "squareFeet": 824,
             "totalTokens": 108,
-            "totalInvestment": 62439,
+            "totalInvestment": 65570,
             "grossRentMonth": null,
             "propertyManagement": 72,
             "realtPlatform": null,
@@ -12630,6 +12630,66 @@
                 "lng": "-86.207610"
             },
             "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x60139f99ddb56b846b998a655de2d775acd936a1": {
+            "fullName": "1991 Ewald Cir, Detroit, MI 48238",
+            "shortName": "1991 Ewald",
+            "tokenPrice": 50.47,
+            "netRentMonthPerToken": 0.42507142857143,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2023-12-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 5886,
+            "totalTokens": 7000,
+            "totalInvestment": 353290,
+            "grossRentMonth": null,
+            "propertyManagement": 447.6,
+            "realtPlatform": null,
+            "insurance": 150,
+            "propertyTaxes": 610,
+            "propertyMaintenanceMonthly": 700,
+            "utilities": 600,
+            "netRentMonth": 2975.5,
+            "coordinate": {
+                "lat": "42.394773",
+                "lng": "-83.130199"
+            },
+            "propertyType": 2,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xaee6ded2c8723c1d81d1b5325a2e620fb055b77b": {
+            "fullName": "13700 Dexter Ave, Detroit, MI 48238",
+            "shortName": "13700 Dexter",
+            "tokenPrice": 50.37,
+            "netRentMonthPerToken": 0.42571994,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2023-12-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 8837,
+            "totalTokens": 12500,
+            "totalInvestment": 629625,
+            "grossRentMonth": null,
+            "propertyManagement": 754.79993333333,
+            "realtPlatform": null,
+            "insurance": 250,
+            "propertyTaxes": 870,
+            "propertyMaintenanceMonthly": 1050,
+            "utilities": 1000,
+            "netRentMonth": 5321.49925,
+            "coordinate": {
+                "lat": "42.391712",
+                "lng": "-83.131770"
+            },
+            "propertyType": 2,
             "rentalType": "long_term",
             "productType": "real_estate_rental"
         }

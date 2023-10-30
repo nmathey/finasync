@@ -17,7 +17,7 @@ from finary_uapi.signin import signin
 from finary_uapi.user_me import get_user_me, get_user_me_institution_connections
 
 
-from .realt import sync_realt_rent, get_realt_token_details
+from .realt import sync_realt_rent
 from .utils import convert_currency
 
 

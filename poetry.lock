@@ -138,7 +138,7 @@ requests = "^2.30.0"
 type = "git"
 url = "https://github.com/lasconic/finary_uapi.git"
 reference = "HEAD"
-resolved_reference = "2eb91a25e212d0e4df0be06237633dc66ce400cf"
+resolved_reference = "b58e2dae96227d2a524147b7e97165f9c000a69a"
 
 [[package]]
 name = "fuzzywuzzy"

@@ -222,7 +222,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             # Handling null value recieved from API
             squareFeet = 1
             print(item.get("squareFeet"))
-            if token_details["squareFeet"] != 0 or is not None: squareFeet = token_details["squareFeet"]
+            if token_details["squareFeet"] != 0 or not None: squareFeet = token_details["squareFeet"]
             
             category = "rent"  #'rent' for RealT rental property
             

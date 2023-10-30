@@ -125,16 +125,20 @@ name = "finary-uapi"
 version = "0.1.8"
 description = "Finary API client and command line tool to interact with your Finary account."
 optional = false
-python-versions = ">=3.10,<4.0"
-files = [
-    {file = "finary_uapi-0.1.8-py3-none-any.whl", hash = "sha256:02d41e2f9b22dcfe51a3679789563a1ea5c37c98e6dd74e99bf5d5978f21b5f3"},
-    {file = "finary_uapi-0.1.8.tar.gz", hash = "sha256:fdb602fec4327306e77646c7beb6f99d0661c1c661ff48e4722ed5914391338c"},
-]
+python-versions = "^3.10"
+files = []
+develop = false
 
 [package.dependencies]
-docopt = ">=0.6.2,<0.7.0"
-fuzzywuzzy = {version = ">=0.18.0,<0.19.0", extras = ["speedup"]}
-requests = ">=2.30.0,<3.0.0"
+docopt = "^0.6.2"
+fuzzywuzzy = {version = "^0.18.0", extras = ["speedup"]}
+requests = "^2.30.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/lasconic/finary_uapi.git"
+reference = "HEAD"
+resolved_reference = "2eb91a25e212d0e4df0be06237633dc66ce400cf"
 
 [[package]]
 name = "fuzzywuzzy"
@@ -459,4 +463,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e90202b4c633717009640e11034e78030c104c081c4677686d256a470e8b095c"
+content-hash = "4122bdb35a6ffc56adcc698bff462392be720d16b30f1896a1869855c978111a"

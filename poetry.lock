@@ -122,7 +122,7 @@ files = [
 
 [[package]]
 name = "finary-uapi"
-version = "0.1.8"
+version = "0.1.9"
 description = "Finary API client and command line tool to interact with your Finary account."
 optional = false
 python-versions = "^3.10"
@@ -138,7 +138,7 @@ requests = "^2.30.0"
 type = "git"
 url = "https://github.com/lasconic/finary_uapi.git"
 reference = "HEAD"
-resolved_reference = "b58e2dae96227d2a524147b7e97165f9c000a69a"
+resolved_reference = "a958737096801cb7bc7aa6a74e672f6f94da09d4"
 
 [[package]]
 name = "fuzzywuzzy"

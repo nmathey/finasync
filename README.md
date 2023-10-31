@@ -30,7 +30,6 @@ Once you clone this repo, you need to install its dependencies:
 ```bash
 cd finasync
 poetry install
-poetry update
 ```
 Copy paste the my_info.json.tpl file to my_info.json and file your Finary username and password (at least), and other personal data.
 

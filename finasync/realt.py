@@ -283,6 +283,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             # Handling currency
             if token_details["currency"] == get_display_currency_code(session):
                 # if property currency same as display currency
+                logging.debug("Property with same currency as display currency : just add it")
                 add_user_real_estates(
                     session,
                     category,
@@ -325,6 +326,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 or "CAD"
             ):
                 # if property currency different than display currency but Finary compatible
+                logging.debug("Property with compatible Finary currency: swicthing display currency")
                 add_user_real_estates_with_currency(
                     session,
                     category,
@@ -361,6 +363,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 )
             else:
                 # if property currency not Finary compatible then convert in display currency
+                logging.debug("Property with uncompatible Finary currency: converting in display currency")
                 add_user_real_estates(
                     session,
                     category,
@@ -415,6 +418,8 @@ def sync_realt_rent(session: requests.Session, wallet_address):
 def delete_all_realt_rentals_finary(session: requests.Session):
     # Get current Finary RealT rent portfolio
     myFinary_realT = json.loads(get_realt_rentals_finary(session))
+    logging.debug("My current RealT portfolio in Finary")
+    logging.debug(myFinary_realT)
     for key in myFinary_realT:
         delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
         logging.info("Deleting " + myFinary_realT[key]["description"])

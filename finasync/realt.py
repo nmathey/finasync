@@ -223,20 +223,31 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                     get_display_currency_code(session),
                 )
 
+            ownership_percentage = round(
+                (myRealT_rentals[key]["balance"] / token_details["totalTokens"]) * 100,
+                4,
+            )
+
+            print(
+                "updating "
+                + myFinary_realT[key]["description"]
+                + " balance to "
+                + str(myRealT_rentals[key]["balance"])
+                + " / "
+                + str(token_details["totalTokens"])
+                + " ~ "
+                + str(ownership_percentage)
+            )
             update_user_real_estates(
                 session,
-                myFinary_realT[key]["finary_id"],  # asset_id
                 "rent",  # category
+                myFinary_realT[key]["finary_id"],  # asset_id
                 user_estimated_value,  # user_estimated_value
                 myFinary_realT[key]["description"],  # description
                 (myFinary_realT[key]["buying_price"]),  # buying_price
-                (
-                    (myRealT_rentals[key]["balance"] / token_details["totalTokens"])
-                    * 100
-                ),  # ownership_percentage = number of token own / total number of token
+                ownership_percentage,  # ownership_percentage = number of token own / total number of token
                 monthly_rent,  # monthly_rent (total)
             )
-            print(token_details)
 
     # If Realt token in wallet not in Finary then add
     for key in myRealT_rentals:
@@ -274,11 +285,11 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                         (myRealT_rentals[key]["balance"] / token_details["totalTokens"])
                         * 100
                     ),  # ownership percentage
-                    0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    0,  # monthy charges (total) (mandatory for rent category) - set to zero to keep it simple for now
                     token_details[
                         "netRentMonth"
-                    ],  # monthly rent (total) in Euro (mandatory for rent category)
-                    0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    ],  # monthly rent (total) (mandatory for rent category)
+                    0,  # yearly taxes (mandatory for rent category) - set to zero to keep it simple for now
                     (
                         "annual"
                         if token_details["rentalType"] == "long_term"

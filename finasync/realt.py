@@ -12,7 +12,10 @@ from finary_uapi.user_real_estates import (
     delete_user_real_estates,
     update_user_real_estates,
     add_user_real_estates,
+    add_user_real_estates_with_currency,
 )
+
+from finary_uapi.user_me import get_display_currency_code
 
 from .constants import (
     GNOSIS_API_TOKENLIST_URI,
@@ -138,21 +141,16 @@ def get_realt_rentals_blockchain(wallet_address):
             original_contract_address = requests.get(
                 GNOSIS_API_TOKENLIST_URI + item["contractAddress"]
             ).json()
-            #print(item.get("symbol"))
-            #print(item["contractAddress"])
             original_contract_address = list(
                 filter(
                     lambda x: re.match("^REALTOKEN", x["symbol"]),
                     original_contract_address["result"],
                 )
             )
-            #print(original_contract_address)
-            #print(original_contract_address[0])
-            #print(original_contract_address[0]["contractAddress"])
-            #print("----------------")
             original_contract_address = str(
                 original_contract_address[0]["contractAddress"]
             )
+
             myRealT_rentals.update(
                 {
                     original_contract_address.lower(): {
@@ -194,27 +192,34 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
         else:
             token_details = get_realt_token_details(key)
+            
+            # Handling currency
+            if token_details["currency"] == get_display_currency_code(session):
+                user_estimated_value = token_details["totalTokens"] * token_details["tokenPrice"]
+                monthly_rent = token_details["netRentMonth"]
+            elif token_details["currency"] == "EUR" or "USD" or "SGD" or "CHF" or "GBP" or "CAD":
+                user_estimated_value = token_details["totalTokens"] * token_details["tokenPrice"]
+                monthly_rent = token_details["netRentMonth"]
+            else:
+                user_estimated_value = token_details["totalTokens"] * convert_currency(
+                        token_details["tokenPrice"], token_details["currency"], get_display_currency_code(session)
+                    )
+                monthly_rent = convert_currency(
+                        token_details["netRentMonth"], token_details["currency"], get_display_currency_code(session)
+                    )
+
             update_user_real_estates(
                 session,
                 myFinary_realT[key]["finary_id"],  # asset_id
                 "rent",  # category
-                (
-                    token_details["totalTokens"]
-                    * convert_currency(
-                        token_details["tokenPrice"], token_details["currency"], "EUR"
-                    )
-                ),  # user_estimated_value (in EUR) = current token value * total number of token
+                user_estimated_value,  # user_estimated_value
                 myFinary_realT[key]["description"],  # description
                 (myFinary_realT[key]["buying_price"]),  # buying_price
                 (
                     (myRealT_rentals[key]["balance"] / token_details["totalTokens"])
                     * 100
                 ),  # ownership_percentage = number of token own / total number of token
-                (
-                    convert_currency(
-                        token_details["netRentMonth"], token_details["currency"], "EUR"
-                    )
-                ),  # monthly_rent (total)
+                monthly_rent,  # monthly_rent (total)
             )
             print(token_details)
 
@@ -229,47 +234,118 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             
             category = "rent"  #'rent' for RealT rental property
             
-            add_user_real_estates(
-                session,
-                category,
-                (
-                    token_details["fullName"].replace(" Holdings", "")
-                ),  # address, #use to get the place ID from address
-                (
-                    token_details["totalTokens"]
-                    * convert_currency(
-                        token_details["tokenPrice"], token_details["currency"], "EUR"
-                    )
-                ),  # user_estimated_value (in EUR) = current token value * total number of token
-                "RealT - " + token_details["fullName"] + " - " + key,  # description
-                round(
-                    (squareFeet * 0.092903), 0
-                ),  # surface in sqm (RealT provide in sqft)
-                (
-                    token_details["totalTokens"]
-                    * convert_currency(
-                        token_details["tokenPrice"], token_details["currency"], "EUR"
-                    )
-                ),  # using market value at the time of the property addition in Finary portfolio (might ignore previous revaluation)
-                get_building_type(token_details["propertyType"]),
-                (
-                    (myRealT_rentals[key]["balance"] / token_details["totalTokens"])
-                    * 100
-                ),  # ownership percentage
-                0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
-                (
-                    convert_currency(
-                        token_details["netRentMonth"], token_details["currency"], "EUR"
-                    )
-                ),  # monthly rent (total) in Euro (mandatory for rent category)
-                0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
-                (
-                    "annual"
-                    if token_details["rentalType"] == "long_term"
-                    else "seasonal"
-                ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
-                "nue",  # rental type: "nue" for RealT rental property (mandatory for rent category)
-            )
+            # Handling currency
+            if token_details["currency"] == get_display_currency_code(session):
+                # if property currency same as display currency
+                add_user_real_estates(
+                    session,
+                    category,
+                    (
+                        token_details["fullName"].replace(" Holdings", "")
+                    ),  # address, #use to get the place ID from address
+                    (
+                        token_details["totalTokens"] * token_details["tokenPrice"]
+                    ),  # user_estimated_value
+                    "RealT - " + token_details["fullName"] + " - " + key,  # description
+                    round(
+                        (squareFeet * 0.092903), 0
+                    ),  # surface in sqm (RealT provide in sqft)
+                    (
+                        token_details["totalTokens"] * token_details["tokenPrice"]
+                    ),  # using market value at the time of the property addition in Finary portfolio (might ignore previous revaluation)
+                    get_building_type(token_details["propertyType"]),
+                    (
+                        (myRealT_rentals[key]["balance"] / token_details["totalTokens"])
+                        * 100
+                    ),  # ownership percentage
+                    0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    token_details["netRentMonth"], # monthly rent (total) in Euro (mandatory for rent category)
+                    0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    (
+                        "annual"
+                        if token_details["rentalType"] == "long_term"
+                        else "seasonal"
+                    ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
+                    "nue"  # rental type: "nue" for RealT rental property (mandatory for rent category)
+                )
+            elif token_details["currency"] == "EUR" or "USD" or "SGD" or "CHF" or "GBP" or "CAD":
+                # if property currency different than display currency but Finary compatible
+                print ("add " + str(myRealT_rentals[key]["balance"]) + " " + token_details["shortName"] + " @ " + str(token_details["tokenPrice"]))
+                add_user_real_estates_with_currency(
+                    session,
+                    category,
+                    (
+                        token_details["fullName"].replace(" Holdings", "")
+                    ),  # address used to get the place ID
+                    token_details["currency"], # property currency code
+                    (
+                        token_details["totalTokens"] * token_details["tokenPrice"]
+                    ),  # user_estimated_value
+                    "RealT - " + token_details["fullName"] + " - " + key,  # description
+                    round(
+                        (squareFeet * 0.092903), 0
+                    ),  # surface in sqm (RealT provide in sqft)
+                    (
+                        token_details["totalTokens"] * token_details["tokenPrice"]
+                    ),  # buying price using market value at the time of the property addition in Finary portfolio (might ignore previous revaluation)
+                    get_building_type(token_details["propertyType"]),
+                    (
+                        (myRealT_rentals[key]["balance"] / token_details["totalTokens"])
+                        * 100
+                    ),  # ownership percentage
+                    0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    token_details["netRentMonth"],  # monthly rent (total) (mandatory for rent category)
+                    0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    (
+                        "annual"
+                        if token_details["rentalType"] == "long_term"
+                        else "seasonal"
+                    ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
+                    "nue",  # rental type: "nue" for RealT rental property (mandatory for rent category)
+                )
+            else: 
+                # if property currency not Finary compatible then convert in display currency
+                add_user_real_estates(
+                    session,
+                    category,
+                    (
+                        token_details["fullName"].replace(" Holdings", "")
+                    ),  # address, #use to get the place ID from address
+                    (
+                        token_details["totalTokens"]
+                        * convert_currency(
+                            token_details["tokenPrice"], token_details["currency"], get_display_currency_code(session)
+                        )
+                    ),  # user_estimated_value (in EUR) = current token value * total number of token
+                    "RealT - " + token_details["fullName"] + " - " + key,  # description
+                    round(
+                        (squareFeet * 0.092903), 0
+                    ),  # surface in sqm (RealT provide in sqft)
+                    (
+                        token_details["totalTokens"]
+                        * convert_currency(
+                            token_details["tokenPrice"], token_details["currency"], get_display_currency_code(session)
+                        )
+                    ),  # using market value at the time of the property addition in Finary portfolio (might ignore previous revaluation)
+                    get_building_type(token_details["propertyType"]),
+                    (
+                        (myRealT_rentals[key]["balance"] / token_details["totalTokens"])
+                        * 100
+                    ),  # ownership percentage
+                    0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    (
+                        convert_currency(
+                            token_details["netRentMonth"], token_details["currency"], get_display_currency_code(session)
+                        )
+                    ),  # monthly rent (total) in Euro (mandatory for rent category)
+                    0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
+                    (
+                        "annual"
+                        if token_details["rentalType"] == "long_term"
+                        else "seasonal"
+                    ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
+                    "nue"  # rental type: "nue" for RealT rental property (mandatory for rent category)
+                )
 
     return 0
 

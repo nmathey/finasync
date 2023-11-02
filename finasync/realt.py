@@ -192,21 +192,36 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
         else:
             token_details = get_realt_token_details(key)
-            
+
             # Handling currency
             if token_details["currency"] == get_display_currency_code(session):
-                user_estimated_value = token_details["totalTokens"] * token_details["tokenPrice"]
+                user_estimated_value = (
+                    token_details["totalTokens"] * token_details["tokenPrice"]
+                )
                 monthly_rent = token_details["netRentMonth"]
-            elif token_details["currency"] == "EUR" or "USD" or "SGD" or "CHF" or "GBP" or "CAD":
-                user_estimated_value = token_details["totalTokens"] * token_details["tokenPrice"]
+            elif (
+                token_details["currency"] == "EUR"
+                or "USD"
+                or "SGD"
+                or "CHF"
+                or "GBP"
+                or "CAD"
+            ):
+                user_estimated_value = (
+                    token_details["totalTokens"] * token_details["tokenPrice"]
+                )
                 monthly_rent = token_details["netRentMonth"]
             else:
                 user_estimated_value = token_details["totalTokens"] * convert_currency(
-                        token_details["tokenPrice"], token_details["currency"], get_display_currency_code(session)
-                    )
+                    token_details["tokenPrice"],
+                    token_details["currency"],
+                    get_display_currency_code(session),
+                )
                 monthly_rent = convert_currency(
-                        token_details["netRentMonth"], token_details["currency"], get_display_currency_code(session)
-                    )
+                    token_details["netRentMonth"],
+                    token_details["currency"],
+                    get_display_currency_code(session),
+                )
 
             update_user_real_estates(
                 session,
@@ -230,10 +245,11 @@ def sync_realt_rent(session: requests.Session, wallet_address):
 
             # Handling null value recieved from API
             squareFeet = 1
-            if token_details["squareFeet"] != 0 or not None: squareFeet = token_details["squareFeet"]
-            
+            if token_details["squareFeet"] != 0 or not None:
+                squareFeet = token_details["squareFeet"]
+
             category = "rent"  #'rent' for RealT rental property
-            
+
             # Handling currency
             if token_details["currency"] == get_display_currency_code(session):
                 # if property currency same as display currency
@@ -259,25 +275,41 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                         * 100
                     ),  # ownership percentage
                     0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
-                    token_details["netRentMonth"], # monthly rent (total) in Euro (mandatory for rent category)
+                    token_details[
+                        "netRentMonth"
+                    ],  # monthly rent (total) in Euro (mandatory for rent category)
                     0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
                     (
                         "annual"
                         if token_details["rentalType"] == "long_term"
                         else "seasonal"
                     ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
-                    "nue"  # rental type: "nue" for RealT rental property (mandatory for rent category)
+                    "nue",  # rental type: "nue" for RealT rental property (mandatory for rent category)
                 )
-            elif token_details["currency"] == "EUR" or "USD" or "SGD" or "CHF" or "GBP" or "CAD":
+            elif (
+                token_details["currency"] == "EUR"
+                or "USD"
+                or "SGD"
+                or "CHF"
+                or "GBP"
+                or "CAD"
+            ):
                 # if property currency different than display currency but Finary compatible
-                print ("add " + str(myRealT_rentals[key]["balance"]) + " " + token_details["shortName"] + " @ " + str(token_details["tokenPrice"]))
+                print(
+                    "add "
+                    + str(myRealT_rentals[key]["balance"])
+                    + " "
+                    + token_details["shortName"]
+                    + " @ "
+                    + str(token_details["tokenPrice"])
+                )
                 add_user_real_estates_with_currency(
                     session,
                     category,
                     (
                         token_details["fullName"].replace(" Holdings", "")
                     ),  # address used to get the place ID
-                    token_details["currency"], # property currency code
+                    token_details["currency"],  # property currency code
                     (
                         token_details["totalTokens"] * token_details["tokenPrice"]
                     ),  # user_estimated_value
@@ -294,7 +326,9 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                         * 100
                     ),  # ownership percentage
                     0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
-                    token_details["netRentMonth"],  # monthly rent (total) (mandatory for rent category)
+                    token_details[
+                        "netRentMonth"
+                    ],  # monthly rent (total) (mandatory for rent category)
                     0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
                     (
                         "annual"
@@ -303,7 +337,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                     ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
                     "nue",  # rental type: "nue" for RealT rental property (mandatory for rent category)
                 )
-            else: 
+            else:
                 # if property currency not Finary compatible then convert in display currency
                 add_user_real_estates(
                     session,
@@ -314,7 +348,9 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                     (
                         token_details["totalTokens"]
                         * convert_currency(
-                            token_details["tokenPrice"], token_details["currency"], get_display_currency_code(session)
+                            token_details["tokenPrice"],
+                            token_details["currency"],
+                            get_display_currency_code(session),
                         )
                     ),  # user_estimated_value (in EUR) = current token value * total number of token
                     "RealT - " + token_details["fullName"] + " - " + key,  # description
@@ -324,7 +360,9 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                     (
                         token_details["totalTokens"]
                         * convert_currency(
-                            token_details["tokenPrice"], token_details["currency"], get_display_currency_code(session)
+                            token_details["tokenPrice"],
+                            token_details["currency"],
+                            get_display_currency_code(session),
                         )
                     ),  # using market value at the time of the property addition in Finary portfolio (might ignore previous revaluation)
                     get_building_type(token_details["propertyType"]),
@@ -335,7 +373,9 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                     0,  # monthy charges (total) in Euro (mandatory for rent category) - set to zero to keep it simple for now
                     (
                         convert_currency(
-                            token_details["netRentMonth"], token_details["currency"], get_display_currency_code(session)
+                            token_details["netRentMonth"],
+                            token_details["currency"],
+                            get_display_currency_code(session),
                         )
                     ),  # monthly rent (total) in Euro (mandatory for rent category)
                     0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now
@@ -344,7 +384,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                         if token_details["rentalType"] == "long_term"
                         else "seasonal"
                     ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
-                    "nue"  # rental type: "nue" for RealT rental property (mandatory for rent category)
+                    "nue",  # rental type: "nue" for RealT rental property (mandatory for rent category)
                 )
 
     return 0

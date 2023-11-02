@@ -10,8 +10,11 @@ from .constants import EXCHANGE_RATES_API_URI, EXCHANGE_OFFLINE_RATES_PATH
 def convert_currency(amount, from_currency, to_currency):
     Now_Time = datetime.today()
     Exchange_OfflineRates_Path = Path(
-        EXCHANGE_OFFLINE_RATES_PATH + "Exchange_OfflineRates_To_" + to_currency +".json"
-        )
+        EXCHANGE_OFFLINE_RATES_PATH
+        + "Exchange_OfflineRates_To_"
+        + to_currency
+        + ".json"
+    )
     Exchange_OfflineRates_Path.touch(exist_ok=True)
     converted_amount = 0
     with open(Exchange_OfflineRates_Path) as json_file:

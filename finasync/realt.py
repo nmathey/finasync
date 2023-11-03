@@ -145,7 +145,7 @@ def get_realt_rentals_blockchain(wallet_address):
                 }
             )
         elif re.match(r"^armmREALT", str(item.get("symbol"))):
-            time.sleep(1)
+            time.sleep(0.2)
             original_contract_address = requests.get(
                 GNOSIS_API_TOKENLIST_URI + item["contractAddress"]
             ).json()
@@ -361,6 +361,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                     ),  # rental period: annual (=long_term) or seasonal (=short_term) (mandatory if rent category)
                     "nue",  # rental type: "nue" for RealT rental property (mandatory for rent category)
                 )
+                time.sleep(0.2)
             else:
                 # if property currency not Finary compatible then convert in display currency
                 logging.debug("Property with uncompatible Finary currency: converting in display currency")

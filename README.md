@@ -22,7 +22,7 @@ This won't be possible without:
 * The great work of @lasconic for his Finary Unofficial API wrapper (https://github.com/lasconic/finary_uapi)
 * The great work of RealT Community API (https://api.realt.community/)
 * Exchange Rate API (https://www.exchangerate-api.com)
-* The great idea from @MadeInPierre author of Finalynx, bringing an alternative for your Finary portefolio views and much more (https://github.com/MadeInPierre/finalynx)
+* The great idea from @MadeInPierre author of Finalynx, bringing an alternative for your Finary portfolio views and much more (https://github.com/MadeInPierre/finalynx)
 
 ## Installation
 
@@ -49,13 +49,14 @@ RealT is a pionner in Real Estate applied to Web3.0 and very focus on its commun
 Made possible thanks to RealT Community API (https://api.realt.community/) so you need an API Key to get full RealT token details.
 Here is the form to get one: [Grant API access token](https://docs.google.com/forms/d/e/1FAIpQLSf20z9fooLlq7tJTrUM4ESRlGRaqXun1wHLz5UscsF2xkdhfg/viewform)
 
-Known limitation:
-Values forced conversion to EUR - see [issue#2](https://github.com/nmathey/finasync/issues/2) 
-
 Current working scope (tried to keep it simple for now):
 - 	rentals properties only for now
 - 	add/delete rentals own properties in Finary real estate rent category
 - 	update properties values and monthly rent
+
+Known limitations:
+-	Gnosis network only
+-	Single wallet only
 
 Usage (once signin):
 	`poetry run python -m finasync realt rent`

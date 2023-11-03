@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 from datetime import datetime, timedelta
 from json.decoder import JSONDecodeError
+import logging
 
 from finary_uapi.user_real_estates import (
     get_user_real_estates,
@@ -54,6 +55,8 @@ def get_realt_token_details(realt_token_contractAdress):
         )
 
         TokensList = TokensListReq.json()
+        logging.debug("Tokens list details from API RealT")
+        logging.debug(TokensList)
         for item in TokensList:
             RealT_OfflineTokensList["data"].update(
                 {
@@ -100,6 +103,8 @@ def get_realt_rentals_finary(session: requests.Session):
             myFinary_real_estates["result"],
         )
     )
+    logging.debug("My RealT Finary portfolio")
+    logging.debug(myFinary_real_estates)
     myFinary_realT = {}
     for item in myFinary_real_estates:
         contractAddress = re.findall(r"0x.+", str(item.get("description")))
@@ -124,8 +129,11 @@ def get_realt_rentals_finary(session: requests.Session):
 def get_realt_rentals_blockchain(wallet_address):
     myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)
     myRealT_rentals = {}
+    logging.debug("My wallet details")
+    logging.debug(myWallet)
     for item in myWallet["result"]:
         if re.match(r"^REALTOKEN", str(item.get("symbol")), re.IGNORECASE):
+            logging.debug("Updating RealT Token to Finary: " + item["symbol"])
             myRealT_rentals.update(
                 {
                     item["contractAddress"].lower(): {
@@ -150,7 +158,7 @@ def get_realt_rentals_blockchain(wallet_address):
             original_contract_address = str(
                 original_contract_address[0]["contractAddress"]
             )
-
+            logging.debug("Updating armm RealT Token to Finary: " + item["symbol"])
             myRealT_rentals.update(
                 {
                     original_contract_address.lower(): {
@@ -161,6 +169,8 @@ def get_realt_rentals_blockchain(wallet_address):
                     }
                 }
             )
+    logging.debug("My RealT portfolio from the blockchain")
+    logging.debug(myRealT_rentals)
 
     return json.dumps(myRealT_rentals)
 
@@ -190,6 +200,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
     for key in myFinary_realT:
         if key not in myRealT_rentals:
             delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
+            logging.info("Deleting " + myFinary_realT[key]["description"])
         else:
             token_details = get_realt_token_details(key)
 
@@ -228,7 +239,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 4,
             )
 
-            print(
+            logging.info(
                 "updating "
                 + myFinary_realT[key]["description"]
                 + " balance to "
@@ -261,9 +272,18 @@ def sync_realt_rent(session: requests.Session, wallet_address):
 
             category = "rent"  #'rent' for RealT rental property
 
+            logging.info(
+                    "add "
+                    + str(myRealT_rentals[key]["balance"])
+                    + " "
+                    + token_details["shortName"]
+                    + " @ "
+                    + str(token_details["tokenPrice"])
+                )
             # Handling currency
             if token_details["currency"] == get_display_currency_code(session):
                 # if property currency same as display currency
+                logging.debug("Property with same currency as display currency : just add it")
                 add_user_real_estates(
                     session,
                     category,
@@ -306,14 +326,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 or "CAD"
             ):
                 # if property currency different than display currency but Finary compatible
-                print(
-                    "add "
-                    + str(myRealT_rentals[key]["balance"])
-                    + " "
-                    + token_details["shortName"]
-                    + " @ "
-                    + str(token_details["tokenPrice"])
-                )
+                logging.debug("Property with compatible Finary currency: swicthing display currency")
                 add_user_real_estates_with_currency(
                     session,
                     category,
@@ -350,6 +363,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 )
             else:
                 # if property currency not Finary compatible then convert in display currency
+                logging.debug("Property with uncompatible Finary currency: converting in display currency")
                 add_user_real_estates(
                     session,
                     category,
@@ -404,7 +418,10 @@ def sync_realt_rent(session: requests.Session, wallet_address):
 def delete_all_realt_rentals_finary(session: requests.Session):
     # Get current Finary RealT rent portfolio
     myFinary_realT = json.loads(get_realt_rentals_finary(session))
+    logging.debug("My current RealT portfolio in Finary")
+    logging.debug(myFinary_realT)
     for key in myFinary_realT:
         delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
+        logging.info("Deleting " + myFinary_realT[key]["description"])
 
     return 0

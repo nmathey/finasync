@@ -35,6 +35,7 @@ def main() -> int:  # pragma: nocover
 
     args = docopt(__doc__)
     result = ""
+
     if args["signin"]:
         result = signin(args["MFA_CODE"])
     else:

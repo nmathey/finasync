@@ -266,9 +266,10 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             token_details = get_realt_token_details(key)
 
             # Handling null value recieved from API
-            squareFeet = 1
-            if token_details["squareFeet"] != 0 or not None:
-                squareFeet = token_details["squareFeet"]
+            if token_details["squareFeet"] is not None:
+                squareFeet = float(token_details["squareFeet"])
+            else:
+                squareFeet = 1.0
 
             category = "rent"  #'rent' for RealT rental property
 

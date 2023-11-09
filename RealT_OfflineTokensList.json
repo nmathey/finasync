@@ -4393,7 +4393,7 @@
                 "timezone_type": 3,
                 "timezone": "UTC"
             },
-            "squareFeet": null,
+            "squareFeet": 1,
             "totalTokens": 10000,
             "totalInvestment": 516700,
             "grossRentMonth": null,

@@ -197,6 +197,8 @@ def sync_realt_rent(session: requests.Session, wallet_address):
     myRealT_rentals = json.loads(get_realt_rentals_blockchain(wallet_address))
 
     # If finary RealT rentals not in RealT wallet then delete otherwise update
+    myFinary_displaycurrency = get_display_currency_code(session)
+    logging.debug("UI Display currency: " + myFinary_displaycurrency)
     for key in myFinary_realT:
         if key not in myRealT_rentals:
             delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
@@ -205,7 +207,8 @@ def sync_realt_rent(session: requests.Session, wallet_address):
             token_details = get_realt_token_details(key)
 
             # Handling currency
-            if token_details["currency"] == get_display_currency_code(session):
+            logging.debug("UI Display currency: " + myFinary_displaycurrency)
+            if token_details["currency"] == myFinary_displaycurrency:
                 user_estimated_value = (
                     token_details["totalTokens"] * token_details["tokenPrice"]
                 )
@@ -226,12 +229,12 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                 user_estimated_value = token_details["totalTokens"] * convert_currency(
                     token_details["tokenPrice"],
                     token_details["currency"],
-                    get_display_currency_code(session),
+                    myFinary_displaycurrency,
                 )
                 monthly_rent = convert_currency(
                     token_details["netRentMonth"],
                     token_details["currency"],
-                    get_display_currency_code(session),
+                    myFinary_displaycurrency,
                 )
 
             ownership_percentage = round(
@@ -282,7 +285,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                     + str(token_details["tokenPrice"])
                 )
             # Handling currency
-            if token_details["currency"] == get_display_currency_code(session):
+            if token_details["currency"] == myFinary_displaycurrency:
                 # if property currency same as display currency
                 logging.debug("Property with same currency as display currency : just add it")
                 add_user_real_estates(
@@ -377,7 +380,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                         * convert_currency(
                             token_details["tokenPrice"],
                             token_details["currency"],
-                            get_display_currency_code(session),
+                            myFinary_displaycurrency,
                         )
                     ),  # user_estimated_value (in EUR) = current token value * total number of token
                     "RealT - " + token_details["fullName"] + " - " + key,  # description
@@ -389,7 +392,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                         * convert_currency(
                             token_details["tokenPrice"],
                             token_details["currency"],
-                            get_display_currency_code(session),
+                            myFinary_displaycurrency,
                         )
                     ),  # using market value at the time of the property addition in Finary portfolio (might ignore previous revaluation)
                     get_building_type(token_details["propertyType"]),
@@ -402,7 +405,7 @@ def sync_realt_rent(session: requests.Session, wallet_address):
                         convert_currency(
                             token_details["netRentMonth"],
                             token_details["currency"],
-                            get_display_currency_code(session),
+                            myFinary_displaycurrency,
                         )
                     ),  # monthly rent (total) in Euro (mandatory for rent category)
                     0,  # yearly taxes in Euro (mandatory for rent category) - set to zero to keep it simple for now

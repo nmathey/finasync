@@ -1,6 +1,6 @@
 {
     "info": {
-        "last_sync": "1707388207.531851"
+        "last_sync": "1708218432.479467"
     },
     "data": {
         "0xe5f7ef61443fc36ae040650aa585b0395aef77c8": {
@@ -5627,14 +5627,14 @@
             "totalTokens": 13500,
             "totalInvestment": 685665,
             "grossRentMonth": null,
-            "propertyManagement": 2715,
+            "propertyManagement": 2673,
             "realtPlatform": null,
             "insurance": 0,
             "propertyTaxes": 885,
             "propertyMaintenanceMonthly": 531.5,
             "utilities": 0,
-            "netRentMonth": 4782.75,
-            "netRentMonthPerToken": 0.35427777777778,
+            "netRentMonth": 4686.85,
+            "netRentMonthPerToken": 0.34717407407407,
             "coordinate": {
                 "lat": "28.336380",
                 "lng": "-81.608013"
@@ -6257,14 +6257,14 @@
             "totalTokens": 13500,
             "totalInvestment": 682425,
             "grossRentMonth": null,
-            "propertyManagement": 2526,
+            "propertyManagement": 2352,
             "realtPlatform": null,
             "insurance": 0,
             "propertyTaxes": 800,
             "propertyMaintenanceMonthly": 531.5,
             "utilities": 0,
-            "netRentMonth": 4436.2,
-            "netRentMonthPerToken": 0.32860740740741,
+            "netRentMonth": 4038.9,
+            "netRentMonthPerToken": 0.29917777777778,
             "coordinate": {
                 "lat": "28.336052",
                 "lng": "-81.608774"
@@ -11057,14 +11057,14 @@
             "totalTokens": 11500,
             "totalInvestment": 585580,
             "grossRentMonth": null,
-            "propertyManagement": 1971.775,
+            "propertyManagement": 1781,
             "realtPlatform": null,
             "insurance": 34,
             "propertyTaxes": 0,
             "propertyMaintenanceMonthly": 75,
             "utilities": 120,
-            "netRentMonth": 5528.583,
-            "netRentMonthPerToken": 0.48074634782609,
+            "netRentMonth": 4971.52,
+            "netRentMonthPerToken": 0.43230608695652,
             "coordinate": {
                 "lat": "7.426605",
                 "lng": "-80.185719"
@@ -13706,8 +13706,8 @@
             "netRentMonth": 623.5,
             "netRentMonthPerToken": 0.41566666666667,
             "coordinate": {
-                "lat": "42.399019",
-                "lng": "-83.161336"
+                "lat": "42.400502",
+                "lng": "-83.734822"
             },
             "propertyType": 1,
             "rentalType": "long_term",
@@ -14908,6 +14908,276 @@
             "coordinate": {
                 "lat": "42.375332",
                 "lng": "-82.945462"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xe5c68e1acae47251fa2edb795b9ddb18cddecc52": {
+            "fullName": "15303 Liberal St, Detroit, MI 48205",
+            "shortName": "15303 Liberal",
+            "tokenPrice": 50.31,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-02-12 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 696,
+            "totalTokens": 1070,
+            "totalInvestment": 53831.7,
+            "grossRentMonth": null,
+            "propertyManagement": 64,
+            "realtPlatform": null,
+            "insurance": 75,
+            "propertyTaxes": 95,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 430,
+            "netRentMonthPerToken": 0.4018691588785,
+            "coordinate": {
+                "lat": "42.440122",
+                "lng": "-82.963574"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xa1f40b6f4df7d9ba5978a0cdb5ab31d6446dce21": {
+            "fullName": "16910 Grovewood Ave, Cleveland, OH 44110",
+            "shortName": "16910 Grovewood",
+            "tokenPrice": 50.86,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-04-06 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1952,
+            "totalTokens": 1850,
+            "totalInvestment": 94091,
+            "grossRentMonth": null,
+            "propertyManagement": 113.2,
+            "realtPlatform": null,
+            "insurance": 150,
+            "propertyTaxes": 190,
+            "propertyMaintenanceMonthly": 180,
+            "utilities": 0,
+            "netRentMonth": 753.5,
+            "netRentMonthPerToken": 0.4072972972973,
+            "coordinate": {
+                "lat": "41.575613",
+                "lng": "-81.561793"
+            },
+            "propertyType": 3,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xf1e9d68db090bd79151bfbfca323e00177decce0": {
+            "fullName": "1866 Reyburn Rd, Cleveland, OH 44112",
+            "shortName": "1866 Reyburn",
+            "tokenPrice": 50.48,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-04-06 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 2128,
+            "totalTokens": 1750,
+            "totalInvestment": 88340,
+            "grossRentMonth": null,
+            "propertyManagement": 106.4,
+            "realtPlatform": null,
+            "insurance": 150,
+            "propertyTaxes": 160,
+            "propertyMaintenanceMonthly": 180,
+            "utilities": 0,
+            "netRentMonth": 707,
+            "netRentMonthPerToken": 0.404,
+            "coordinate": {
+                "lat": "41.548203",
+                "lng": "-81.559418"
+            },
+            "propertyType": 3,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x78f5268a7d646ef04c9d5869adae6b7654bdb725": {
+            "fullName": "8308 Denison Ave, Cleveland, OH 44102",
+            "shortName": "8308 Denison",
+            "tokenPrice": 50.07,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-04-06 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1768,
+            "totalTokens": 1900,
+            "totalInvestment": 95133,
+            "grossRentMonth": null,
+            "propertyManagement": 110.8,
+            "realtPlatform": null,
+            "insurance": 150,
+            "propertyTaxes": 150,
+            "propertyMaintenanceMonthly": 180,
+            "utilities": 0,
+            "netRentMonth": 766.5,
+            "netRentMonthPerToken": 0.40342105263158,
+            "coordinate": {
+                "lat": "41.463842",
+                "lng": "-81.742401"
+            },
+            "propertyType": 3,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x8f1bedf87b6382f80da197dde690d8ff7455d19a": {
+            "fullName": "4218 Denison Ave, Cleveland, OH 44109",
+            "shortName": "4218 Denison",
+            "tokenPrice": 50.34,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-04-06 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 2566,
+            "totalTokens": 1800,
+            "totalInvestment": 90612,
+            "grossRentMonth": null,
+            "propertyManagement": 108,
+            "realtPlatform": null,
+            "insurance": 150,
+            "propertyTaxes": 150,
+            "propertyMaintenanceMonthly": 180,
+            "utilities": 0,
+            "netRentMonth": 735,
+            "netRentMonthPerToken": 0.40833333333333,
+            "coordinate": {
+                "lat": "41.452310",
+                "lng": "-81.713886"
+            },
+            "propertyType": 3,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x8980070153a3f76128122a20837f84b2b1513665": {
+            "fullName": "2953 E 120th St, Cleveland, OH 44120",
+            "shortName": "2953 E 120th",
+            "tokenPrice": 50.9,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-04-06 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1408,
+            "totalTokens": 1800,
+            "totalInvestment": 91620,
+            "grossRentMonth": null,
+            "propertyManagement": 104,
+            "realtPlatform": null,
+            "insurance": 150,
+            "propertyTaxes": 100,
+            "propertyMaintenanceMonthly": 180,
+            "utilities": 0,
+            "netRentMonth": 740,
+            "netRentMonthPerToken": 0.41111111111111,
+            "coordinate": {
+                "lat": "41.478422",
+                "lng": "-81.598988"
+            },
+            "propertyType": 3,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xd8fb5b929b08a60fc50d319d6c5ce21d61c7fd83": {
+            "fullName": "5933 Moran St, Detroit, MI 48211",
+            "shortName": "5933 Moran",
+            "tokenPrice": 50.56,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-04-15 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1162,
+            "totalTokens": 1400,
+            "totalInvestment": 70784,
+            "grossRentMonth": null,
+            "propertyManagement": 74,
+            "realtPlatform": null,
+            "insurance": 75,
+            "propertyTaxes": 70,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 567.5,
+            "netRentMonthPerToken": 0.40535714285714,
+            "coordinate": {
+                "lat": "42.376731",
+                "lng": "-83.037135"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xfdac8839e977bb556c85cea620cdee02339a6893": {
+            "fullName": "8565 Northlawn St, Detroit, MI 48204",
+            "shortName": "8565 Northlawn",
+            "tokenPrice": 50.49,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-04-15 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 982,
+            "totalTokens": 1380,
+            "totalInvestment": 69676.2,
+            "grossRentMonth": null,
+            "propertyManagement": 74.4,
+            "realtPlatform": null,
+            "insurance": 75,
+            "propertyTaxes": 85,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 557,
+            "netRentMonthPerToken": 0.4036231884058,
+            "coordinate": {
+                "lat": "42.357651",
+                "lng": "-83.152206"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x696140e761afb57d7f2adc970c2b0e200975ee63": {
+            "fullName": "3514 Medbury St, Detroit, MI 48211",
+            "shortName": "3514 Medbury",
+            "tokenPrice": 50.24,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-06-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1010,
+            "totalTokens": 1500,
+            "totalInvestment": 75360,
+            "grossRentMonth": null,
+            "propertyManagement": 79.2,
+            "realtPlatform": null,
+            "insurance": 75,
+            "propertyTaxes": 65,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 631,
+            "netRentMonthPerToken": 0.42066666666667,
+            "coordinate": {
+                "lat": "42.376204",
+                "lng": "-83.036159"
             },
             "propertyType": 1,
             "rentalType": "long_term",

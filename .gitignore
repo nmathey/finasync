@@ -1,6 +1,6 @@
 my_info.json
 Exchange_Offline*.json
-RealT_OffineTokens*.json
+jwt.json
 
 # Ignore the cached files used for fetching
 *_cache.json

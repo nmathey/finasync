@@ -22,6 +22,8 @@ from finary_uapi.user_me import get_display_currency_code, update_display_curren
 from finary_uapi.user_generic_assets import (
     get_user_generic_assets,
     add_user_generic_asset,
+    update_user_generic_asset,
+    delete_user_generic_asset,
 )
 
 from .constants import (
@@ -438,7 +440,7 @@ def delete_all_realt_rentals_finary(session: requests.Session):
 
     return 0
 
-def get_realtportfolio_other_finary_id(session: requests.Session):
+def get_realtportfolio_other_finary(session: requests.Session):
     myFinary_realt_portfolio = get_user_generic_assets(session)
     myFinary_realt_portfolio = list(
         filter(
@@ -450,7 +452,7 @@ def get_realtportfolio_other_finary_id(session: requests.Session):
     logging.debug(myFinary_realt_portfolio)
     
     if myFinary_realt_portfolio:
-        return myFinary_realt_portfolio[0]["id"]
+        return myFinary_realt_portfolio[0]
     else:
         return None
 
@@ -516,11 +518,20 @@ def get_realtportfolio_value(wallet_address):
 def sync_realtportfolio_other(session: requests.Session, wallet_address):
 
     # Get current RealT Portfolio from Finary
-    myFinary_RealTPortfolio_id = get_realtportfolio_other_finary_id(session)
+    myFinary_RealTPortfolio = get_realtportfolio_other_finary(session)
     myRealT_Portfolio_value = get_realtportfolio_value(wallet_address)
     
-    if myFinary_RealTPortfolio_id is not None:
-        print("updating RealtT Portfolio id " + str(myFinary_RealTPortfolio_id))
+    if myFinary_RealTPortfolio is not None:
+        logging.info("Updating RealtT Portfolio in other assets id " + str(myFinary_RealTPortfolio['id']))
+        update_user_generic_asset(
+            session,
+            myFinary_RealTPortfolio['id'],
+            myFinary_RealTPortfolio['name'],
+            myFinary_RealTPortfolio['category'],
+            1,
+            myFinary_RealTPortfolio['buying_price'],
+            myRealT_Portfolio_value
+        )
     else:
         myFinary_displaycurrency = get_display_currency_code(session)
         if myFinary_displaycurrency != "USD":
@@ -530,7 +541,13 @@ def sync_realtportfolio_other(session: requests.Session, wallet_address):
             update_display_currency_by_code(session, myFinary_displaycurrency)
         else:
             add_user_generic_asset(session, "RealT Portfolio", "other", 1 , myRealT_Portfolio_value , myRealT_Portfolio_value)
+        logging.info("Adding RealtT Portfolio in other assets category as one line for a value of " + str(myRealT_Portfolio_value))
 
-    print("adding RealtT Portfolio in other assets category for a value of " + str(myRealT_Portfolio_value))
+    return 0
+
+def delete_realtportfolio_other_finary(session: requests.Session):
+    myFinary_RealTPortfolio = get_realtportfolio_other_finary(session)
+    delete_user_generic_asset(session, myFinary_RealTPortfolio['id'])
+    logging.info("Deleting " + str(myFinary_RealTPortfolio['id']))
 
     return 0

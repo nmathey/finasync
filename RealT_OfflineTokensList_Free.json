@@ -1,0 +1,3598 @@
+{
+    "info": {
+        "last_sync": "1709000009.120245"
+    },
+    "data": {
+        "0xe5f7ef61443fc36ae040650aa585b0395aef77c8": {
+            "fullName": "OLD-9943 Marlowe St, Detroit, MI 48227",
+            "shortName": "OLD-9943 Marlowe",
+            "tokenPrice": 68.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xed42cedcadbfbcaa3e6f411b09567c2c0b5ad28f": {
+            "fullName": "OLD-9336 Patton St, Detroit, MI 48228",
+            "shortName": "OLD-9336 Patton",
+            "tokenPrice": 65.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x395c47a421c254ae42253764a7f56e0ee0cddac5": {
+            "fullName": "OLD-20200 Lesure St, Detroit, MI 48235",
+            "shortName": "OLD-20200 Lesure",
+            "tokenPrice": 71.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x43688910273f199b8ae2ca018c13918fb3d37b58": {
+            "fullName": "OLD-5942 Audubon Rd, Detroit, MI 48224",
+            "shortName": "OLD-5942 Audubon",
+            "tokenPrice": 82,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x22c8ecf727c23422f47093b562ec53c139805301": {
+            "fullName": "OLD-16200 Fullerton Ave, Detroit, MI 48227",
+            "shortName": "OLD-16200 Fullerton",
+            "tokenPrice": 185.8,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5807ca447851c98569c567963b25b1c83d41bebc": {
+            "fullName": "OLD-10024-10028 Appoline St, Detroit, MI 48227",
+            "shortName": "OLD-10024-10028 Appoline",
+            "tokenPrice": 173.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6fd016ccc4611f7bab1dd3267334cb0216ef47f9": {
+            "fullName": "OLD-8342 Schaefer Hwy, Detroit, MI 48228",
+            "shortName": "OLD-8342 Schaefer",
+            "tokenPrice": 52,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xfc89f1b932079b462ef9c8757de5a28e387b847b": {
+            "fullName": "OLD-18276 Appoline St, Detroit, MI 48235",
+            "shortName": "OLD-18276 Appoline",
+            "tokenPrice": 54.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x74d2cb65b1158300c3e6bea149d68509c7b2425d": {
+            "fullName": "OLD-25097 Andover Dr, Dearborn Heights, MI 48125",
+            "shortName": "OLD-25097 Andover",
+            "tokenPrice": 60.68,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbecaea7aa3629d4b7ddccf3a973bef09ff34d4b6": {
+            "fullName": "OLD-15634 Liberal St, Detroit, MI 48205",
+            "shortName": "OLD-15634 Liberal",
+            "tokenPrice": 51.58,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x22cabb38295eaeccfede4e99af508052e3b74ca0": {
+            "fullName": "OLD-18900 Mansfield St, Detroit, MI 48235",
+            "shortName": "OLD-18900 Mansfield",
+            "tokenPrice": 53.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe9eace1313913888c364d8504ffc3b8d991c67c6": {
+            "fullName": "OLD-272 N.E. 42nd Court, Deerfield Beach, FL 33064",
+            "shortName": "OLD-272 N.E. 42nd Court",
+            "tokenPrice": 108.83,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x67f2014293d641468161bbb0e6bd088fc0b8c381": {
+            "fullName": "OLD-15048 Freeland St, Detroit, MI 48227",
+            "shortName": "OLD-15048 Freeland",
+            "tokenPrice": 50.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbff3a3d79d0f9165cfcc1b369ee41f3c5c9ae398": {
+            "fullName": "OLD-18433 Faust Ave, Detroit, MI 48219",
+            "shortName": "OLD-18433 Faust",
+            "tokenPrice": 59,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc1af55156b64da1d484fb13b1afdb1da8efa7733": {
+            "fullName": "OLD-9165 Kensington Ave, Detroit, MI 48224",
+            "shortName": "OLD-9165 Kensington",
+            "tokenPrice": 56.85,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x67bc218f5ea919ff9003b28c1702d468312af302": {
+            "fullName": "OLD-10048 Grayton St, Detroit, MI 48224",
+            "shortName": "OLD-10048 Grayton",
+            "tokenPrice": 53.73,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xac1682ad8893ed96e7ec3379f3a212dc50f06d23": {
+            "fullName": "OLD-10084 Grayton St, Detroit, MI 48224",
+            "shortName": "OLD-10084 Grayton",
+            "tokenPrice": 52.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xfd510a3c53666035900ceb4d4743bd869d98d57a": {
+            "fullName": "OLD-9166 Devonshire Rd, Detroit, MI 48224",
+            "shortName": "OLD-9166 Devonshire",
+            "tokenPrice": 57.89,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd4203d4f0f2c3ae21ce93f04ab00517262f65aa9": {
+            "fullName": "OLD-10612 Somerset Ave, Detroit, MI 48224",
+            "shortName": "OLD-10612 Somerset",
+            "tokenPrice": 51.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa9e8a9d9729e766a72763253f2afd1b1cf9053a0": {
+            "fullName": "OLD-9309 Courville St, Detroit, MI 48224",
+            "shortName": "OLD-9309 Courville",
+            "tokenPrice": 53.53,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x53993d04758ee89bbe190e15a81c411688543aba": {
+            "fullName": "OLD-10616 McKinney St, Detroit, MI 48224",
+            "shortName": "OLD-10616 McKinney",
+            "tokenPrice": 52.81,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x273a160eb5df613c8c99869f5ae4941f65bf94cb": {
+            "fullName": "OLD-9169 Boleyn St, Detroit, MI 48224",
+            "shortName": "OLD-9169 Boleyn",
+            "tokenPrice": 59.05,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xec2d495f20adf65cd26e9e250c8cd5d863609afd": {
+            "fullName": "OLD-3432 Harding St, Detroit, MI 48214",
+            "shortName": "OLD-3432 Harding",
+            "tokenPrice": 51.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x033b186321fa88603e3ecc98821fb0932b2c0760": {
+            "fullName": "OLD-12334 Lansdowne St, Detroit, MI 48224",
+            "shortName": "OLD-12334 Lansdowne",
+            "tokenPrice": 55.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x87645f94f6ea37f9f2f56d4521315e9c1ed89aa4": {
+            "fullName": "OLD-10974 Worden St, Detroit, MI 48224",
+            "shortName": "OLD-10974 Worden",
+            "tokenPrice": 55.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4475ad655d6fa73db81cc52a5cf4585faa34a1dd": {
+            "fullName": "OLD-13991 Warwick St, Detroit, MI 48223",
+            "shortName": "OLD-13991 Warwick",
+            "tokenPrice": 46.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2830209f6573f10c481d946ba18b446429f30360": {
+            "fullName": "OLD-6923 Greenview Ave, Detroit, MI 48228",
+            "shortName": "OLD-6923 Greenview",
+            "tokenPrice": 53.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xdbb13d3f745a64995ca76069f2cebf9a2d7b18c0": {
+            "fullName": "OLD-1000 Florida Ave, Akron, OH 44314",
+            "shortName": "OLD-1000 Florida",
+            "tokenPrice": 58.99,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xee9a08fc54bf53353398f946db4cb2447276f850": {
+            "fullName": "OLD-4340 East 71, Cleveland, OH 44105",
+            "shortName": "OLD-4340 East 71",
+            "tokenPrice": 54.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xec069eaa5c83763f288106506fecbd5dbe74d047": {
+            "fullName": "OLD-9133 Devonshire Rd, Detroit, MI 48224",
+            "shortName": "OLD-9133 Devonshire",
+            "tokenPrice": 58.27,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc4cb613947890ea300fedc509ac19f8efa0cdd14": {
+            "fullName": "OLD-10604 Somerset Ave, Detroit, MI 48224",
+            "shortName": "OLD-10604 Somerset",
+            "tokenPrice": 54.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8a41b6b6177f35bfa6d677447d3fe0d5a0cec45e": {
+            "fullName": "OLD-581-587 Jefferson Ave, Rochester, NY 14611",
+            "shortName": "OLD-581-587 Jefferson",
+            "tokenPrice": 58.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1105c20ac6f4de989faf05d17ab3f950963b75ad": {
+            "fullName": "OLD-15778 Manor St, Detroit, MI 48238",
+            "shortName": "OLD-15778 Manor",
+            "tokenPrice": 62.35,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x438f9de51f51692a4b83696413062a040cc5cbd5": {
+            "fullName": "OLD-15784 Monte Vista St, Detroit, MI 48238",
+            "shortName": "OLD-15784 Monte Vista",
+            "tokenPrice": 55.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x434e3a92c43a98ff508ab44e023ea7638952ad21": {
+            "fullName": "OLD-13114 Glenfield Ave, Detroit, MI 48213",
+            "shortName": "OLD-13114 Glenfield",
+            "tokenPrice": 59.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xba0d050bbb662c190bf99c61708b42ff9d8750e0": {
+            "fullName": "OLD-13116 Kilbourne Ave, Detroit, MI 48213",
+            "shortName": "OLD-13116 Kilbourne",
+            "tokenPrice": 53.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x419f97e6dcfbf89a70ea898b7f44472f75bf6137": {
+            "fullName": "OLD-19317 Gable St, Detroit, MI 48234",
+            "shortName": "OLD-19317 Gable",
+            "tokenPrice": 46.69,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xfe17c3c0b6f38cf3bd8ba872bee7a18ab16b43fb": {
+            "fullName": "15777 Ardmore St, Detroit, MI 48227",
+            "shortName": "15777 Ardmore",
+            "tokenPrice": 48.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x41599149f1b52035392402f9e311b1edb0c9f699": {
+            "fullName": "14319 Rosemary St, Detroit, MI 48213",
+            "shortName": "14319 Rosemary",
+            "tokenPrice": 49.69,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x315699f1ba88383cff2f2f30fcad187adb2e4d72": {
+            "fullName": "14078 Carlisle St, Detroit, MI 48205",
+            "shortName": "14078 Carlisle",
+            "tokenPrice": 54.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6f442da588232dc57bf0096e8de48d6961d5cc83": {
+            "fullName": "13895 Saratoga St, Detroit, MI 48205",
+            "shortName": "13895 Saratoga",
+            "tokenPrice": 58.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x96700ffae33c651bc329c3f3fbfe56e1f291f117": {
+            "fullName": "4380 Beaconsfield St, Detroit, MI 48224",
+            "shortName": "4380 Beaconsfield",
+            "tokenPrice": 53.88,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x499a6c19f5537dd6005e2b5c6e1263103f558ba4": {
+            "fullName": "17813 Bradford St, Detroit, MI 48205",
+            "shortName": "17813 Bradford",
+            "tokenPrice": 51.33,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb3d3c1bbcef737204aadb4fa6d90e974bc262197": {
+            "fullName": "15796 Hartwell St, Detroit, MI 48227",
+            "shortName": "15796 Hartwell",
+            "tokenPrice": 53.04,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x73bde888664df8ddfd156b52e6999eeabab57c94": {
+            "fullName": "9717 Everts St, Detroit, MI 48224",
+            "shortName": "9717 Everts",
+            "tokenPrice": 50.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x830b0e9a5ecf36d0a886d21e1c20043cd2d16515": {
+            "fullName": "19201 Westphalia St, Detroit, MI 48205",
+            "shortName": "19201 Westphalia",
+            "tokenPrice": 52.17,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4cc53ee5ef306a95d407321d4b4acc30814c04ee": {
+            "fullName": "19163 Mitchell St, Detroit, MI 48234",
+            "shortName": "19163 Mitchell",
+            "tokenPrice": 56.33,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd9e89bfebae447b42c1fa85c590716ec8820f737": {
+            "fullName": "4061 Grand St, Detroit, MI 48238",
+            "shortName": "4061 Grand",
+            "tokenPrice": 71.11,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xefe82d6baf0db71f92889eb9d00721bd49121316": {
+            "fullName": "4680 Buckingham Ave, Detroit, MI 48224",
+            "shortName": "4680 Buckingham",
+            "tokenPrice": 50.54,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8a9f904b4ead6a97f3ab304d0d2196f5c602c807": {
+            "fullName": "19311 Keystone St, Detroit, MI 48234",
+            "shortName": "19311 Keystone",
+            "tokenPrice": 52.13,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7e95b310724334ff74537dc08bfd3377d25e65ce": {
+            "fullName": "15039 Ward Ave, Detroit, MI 48227",
+            "shortName": "15039 Ward",
+            "tokenPrice": 52.13,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x75f06b482adbfb04b877d8ee683e2fcdf18ad153": {
+            "fullName": "18481 Westphalia St, Detroit, MI 48205",
+            "shortName": "18481 Westphalia",
+            "tokenPrice": 53.83,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3150f0ebc0efee280b5348b9c8c271ad44eb8b13": {
+            "fullName": "19596 Goulburn Ave, Detroit, MI 48205",
+            "shortName": "19596 Goulburn",
+            "tokenPrice": 50.46,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x94fa7f8cb8453ad57cd133363b3012044647078c": {
+            "fullName": "1244 S. Avers St, Chicago, IL 60623",
+            "shortName": "1244 S. Avers",
+            "tokenPrice": 50,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x175cbd54d38f58b530785e01471a2ec0d4596eb5": {
+            "fullName": "15770 Prest St, Detroit, MI 48227",
+            "shortName": "15770 Prest",
+            "tokenPrice": 56.04,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xce111a198eb04f388aceb78c40ced6daf1b0514a": {
+            "fullName": "272 N.E. 42nd Court, Deerfield Beach, FL 33064",
+            "shortName": "272 N.E. 42nd Court",
+            "tokenPrice": 108.83,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa29ae272bc89e5f315b2793925f700045f845d82": {
+            "fullName": "581-587 Jefferson Ave, Rochester, NY 14611",
+            "shortName": "581-587 Jefferson",
+            "tokenPrice": 41.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x34ed9e71449529e034d0326cfbb3b5ccdca00cbc": {
+            "fullName": "19317 Gable St, Detroit, MI 48234",
+            "shortName": "19317 Gable",
+            "tokenPrice": 46.69,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb5d30c28f87acf675ed5b9f343e5fff39ec9942c": {
+            "fullName": "10024-10028 Appoline St, Detroit, MI 48227",
+            "shortName": "10024-10028 Appoline",
+            "tokenPrice": 173.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1eb16ec378f0ce8f81449120629f52ba28961d47": {
+            "fullName": "1000 Florida Ave, Akron, OH 44314",
+            "shortName": "1000 Florida",
+            "tokenPrice": 58.99,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4e98493920b16dd6642e9d48497c8d0a49150f6f": {
+            "fullName": "13991 Warwick St, Detroit, MI 48223",
+            "shortName": "13991 Warwick",
+            "tokenPrice": 46.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9a99f283e1f6c3b7f24901995624ef7b78e94471": {
+            "fullName": "18466 Fielding St, Detroit, MI 48219",
+            "shortName": "18466 Fielding",
+            "tokenPrice": 54.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9fef44fc4c571010bccd5b63e1cdc807d3b347bf": {
+            "fullName": "15095 Hartwell St, Detroit, MI 48227",
+            "shortName": "15095 Hartwell",
+            "tokenPrice": 52.08,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9856c5ca15a4ac9c65aac090c38a9f39eb3b5eec": {
+            "fullName": "18273 Monte Vista St, Detroit, MI 48221",
+            "shortName": "18273 Monte Vista",
+            "tokenPrice": 55.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe3902e329ef2d3fd7666022c139d75bcc984b7a5": {
+            "fullName": "15048 Freeland St, Detroit, MI 48227",
+            "shortName": "15048 Freeland",
+            "tokenPrice": 50.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7f940b5509a22e81d29167581bdeea3fa5a0abee": {
+            "fullName": "15784 Monte Vista St, Detroit, MI 48238",
+            "shortName": "15784 Monte Vista",
+            "tokenPrice": 55.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd08d2b199e9e5df407427d4085877d1fdff3b1d6": {
+            "fullName": "6923 Greenview Ave, Detroit, MI 48228",
+            "shortName": "6923 Greenview",
+            "tokenPrice": 53.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9f923653a19537b5a1b003854a1920fe67a8ffeb": {
+            "fullName": "13114 Glenfield Ave, Detroit, MI 48213",
+            "shortName": "13114 Glenfield",
+            "tokenPrice": 59.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x08ad1f3a48be1d23c723a6cc8486b247f5de935a": {
+            "fullName": "13116 Kilbourne Ave, Detroit, MI 48213",
+            "shortName": "13116 Kilbourne",
+            "tokenPrice": 53.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd1c15cebfdcd16f00d91666bf64c8b66cbf5e9b5": {
+            "fullName": "10612 Somerset Ave, Detroit, MI 48224",
+            "shortName": "10612 Somerset",
+            "tokenPrice": 51.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa68b7779504b0ae372ddcc109f8786db9b91e93e": {
+            "fullName": "4340 East 71, Cleveland, OH 44105",
+            "shortName": "4340 East 71",
+            "tokenPrice": 54.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8626b38267e4fc0d8c92e0bb86f97acab3f6aa05": {
+            "fullName": "10604 Somerset Ave, Detroit, MI 48224",
+            "shortName": "10604 Somerset",
+            "tokenPrice": 54.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x76dbeb740ecd1f3b052a9afa302abc7eb4fb5390": {
+            "fullName": "9133 Devonshire Rd, Detroit, MI 48224",
+            "shortName": "9133 Devonshire",
+            "tokenPrice": 58.27,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x46f8a600337dec5cab03aa9b8f67f1d5b788ce28": {
+            "fullName": "18433 Faust Ave, Detroit, MI 48219",
+            "shortName": "18433 Faust",
+            "tokenPrice": 59,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe5ce63ac9a08c1eb160889151cd84855f16c94d2": {
+            "fullName": "10616 McKinney St, Detroit, MI 48224",
+            "shortName": "10616 McKinney",
+            "tokenPrice": 52.81,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x67a83b28f6dd8c07301495ee2c6f83b73fd21092": {
+            "fullName": "9309 Courville St, Detroit, MI 48224",
+            "shortName": "9309 Courville",
+            "tokenPrice": 53.53,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3c56d5e887d8fa7ae1ba65bf7eccc25ec09eaf18": {
+            "fullName": "9165 Kensington Ave, Detroit, MI 48224",
+            "shortName": "9165 Kensington",
+            "tokenPrice": 56.85,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x537dc65657ed455d1c17e319fe6f4926d6033f2b": {
+            "fullName": "10974 Worden St, Detroit, MI 48224",
+            "shortName": "10974 Worden",
+            "tokenPrice": 55.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf23b80216a10e6f0c0d3b5ad5c9349e9425cad40": {
+            "fullName": "15778 Manor St, Detroit, MI 48238",
+            "shortName": "15778 Manor",
+            "tokenPrice": 62.35,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa69d7d4ddf397f3d1e7ebaf108555d1107b3b117": {
+            "fullName": "9166 Devonshire Rd, Detroit, MI 48224",
+            "shortName": "9166 Devonshire",
+            "tokenPrice": 57.89,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x806690b7a093d2cf6419a515abedb7f28595bc5e": {
+            "fullName": "9169 Boleyn St, Detroit, MI 48224",
+            "shortName": "9169 Boleyn",
+            "tokenPrice": 59.05,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xee2f2212a64ec3f6bc0f7580e10c53cb38b57508": {
+            "fullName": "12334 Lansdowne St, Detroit, MI 48224",
+            "shortName": "12334 Lansdowne",
+            "tokenPrice": 55.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x92161385c9de8798ad5fb01c0be99ffcbc84dfd8": {
+            "fullName": "10084 Grayton St, Detroit, MI 48224",
+            "shortName": "10084 Grayton",
+            "tokenPrice": 52.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x400b5716b0c23b6f1f0f2a5fdb038949962b803e": {
+            "fullName": "3432 Harding St, Detroit, MI 48214",
+            "shortName": "3432 Harding",
+            "tokenPrice": 51.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x57eadd2a542cfe9f00a37f55df4d5062f857c0e8": {
+            "fullName": "9943 Marlowe St, Detroit, MI 48227",
+            "shortName": "9943 Marlowe",
+            "tokenPrice": 68.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x21f1af3e751317a2f7de7df31d5d092e6a907bde": {
+            "fullName": "18276 Appoline St, Detroit, MI 48235",
+            "shortName": "18276 Appoline",
+            "tokenPrice": 54.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9eb90ec3faafc22092c9b91559fddde538042093": {
+            "fullName": "18900 Mansfield St, Detroit, MI 48235",
+            "shortName": "18900 Mansfield",
+            "tokenPrice": 53.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf18cffb528eca0ea31d1d6b28bc80d2eca34d14d": {
+            "fullName": "25097 Andover Dr, Dearborn Heights, MI 48125",
+            "shortName": "25097 Andover",
+            "tokenPrice": 60.68,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6db6d540f5614e6bab7475af3f430f46a0b083e2": {
+            "fullName": "5942 Audubon Rd, Detroit, MI 48224",
+            "shortName": "5942 Audubon",
+            "tokenPrice": 82,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x741857c07b100c9c0c1272d95845dddc4f1b67cb": {
+            "fullName": "8342 Schaefer Hwy, Detroit, MI 48228",
+            "shortName": "8342 Schaefer",
+            "tokenPrice": 52,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x23684569c0636c9aea246551879d457d0a0e6f58": {
+            "fullName": "9336 Patton St, Detroit, MI 48228",
+            "shortName": "9336 Patton",
+            "tokenPrice": 65.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xeedc2f5f4d1226759b1acf9efa23a99661de6663": {
+            "fullName": "20200 Lesure St, Detroit, MI 48235",
+            "shortName": "20200 Lesure",
+            "tokenPrice": 71.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa81f77e8988b28fb74243b907ace3c83353dc80a": {
+            "fullName": "15634 Liberal St, Detroit, MI 48205",
+            "shortName": "15634 Liberal",
+            "tokenPrice": 51.58,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x021bb23a45e9fc824260435e670fc383b7b8cbbb": {
+            "fullName": "16200 Fullerton Ave, Detroit, MI 48227",
+            "shortName": "16200 Fullerton",
+            "tokenPrice": 185.8,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x280e9ed3b20c580a2f4219657bb9332d80bc01f1": {
+            "fullName": "19020 Rosemont Ave, Detroit, MI 48219",
+            "shortName": "19020 Rosemont",
+            "tokenPrice": 56.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x33722ea778df197f1b7b1cf0b124d7a962181d65": {
+            "fullName": "19136 Tracey St, Detroit, MI 48235",
+            "shortName": "19136 Tracey",
+            "tokenPrice": 56.67,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x750fa12ae51d1515c893c1aaabe2c135937a2c8b": {
+            "fullName": "9465 Beaconsfield St, Detroit, MI 48224",
+            "shortName": "9465 Beaconsfield",
+            "tokenPrice": 55.92,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x730fbb27b650a2a3bcaa6729e635dc255acee343": {
+            "fullName": "1115 S. Troy St, Chicago, IL 60612",
+            "shortName": "1115 S. Troy",
+            "tokenPrice": 53.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc731eca970979cd2da2a1094a808f49894070d35": {
+            "fullName": "19218 Houghton St, Detroit, MI 48219",
+            "shortName": "19218 Houghton",
+            "tokenPrice": 55.91,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x06d0e5aee443093ac5635b709c8a01342e59df19": {
+            "fullName": "10617 Hathaway Ave, Cleveland, OH 44108",
+            "shortName": "10617 Hathaway",
+            "tokenPrice": 54.02,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4d0da4e75d40bd7d9c4f7a292bf883bcdf38c45d": {
+            "fullName": "15373 Parkside St, Detroit, MI 48238",
+            "shortName": "15373 Parkside",
+            "tokenPrice": 58.82,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9528a7402c0fe85b817aa6e106eafa03a02924c4": {
+            "fullName": "14231 Strathmoor St, Detroit, MI 48227",
+            "shortName": "14231 Strathmoor",
+            "tokenPrice": 52.46,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xda47bd33e8f5d17bb81b8752784bfb46c1c44b2a": {
+            "fullName": "15350 Greydale St, Detroit, MI 48223",
+            "shortName": "15350 Greydale",
+            "tokenPrice": 54.42,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb5dd2b6e0a0422e069e1d2cc3ed16533488a05e3": {
+            "fullName": "12866 Lauder St, Detroit, MI 48227",
+            "shortName": "12866 Lauder",
+            "tokenPrice": 54.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x92d31e19f88597f368825ba16410f263a844527a": {
+            "fullName": "8181 Bliss St, Detroit, MI 48234",
+            "shortName": "8181 Bliss",
+            "tokenPrice": 53.96,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x24293ab20159cfc0f3d7c8727cd827fba63d4f64": {
+            "fullName": "19333 Moenart St, Detroit, MI 48234",
+            "shortName": "19333 Moenart",
+            "tokenPrice": 55.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5e2a09064b2dca8c44aad8a5b69a69bb1854fe72": {
+            "fullName": "11201 College St, Detroit, MI 48205",
+            "shortName": "11201 College",
+            "tokenPrice": 55.71,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa9f30c907321718e655b74463ca665b690b78894": {
+            "fullName": "15860 Hartwell St, Detroit, MI 48227",
+            "shortName": "15860 Hartwell",
+            "tokenPrice": 54.04,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb8403b7730368942a5bfe5aac04a31b44015b1cc": {
+            "fullName": "11078 Wayburn St, Detroit, MI 48224",
+            "shortName": "11078 Wayburn",
+            "tokenPrice": 51.83,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x43fed9f9bf7deedcb314b432a8e38219dd62ce9e": {
+            "fullName": "14825 Wilfred St, Detroit, MI 48213",
+            "shortName": "14825 Wilfred",
+            "tokenPrice": 52.75,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xff1b4d71ae12538d86777a954b136cf723fccefd": {
+            "fullName": "14882 Troester St, Detroit, MI 48205",
+            "shortName": "14882 Troester",
+            "tokenPrice": 54.21,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x31aa5fa895fd186fde12347a6fcaf540875b6434": {
+            "fullName": "17809 Charest St, Detroit, MI 48212",
+            "shortName": "17809 Charest",
+            "tokenPrice": 56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xba07997f594a52df179620284b52b50a4e66227d": {
+            "fullName": "18776 Sunderland Rd, Detroit, MI 48219",
+            "shortName": "18776 Sunderland",
+            "tokenPrice": 52.88,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb09850e2b93aa3aaa1476bf0c007cfc960e2de79": {
+            "fullName": "14229 Wilshire Dr, Detroit, MI 48213",
+            "shortName": "14229 Wilshire",
+            "tokenPrice": 54.68,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa137d82197ea4cdfd5f008a91ba816b8324f59e1": {
+            "fullName": "5601 S Wood St, Chicago, IL 60636",
+            "shortName": "5601 S Wood",
+            "tokenPrice": 54.08,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1e001730a23c7ebaff35bc8bc90da5a9b20804a4": {
+            "fullName": "9481 Wayburn St, Detroit, MI 48224",
+            "shortName": "9481 Wayburn",
+            "tokenPrice": 57.53,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9b5b4886033b4abc5eb0552fff7c15a67c3c47c7": {
+            "fullName": "11300 Roxbury St, Detroit, MI 48224",
+            "shortName": "11300 Roxbury",
+            "tokenPrice": 59.07,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd5d1adf54fbf73a00b197ddcfdad7cc27d93002f": {
+            "fullName": "10629 McKinney St, Detroit, MI 48224",
+            "shortName": "10629 McKinney",
+            "tokenPrice": 54.1,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa2b2ae397492c7ed8a4c1e751ac72d2b59947e6b": {
+            "fullName": "9920 Bishop St, Detroit, MI 48224",
+            "shortName": "9920 Bishop",
+            "tokenPrice": 57.17,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4a99cc509f7facf58d7b67e99236db5e0921ef81": {
+            "fullName": "10639 Stratman St, Detroit, MI 48224",
+            "shortName": "10639 Stratman",
+            "tokenPrice": 58,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5600e25b4f24c63afa655c3bd96e3c178b654fa1": {
+            "fullName": "13045 Wade St, Detroit, MI 48213",
+            "shortName": "13045 Wade",
+            "tokenPrice": 56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2adc1cfa726a45264a328d9d2e2c692ceac97458": {
+            "fullName": "14494 Chelsea Ave, Detroit, MI 48213",
+            "shortName": "14494 Chelsea",
+            "tokenPrice": 53.16,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xad91999f534f4075b00ba4231c018e57bdebb342": {
+            "fullName": "18983 Alcoy Ave, Detroit, MI 48205",
+            "shortName": "18983 Alcoy",
+            "tokenPrice": 54.82,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x211618fa0934910666f2c2731101f5a3ac013fd8": {
+            "fullName": "19200 Strasburg St, Detroit, MI 48205",
+            "shortName": "19200 Strasburg",
+            "tokenPrice": 56.13,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x31820af2d43c08bd82bd94b08974062482bd98d3": {
+            "fullName": "11653 Nottingham Rd, Detroit, MI 48224",
+            "shortName": "11653 Nottingham",
+            "tokenPrice": 58.02,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8d1090df790ffafdaccda03015c05df3b4cc9c21": {
+            "fullName": "15753 Hartwell St, Detroit, MI 48227",
+            "shortName": "15753 Hartwell",
+            "tokenPrice": 55.76,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1fdb4015fd5e031c5641752c1e03b973ad5ea168": {
+            "fullName": "17500 Evergreen Rd, Detroit, MI 48219",
+            "shortName": "17500 Evergreen",
+            "tokenPrice": 57.08,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe82cbb7c29d00a4296ee505d12a473c26cd9c423": {
+            "fullName": "10700 Whittier Ave, Detroit, MI 48224",
+            "shortName": "10700 Whittier",
+            "tokenPrice": 51.29,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x63a1849b47ef5913ccc5adb0e2708b11a4ba6972": {
+            "fullName": "14918 Joy Rd, Detroit, MI 48228",
+            "shortName": "14918 Joy",
+            "tokenPrice": 49.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe255caf8893382465368b8e1cd4ef8436acf0ade": {
+            "fullName": "402 S Kostner Ave, Chicago, IL 60624",
+            "shortName": "402 S Kostner",
+            "tokenPrice": 51.93,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x69d1b42b20f3ded07bec322253d0140b04cbb6f5": {
+            "fullName": "1542 S Ridgeway Ave, Chicago, IL 60623",
+            "shortName": "1542 S Ridgeway",
+            "tokenPrice": 52.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd5fc0c4c4c5ff316e1e91494d963ff1d52ba25ff": {
+            "fullName": "11078 Longview St, Detroit, MI 48213",
+            "shortName": "11078 Longview",
+            "tokenPrice": 50.59,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x311fc485f1fea0c8cc9b5c783e79f4313ddfa720": {
+            "fullName": "19996 Joann Ave, Detroit, MI 48205",
+            "shortName": "19996 Joann",
+            "tokenPrice": 51.75,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x804f6baa10615c85e4b4a5bc4efe516d9f7a4365": {
+            "fullName": "13606 Winthrop St, Detroit, MI 48227",
+            "shortName": "13606 Winthrop",
+            "tokenPrice": 50.86,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x969d42ad7008e6651e1fd52742153f8743225d98": {
+            "fullName": "12409 Whitehill St, Detroit, MI 48224",
+            "shortName": "12409 Whitehill",
+            "tokenPrice": 54.24,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe7b6de709ffc3bd237c2f2c800e1002f97a760f3": {
+            "fullName": "4852-4854 W Cortez St, Chicago, IL 60651",
+            "shortName": "4852-4854 W Cortez",
+            "tokenPrice": 50.9,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9d918ee39a356be8ef99734599c7e70160db4db6": {
+            "fullName": "12405 Santa Rosa Dr, Detroit, MI 48204",
+            "shortName": "12405 Santa Rosa",
+            "tokenPrice": 50.51,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xdd833d0eef6d5d7cec781b03c19f3b425f3039df": {
+            "fullName": "11957 Olga St, Detroit, MI 48213",
+            "shortName": "11957 Olga",
+            "tokenPrice": 53.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8fcb39a25e639c8fbd28e8a018227d6570e02352": {
+            "fullName": "1815 S Avers Ave, Chicago, IL 60623",
+            "shortName": "1815 S Avers",
+            "tokenPrice": 54.95,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf4657ab08681214bcb1893aa8e9c7613459250ec": {
+            "fullName": "1617 S Avers Ave, Chicago, IL 60623",
+            "shortName": "1617 S Avers",
+            "tokenPrice": 50.85,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe887dc4fcb5240c0c080aeab8870421d3ebd0b28": {
+            "fullName": "14066 Santa Rosa Dr, Detroit, MI 48238",
+            "shortName": "14066 Santa Rosa",
+            "tokenPrice": 52.22,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5b690b010944bdfa8b26116967fe3fb3c38cfaac": {
+            "fullName": "13370 Wilshire Dr, Detroit, MI 48213",
+            "shortName": "13370 Wilshire",
+            "tokenPrice": 58.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x38de2858be53d603b1104f16aa67cf180002465d": {
+            "fullName": "738-742 E 87th Pl, Chicago, IL 60619",
+            "shortName": "738-742 E 87th",
+            "tokenPrice": 49.05,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x78a9013b53d2d255935bbc43112d0dd3f475f3d3": {
+            "fullName": "15203 Park Grove St, Detroit, MI 48205",
+            "shortName": "15203 Park Grove",
+            "tokenPrice": 53,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x0954682ff1b512d3927d06c591942f50917e16a0": {
+            "fullName": "10021 Grayton St, Detroit, MI 48224",
+            "shortName": "10021 Grayton",
+            "tokenPrice": 56.73,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcb061ae1f9b618c44ac10a47a672bf438da01fd8": {
+            "fullName": "893-895 W Philadelphia St, Detroit, MI 48202",
+            "shortName": "893-895 W Philadelphia",
+            "tokenPrice": 54.95,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf5aeab9d9c707b56311066e5172239686ab88110": {
+            "fullName": "2318-2324 W Marquette Rd, Chicago, IL 60636",
+            "shortName": "2318-2324 W Marquette",
+            "tokenPrice": 51.67,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9b091105b9a9eb118f4e0da06a090d6d95463357": {
+            "fullName": "11217 Greenwich Ave, Cleveland, OH 44105",
+            "shortName": "11217 Greenwich",
+            "tokenPrice": 51.21,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4471962eeffec57a33fa4e0793efeec07684dffb": {
+            "fullName": "10003 Pinehurst St, Detroit, MI 48204",
+            "shortName": "10003 Pinehurst",
+            "tokenPrice": 57,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x584967356bad1499c10a8695522983f2fb7d88f3": {
+            "fullName": "19191 Bradford Ave, Detroit, MI 48205",
+            "shortName": "19191 Bradford",
+            "tokenPrice": 56.64,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8c1c77c549a3f233fa8f8dea133ff5415d9bae11": {
+            "fullName": "1521-1523 S Drake Ave, Chicago, IL 60623",
+            "shortName": "1521-1523 S Drake",
+            "tokenPrice": 49.95,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcdf955df8a7ae1264f3b4f8ee5fa68507e8528aa": {
+            "fullName": "5278-5280 Drexel St, Detroit, MI 48213",
+            "shortName": "5278-5280 Drexel",
+            "tokenPrice": 54.78,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x394d59797495848934acf61e680c1739a2cd8cfd": {
+            "fullName": "5772-5774 Chalmers St, Detroit, MI 48213",
+            "shortName": "5772-5774 Chalmers",
+            "tokenPrice": 53.35,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x950bc24510274163aabf83339424e7b49bf6a0c0": {
+            "fullName": "7430 Nett St, Detroit, MI 48213",
+            "shortName": "7430 Nett",
+            "tokenPrice": 52.75,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x26ccc79ceeec918e01bbd5c04a64767919f9ec1a": {
+            "fullName": "7109-7111 Pilgrim St, Detroit, MI 48238",
+            "shortName": "7109-7111 Pilgrim",
+            "tokenPrice": 54.03,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xca4e38439d5d86554431e15eced03b8bcf2abddd": {
+            "fullName": "15864 Eastburn St, Detroit, MI 48205",
+            "shortName": "15864 Eastburn",
+            "tokenPrice": 51.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6bd094e39d0b839689e2f900bfdd180b10df62d7": {
+            "fullName": "12410 Hamburg St, Detroit, MI 48205",
+            "shortName": "12410 Hamburg",
+            "tokenPrice": 53.55,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x81cea1a7c83d5caed483dd4da59bfe98f24ef687": {
+            "fullName": "15379 Patton St, Detroit, MI 48223",
+            "shortName": "15379 Patton",
+            "tokenPrice": 51.8,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x328249efca026ae8596e9afe913c5f8775ef60ae": {
+            "fullName": "14884 Ward Ave, Detroit, MI 48227",
+            "shortName": "14884 Ward",
+            "tokenPrice": 58.8,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x46b00b4bf04c2c94ae67576004a3a247b9400ade": {
+            "fullName": "116 Monterey St, Highland Park, MI 48203",
+            "shortName": "116 Monterey",
+            "tokenPrice": 56.9,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x10c2c7a5342988818eb6726fae369299d8fb6328": {
+            "fullName": "14839 Wisconsin St, Detroit, MI 48238",
+            "shortName": "14839 Wisconsin",
+            "tokenPrice": 56.95,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x0c12f2b2c3ad5150d344b6d3abb901b4795d72d9": {
+            "fullName": "14215 Hampshire St, Detroit, MI 48213",
+            "shortName": "14215 Hampshire",
+            "tokenPrice": 50.75,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8c3761c5d489ee5a5c30f874b5220c769a7c5a16": {
+            "fullName": "15841 Coram St, Detroit, MI 48205",
+            "shortName": "15841 Coram",
+            "tokenPrice": 62.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd3f7130940c7746298d9778f79e7bba4c552f176": {
+            "fullName": "11758 Christy St, Detroit, MI 48205",
+            "shortName": "11758 Christy",
+            "tokenPrice": 58.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xef2b6234e376c3b152c5febe47e1ca3c73cdaa9f": {
+            "fullName": "15208 Bringard Dr, Detroit, MI 48205",
+            "shortName": "15208 Bringard",
+            "tokenPrice": 55.67,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa5c16ae5fd75f4f079f3e33f0124899bacf567f9": {
+            "fullName": "882-884 Pingree St, Detroit, MI 48202",
+            "shortName": "882-884 Pingree",
+            "tokenPrice": 53.76,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1d5da20522b1b94e3b7d983c954075da429bbae1": {
+            "fullName": "19154 Sherwood St, Detroit, MI 48234",
+            "shortName": "19154 Sherwood",
+            "tokenPrice": 51.7,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x23bb1314b73aaaa888800b177ad5d9719a51195b": {
+            "fullName": "14432 Wilshire Dr, Detroit, MI 48213",
+            "shortName": "14432 Wilshire",
+            "tokenPrice": 57.17,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc363ea8a468b3970ef93140d5d4ad9d124178f6e": {
+            "fullName": "20418 Andover St, Detroit, MI 48203",
+            "shortName": "20418 Andover",
+            "tokenPrice": 50.4,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7389ef988fae6b3bcf520000c535e1e2d94c5427": {
+            "fullName": "18949 Fenmore St, Detroit, MI 48235",
+            "shortName": "18949 Fenmore",
+            "tokenPrice": 55.59,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd1095b31f41d3bdbb66a52b94a737b2d7ac17635": {
+            "fullName": "14263 Ohio St, Detroit, MI 48238",
+            "shortName": "14263 Ohio",
+            "tokenPrice": 51.8,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa8ab830bfd0d91bc017cdec98a2a198b9938ea8d": {
+            "fullName": "12747-12749 Nashville St, Detroit, MI 48205",
+            "shortName": "12747-12749 Nashville",
+            "tokenPrice": 51.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xafd76591d02462cce1aa5b6c6430854aa9a17e56": {
+            "fullName": "2550 Greenway St, Toledo, OH 43607",
+            "shortName": "2550 Greenway",
+            "tokenPrice": 51.39,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x690602eb0bf5607e3586f1d3e4c4601ef6e4a89f": {
+            "fullName": "8531 Intervale St, Detroit, MI 48238",
+            "shortName": "8531 Intervale",
+            "tokenPrice": 53.92,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x185e39d860cf86fbecf4a7c341bd1545ea3a41b9": {
+            "fullName": "20552 Waltham St, Detroit, MI 48205",
+            "shortName": "20552 Waltham",
+            "tokenPrice": 53.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x24a2558d0b0b2247a64eab7cf09d7244cb4c9597": {
+            "fullName": "17616 Beland St, Detroit, MI 48234",
+            "shortName": "17616 Beland",
+            "tokenPrice": 56.68,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcd7dc5e034b631331bc0cfc4ea71d2dc7b53c338": {
+            "fullName": "2950-2952 Monterey St, Detroit, MI 48206",
+            "shortName": "2950-2952 Monterey",
+            "tokenPrice": 58.03,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2360fca74ed948ff4f962e369080a64a40a1300d": {
+            "fullName": "8366 Schaefer Hwy, Detroit, MI 48228",
+            "shortName": "8366 Schaefer",
+            "tokenPrice": 51.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc7785a2575606d444cefbc8a22591600ae5aa9b4": {
+            "fullName": "13041 Hayes St, Detroit, MI 48205",
+            "shortName": "13041 Hayes",
+            "tokenPrice": 51.97,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5162d60b699a44b9f09b5fbfd8e6343cde9d7b22": {
+            "fullName": "128 E Weber St, Toledo, OH 43608",
+            "shortName": "128 E Weber",
+            "tokenPrice": 48.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2b683f8cc61de593f089bdddc01431c0d7ca2ee2": {
+            "fullName": "601 Milton St, Toledo, OH 43605",
+            "shortName": "601 Milton",
+            "tokenPrice": 48.71,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x83b16b1dcaaeb59caa13b96da260d8b15671822a": {
+            "fullName": "1204 E Manhattan Blvd, Toledo, OH 43608",
+            "shortName": "1204 E Manhattan",
+            "tokenPrice": 51.2,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xde9122799c313d5cc5c4385984156ad068cde331": {
+            "fullName": "1612 Denver Ave, Toledo, OH 43605",
+            "shortName": "1612 Denver",
+            "tokenPrice": 48.72,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9d19b4d771ef67ea1da64699a388133b44eb434c": {
+            "fullName": "19962 Waltham St, Detroit, MI 48205",
+            "shortName": "19962 Waltham",
+            "tokenPrice": 53.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4505f5bff6bada5a20b1a008c6db3cd9545027a4": {
+            "fullName": "338 Willard St, Toledo, OH 43605",
+            "shortName": "338 Willard",
+            "tokenPrice": 48.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x79e18a519d60c2ef7e18aac08d60ba0d4eee2511": {
+            "fullName": "20039 Bloom St, Detroit, MI 48234",
+            "shortName": "20039 Bloom",
+            "tokenPrice": 50.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x18e55343ecfc135e21916fcdb9788accb5b53caf": {
+            "fullName": "9171 Whittier Ave, Detroit, MI 48224",
+            "shortName": "9171 Whittier",
+            "tokenPrice": 49.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb2960e73b260812e4326723c7136e7b1988a036a": {
+            "fullName": "8060 Dreamsicle Dr, Kissimmee, FL 34747",
+            "shortName": "8060 Dreamsicle",
+            "tokenPrice": 50.79,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe23a5fc3502976de653cb64e5c27dc01d700db36": {
+            "fullName": "19144 Riopelle St, Highland Park, MI 48203",
+            "shortName": "19144 Riopelle",
+            "tokenPrice": 53.87,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x945d833927380e25f402350667c6cd2d2615e7c2": {
+            "fullName": "18668 St Louis St, Detroit, MI 48234",
+            "shortName": "18668 St Louis",
+            "tokenPrice": 53.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x96510c0bafc5b3305d2b468063f7b3f8e8389802": {
+            "fullName": "12779 Strathmoor St, Detroit, MI 48227",
+            "shortName": "12779 Strathmoor",
+            "tokenPrice": 55.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x062f0732a7daca652c3bd7d8ad51c3a920b25962": {
+            "fullName": "5846 Crane St, Detroit, MI 48213",
+            "shortName": "5846 Crane",
+            "tokenPrice": 52.9,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5e29f1b62c15658e76671e199a7f16afddc9ad76": {
+            "fullName": "2661-2663 Cortland St, Detroit, MI 48206",
+            "shortName": "2661-2663 Cortland",
+            "tokenPrice": 52.85,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x529ff4d9b07acd6366d0c3eb077ebaa2b06e71c4": {
+            "fullName": "20160 Conant St, Detroit, MI 48234",
+            "shortName": "20160 Conant",
+            "tokenPrice": 51.89,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3d2129d9ceed93992cea3ee7d8e44754faedc922": {
+            "fullName": "12730 Wade St, Detroit, MI 48213",
+            "shortName": "12730 Wade",
+            "tokenPrice": 50.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6133a54e3895f478ee6aae582d7dbc7bbb086b7d": {
+            "fullName": "5517-5519 Elmhurst St, Detroit, MI 48204",
+            "shortName": "5517-5519 Elmhurst",
+            "tokenPrice": 54.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8c60eccab34ffce7b54e985fc8b7ba280b45701d": {
+            "fullName": "8017-8019 S Paulina St, Chicago, IL 60620",
+            "shortName": "8017-8019 S Paulina",
+            "tokenPrice": 51.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb890b3cc0f2874b15b0dbf6377d39c106ca29fbf": {
+            "fullName": "2626-2638 Wreford St, Detroit, MI 48208",
+            "shortName": "2626-2638 Wreford",
+            "tokenPrice": 51.79,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x934e4bed6f85295581697002fadd816b07c03406": {
+            "fullName": "4000 Taylor St, Detroit, MI 48204",
+            "shortName": "4000 Taylor",
+            "tokenPrice": 54.34,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x744ca59499be33f6a112eed3acca533954da1050": {
+            "fullName": "9135 Yorkshire Rd, Detroit, MI 48224",
+            "shortName": "9135 Yorkshire",
+            "tokenPrice": 50.86,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x20170890ef210e402578f97d6b179784c45f3a1b": {
+            "fullName": "7337 S Yale Ave, Chicago, IL 60621",
+            "shortName": "7337 S Yale",
+            "tokenPrice": 51.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xccca5323052435aa4b0ec94c1d0255f17e4f495c": {
+            "fullName": "11750 Morang Ave, Detroit, MI 48224",
+            "shortName": "11750 Morang",
+            "tokenPrice": 51.64,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x306044777e68ec5c323889468baacba6d2705994": {
+            "fullName": "15440-15444 St Clair Ave, Cleveland, OH 44110",
+            "shortName": "15440-15444 St Clair",
+            "tokenPrice": 49.59,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x052ad78e3aa0b0f2d3912fd3b50a9a289cf2f7aa": {
+            "fullName": "13245 Monica St, Detroit, MI 48238",
+            "shortName": "13245 Monica",
+            "tokenPrice": 51.34,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa5fd99f142ebf4343974137a3200e5197bf0c81b": {
+            "fullName": "1907 Ottawa Dr, Toledo, OH 43606",
+            "shortName": "1907 Ottawa",
+            "tokenPrice": 51.87,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8a25f83819fda66ff0fc6567c8327a5f154c2ec6": {
+            "fullName": "425 Steward Ave, Jackson, MI 49201",
+            "shortName": "425 Steward",
+            "tokenPrice": 50.73,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbdc1f8ccd117fe4e34f6c78f5293cd126b0c0474": {
+            "fullName": "10518 Woodland Ave, Cleveland, OH 44104",
+            "shortName": "10518 Woodland",
+            "tokenPrice": 50.06,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x009bab289f104699ae87e576294d18ed505faa61": {
+            "fullName": "3323 Waverly St, Detroit, MI 48238",
+            "shortName": "3323 Waverly",
+            "tokenPrice": 52.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe447e8ec034c9100c1ff9bc401b5cd2fe15c9dcc": {
+            "fullName": "8065 Lost Shaker Ln, Kissimmee, FL 34747",
+            "shortName": "8065 Lost Shaker",
+            "tokenPrice": 50.55,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x062c208073c9b439d1973262cfe0ddd88f38afa8": {
+            "fullName": "19268 Eureka St, Detroit, MI 48234",
+            "shortName": "19268 Eureka",
+            "tokenPrice": 52.76,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2fb7eeeece8498af2bf5b00ea29ca03005c35956": {
+            "fullName": "1389 Bird Ave, Birmingham, MI 48009",
+            "shortName": "1389 Bird",
+            "tokenPrice": 52.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcfe61eff2cde5c5885ba3a649ab092f56bd2830f": {
+            "fullName": "3747 Scovel Pl, Detroit, MI 48208",
+            "shortName": "3747 Scovel",
+            "tokenPrice": 50.19,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa6004ca1fab428152f27135355f21d6bcdf355bd": {
+            "fullName": "16767 Greenfield Rd, Detroit, MI 48235",
+            "shortName": "16767 Greenfield",
+            "tokenPrice": 50.6,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x964ee9e5d9d8abfc768f8d860cc6c33e75d37112": {
+            "fullName": "9151 Whittier Ave, Detroit, MI 48224",
+            "shortName": "9151 Whittier",
+            "tokenPrice": 50.02,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x0d5d0b74c690170a82bf52e5d16388fc4fa29082": {
+            "fullName": "10435-10445 Cadieux Rd, Detroit, MI 48224",
+            "shortName": "10435-10445 Cadieux",
+            "tokenPrice": 50.54,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x27dcc5de7ee468c2da8bf2fd21e60348747223cc": {
+            "fullName": "212 N Park Ave, Jackson, MI 49201",
+            "shortName": "212 N Park",
+            "tokenPrice": 50.72,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xdf7a80778a8be812e654291ffab21d61e9c21323": {
+            "fullName": "10030 Cadieux Rd, Detroit, MI 48224",
+            "shortName": "10030 Cadieux",
+            "tokenPrice": 51.61,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2e1a7d86e4591ebe5662ce6b5e3601f19a626c22": {
+            "fullName": "3344 E 140th St, Cleveland, OH 44120",
+            "shortName": "3344 E 140th",
+            "tokenPrice": 51.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x960e61f5c4107d71bd8936b010416738c250f91c": {
+            "fullName": "16851-16881 Greenfield Rd, Detroit, MI 48235",
+            "shortName": "16851-16881 Greenfield",
+            "tokenPrice": 50.85,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1707a9bad232d728afded75faced38ec90eaa41e": {
+            "fullName": "1354 W 64th St, Chicago, IL 60636",
+            "shortName": "1354 W 64th",
+            "tokenPrice": 51.03,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x07da3cdae2396aa826387a48deba5868d7deb7bc": {
+            "fullName": "10411-10421 Cadieux Rd, Detroit, MI 48224",
+            "shortName": "10411-10421 Cadieux",
+            "tokenPrice": 50.26,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf13d215776dac65c9c1e80d8f3daf6d91cc062d5": {
+            "fullName": "16007 Nelacrest Rd, East Cleveland, OH 44112",
+            "shortName": "16007 Nelacrest",
+            "tokenPrice": 50.12,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xee2dacc1e9264cbcb19c46863373fbff4ba7a9bd": {
+            "fullName": "4342-4344 Cortland St, Detroit, MI 48204",
+            "shortName": "4342-4344 Cortland",
+            "tokenPrice": 53.68,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5d0436f003aef56990194f79a242bc185843aea5": {
+            "fullName": "19750 Marx St, Highland Park, MI 48203",
+            "shortName": "19750 Marx",
+            "tokenPrice": 50.31,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5d9eb5fc910176b08efa5f8d13812b85fdf3394b": {
+            "fullName": "13835 La Salle Blvd, Detroit, MI 48238",
+            "shortName": "13835 La Salle",
+            "tokenPrice": 50.14,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xac0d5dbfed881b3ffaebc7152bc2bc23464fe0cc": {
+            "fullName": "19751 Marx St, Highland Park, MI 48203",
+            "shortName": "19751 Marx",
+            "tokenPrice": 50.71,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd88e8873e90f734c9d3e3519e9e87345478c1df2": {
+            "fullName": "1610 E State Fair Ave, Detroit, MI 48203",
+            "shortName": "1610 E State Fair",
+            "tokenPrice": 50.31,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe919df5f4eff1e6e6c6fe7c82471a5e6ce3437f1": {
+            "fullName": "1630 E State Fair Ave, Detroit, MI 48203",
+            "shortName": "1630 E State Fair",
+            "tokenPrice": 50.06,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x994c698175e5dbe405a46df94fbd54999a3676c2": {
+            "fullName": "2703-2705 W Grand St, Detroit, MI 48238",
+            "shortName": "2703-2705 W Grand",
+            "tokenPrice": 52.16,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x65d81bf81a65b177012b323f14970071c5099226": {
+            "fullName": "9415-9417 Ravenswood St, Detroit, MI 48204",
+            "shortName": "9415-9417 Ravenswood",
+            "tokenPrice": 53.59,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc8ed28ce508811216030b96e2dc70883abad5408": {
+            "fullName": "7519-7521 Wykes St, Detroit, MI 48210",
+            "shortName": "7519-7521 Wykes",
+            "tokenPrice": 52.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3839ab8550a64940964e0ecb02ed301005a96ffc": {
+            "fullName": "18980 Fenton St, Detroit, MI 48219",
+            "shortName": "18980 Fenton",
+            "tokenPrice": 50.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf7412e264fa85ae5e79ac3a4b64ce4669e32b98f": {
+            "fullName": "19000 Fenton St, Detroit, MI 48219",
+            "shortName": "19000 Fenton",
+            "tokenPrice": 50.06,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xafa816f7fff6f252e5cdbd40b80d9ef77b7e289b": {
+            "fullName": "19041 Lenore Ave, Detroit, MI 48219",
+            "shortName": "19041 Lenore",
+            "tokenPrice": 50.26,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2089b1b815a2fd0187a48a1c66c511da828a8128": {
+            "fullName": "3310-3312 Sturtevant St, Detroit, MI 48206",
+            "shortName": "3310-3312 Sturtevant",
+            "tokenPrice": 51.63,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf793d1ba72e2914525205ca592dec2142e700cb4": {
+            "fullName": "10040 Cadieux Rd, Detroit, MI 48224",
+            "shortName": "10040 Cadieux",
+            "tokenPrice": 50.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xef0c14c5d7da4d0447c28da7a9c8145d0a5a6f61": {
+            "fullName": "S 9795-9797 Chenlot St, Detroit, MI 48204",
+            "shortName": "S 9795-9797 Chenlot",
+            "tokenPrice": 53.21,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x75645f349da40702710599ac41adef6e7e700dbe": {
+            "fullName": "D 9795-9797 Chenlot St, Detroit, MI 48204",
+            "shortName": "D 9795-9797 Chenlot",
+            "tokenPrice": 53.21,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x03cbe3dda83908ad48643d6a1b5b13d11acaf845": {
+            "fullName": "324 Piper Blvd, Detroit, MI 48215",
+            "shortName": "324 Piper",
+            "tokenPrice": 52.04,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7a684f6d9a34175d642eedb31fa545604d8d3acf": {
+            "fullName": "2911 Sturtevant St, Detroit, MI 48206",
+            "shortName": "2911 Sturtevant",
+            "tokenPrice": 50.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe2fbdeadc82c71c1b8bff9ca4f9e7666224a362c": {
+            "fullName": "16085 E Seven Mile, Detroit, MI 48205",
+            "shortName": "16085 E Seven Mile",
+            "tokenPrice": 50.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5b571d103e670848ce8cde37f93821c9c93c7c43": {
+            "fullName": "14409 Linnhurst St, Detroit, MI 48205",
+            "shortName": "14409 Linnhurst",
+            "tokenPrice": 50.16,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4b293baa4703c5e7d480498bf3ccd8dc3d1297cd": {
+            "fullName": "S 10147 Somerset Ave, Detroit, MI 48224",
+            "shortName": "S 10147 Somerset",
+            "tokenPrice": 52.58,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc6a9ad5f687b832636e8a946be5f5f213dd563fa": {
+            "fullName": "D 10147 Somerset Ave, Detroit, MI 48224",
+            "shortName": "D 10147 Somerset",
+            "tokenPrice": 52.58,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3113bb5e8bf9dc44ecdb111e5c4ab0818015a2e1": {
+            "fullName": "16520 Ilene St, Detroit, MI 48221",
+            "shortName": "16520 Ilene",
+            "tokenPrice": 53.13,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6f5258feb5862b661829315841b0718d6e56ca2c": {
+            "fullName": "20257 Monica St, Detroit, MI 48221",
+            "shortName": "20257 Monica",
+            "tokenPrice": 52.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc1c1031e4a44b98707203480029e6576cb3267e3": {
+            "fullName": "11898 Laing St, Detroit, MI 48224",
+            "shortName": "11898 Laing",
+            "tokenPrice": 51.82,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x19a6a39b746c4647a01a3bf80751155969ddb15a": {
+            "fullName": "S 616 E 131st St, Cleveland, OH 44108",
+            "shortName": "S 616 E 131st",
+            "tokenPrice": 50.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x97cc36cd93c8a4933c5870768b49f073062477a1": {
+            "fullName": "D 616 E 131st St, Cleveland, OH 44108",
+            "shortName": "D 616 E 131st",
+            "tokenPrice": 50.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4b9c173c81ea2b6804b99ac91846c62bdb74fe72": {
+            "fullName": "S 10163 Duprey St, Detroit, MI 48224",
+            "shortName": "S 10163 Duprey",
+            "tokenPrice": 53.63,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x91cef0e64c0059afff516418304761c772ddfec8": {
+            "fullName": "D 10163 Duprey St, Detroit, MI 48224",
+            "shortName": "D 10163 Duprey",
+            "tokenPrice": 53.63,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7909090541d646a262a3062639298772a2c79daa": {
+            "fullName": "S 3510 Ewald Cir, Detroit, MI 48204",
+            "shortName": "S 3510 Ewald",
+            "tokenPrice": 50.09,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x270c59b84c5b56564cb7c418fbf2df1d1efa7e04": {
+            "fullName": "D 3510 Ewald Cir, Detroit, MI 48204",
+            "shortName": "D 3510 Ewald",
+            "tokenPrice": 50.09,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x304bee450c2d116696d8b442981e7a300dfdf1cb": {
+            "fullName": "S 11965 Lakepointe St, Detroit, MI 48224",
+            "shortName": "S 11965 Lakepointe",
+            "tokenPrice": 54.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf63b6b88ccc49825db9b2c6710a3b4513adb58c3": {
+            "fullName": "D 11965 Lakepointe St, Detroit, MI 48224",
+            "shortName": "D 11965 Lakepointe",
+            "tokenPrice": 54.25,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x64d69276cc78adbb6d5fea95d3e6370b4844dc76": {
+            "fullName": "S 10645 Stratman St, Detroit, MI 48224",
+            "shortName": "S 10645 Stratman",
+            "tokenPrice": 55.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x61ee29983da5d006a56b549e1543b8196df159a5": {
+            "fullName": "D 10645 Stratman St, Detroit, MI 48224",
+            "shortName": "D 10645 Stratman",
+            "tokenPrice": 55.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xdaf6b273691372e4eb2fe353624f8f4f768c2099": {
+            "fullName": "618 E 79th St, Chicago, IL 60619",
+            "shortName": "618 E 79th",
+            "tokenPrice": 50.83,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x53cebce6bd24f8e14da85ba0627a92336bd4f515": {
+            "fullName": "S 9200 Harvard Rd, Detroit, MI 48224",
+            "shortName": "S 9200 Harvard",
+            "tokenPrice": 53.41,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcacd674995bb591e6bbe0177e5404ecd0fa91b55": {
+            "fullName": "D 9200 Harvard Rd, Detroit, MI 48224",
+            "shortName": "D 9200 Harvard",
+            "tokenPrice": 49.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb80173756781960761aa59c9eeebe191f049f4c8": {
+            "fullName": "S 19391 Grandview St, Detroit, MI 48219",
+            "shortName": "S 19391 Grandview",
+            "tokenPrice": 52.96,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x0fd357ea71ad533c6b8a62520321ed286ed9a0c2": {
+            "fullName": "S 17204 Bradford Ave, Detroit, MI 48205",
+            "shortName": "S 17204 Bradford",
+            "tokenPrice": 51.43,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9d4cf0316442e23eac10aafe4423305685597f78": {
+            "fullName": "D 17204 Bradford Ave, Detroit, MI 48205",
+            "shortName": "D 17204 Bradford",
+            "tokenPrice": 51.43,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa984e4c759bea433bef9239736d5f9a9af0e7389": {
+            "fullName": "S 10703 McKinney St, Detroit, MI 48224",
+            "shortName": "S 10703 McKinney",
+            "tokenPrice": 52.77,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xfbb6d3c33b106439da541a7a1b64ba0c07f3a1f8": {
+            "fullName": "D 10703 McKinney St, Detroit, MI 48224",
+            "shortName": "D 10703 McKinney",
+            "tokenPrice": 49.79,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf549b95362e6062999bdfe6c61e75e4547b8116d": {
+            "fullName": "S 11117 Worden St, Detroit, MI 48224",
+            "shortName": "S 11117 Worden",
+            "tokenPrice": 50.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8c33b8f55bbae1770813a9e855cd4c6da327896d": {
+            "fullName": "D 11217 Beaconsfield St, Detroit, MI 48224",
+            "shortName": "D 11217 Beaconsfield",
+            "tokenPrice": 48.01,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9eea197bf77fd70f485f25e606b731ce3c510b2c": {
+            "fullName": "D 11117 Worden St, Detroit, MI 48224",
+            "shortName": "D 11117 Worden",
+            "tokenPrice": 50.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x034ecb6dc0608b73765f2965771a003d940ee8b2": {
+            "fullName": "S 22233 Lyndon St, Detroit, MI 48223",
+            "shortName": "S 22233 Lyndon",
+            "tokenPrice": 53.92,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x30a4e022287aa6bfe9ea96f5ad8482ff9af8c357": {
+            "fullName": "D 22233 Lyndon St, Detroit, MI 48223",
+            "shortName": "D 22233 Lyndon",
+            "tokenPrice": 50.2,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcaf963cd253cf81664ecbcad71d043c47edf77fb": {
+            "fullName": "S 11217 Beaconsfield St, Detroit, MI 48224",
+            "shortName": "S 11217 Beaconsfield",
+            "tokenPrice": 50.77,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf98be7ddab511622b5de91039c48f1f2e37d0bc1": {
+            "fullName": "S 9624 Abington Ave, Detroit, MI 48227",
+            "shortName": "S 9624 Abington",
+            "tokenPrice": 53.54,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf8a00e1a560ac95ae807dadc261013ca91f8497b": {
+            "fullName": "D 9624 Abington Ave, Detroit, MI 48227",
+            "shortName": "D 9624 Abington",
+            "tokenPrice": 49.78,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9abff92ddd896f3f7664ec232bb0a5db027d6724": {
+            "fullName": "S 11310 Abington Ave, Detroit, MI 48227",
+            "shortName": "S 11310 Abington",
+            "tokenPrice": 52.77,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc3dcbded5a38b94479d48375bea4b1f69630906d": {
+            "fullName": "D 11310 Abington Ave, Detroit, MI 48227",
+            "shortName": "D 11310 Abington",
+            "tokenPrice": 47.17,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x70fd4cbc25b086693260f0307b29d88eea4d71b5": {
+            "fullName": "D 14117 Manning St, Detroit, MI 48205",
+            "shortName": "D 14117 Manning",
+            "tokenPrice": 50.26,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7dfeee178fc1f929a88ad69e4e8d493600dd26d0": {
+            "fullName": "S 14117 Manning St, Detroit, MI 48205",
+            "shortName": "S 14117 Manning",
+            "tokenPrice": 53.92,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x82a6e0e7598447be0c173971394cc4fc71ce6ac3": {
+            "fullName": "D 9585 Abington Ave, Detroit, MI 48227",
+            "shortName": "D 9585 Abington",
+            "tokenPrice": 49.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x219c820c2d25d8937601d8713235b556c4a37f62": {
+            "fullName": "S 9585 Abington Ave, Detroit, MI 48227",
+            "shortName": "S 9585 Abington",
+            "tokenPrice": 53.46,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x795e43d6914c9c391de268837f437ecdcd77f5e3": {
+            "fullName": "D 14439 Longview St, Detroit, MI 48213",
+            "shortName": "D 14439 Longview",
+            "tokenPrice": 49.14,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbb32de53a057f29280ad889a92fe99d69d470ef0": {
+            "fullName": "S 14439 Longview St, Detroit, MI 48213",
+            "shortName": "S 14439 Longview",
+            "tokenPrice": 53.15,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xfc5073816fe9671859ef1e6936efd23bb7814274": {
+            "fullName": "S 1418 W Marquette Rd, Chicago, IL 60636",
+            "shortName": "S 1418 W Marquette",
+            "tokenPrice": 50.36,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf8c1ade28b78678449494114f18a6c1b785bbf76": {
+            "fullName": "D 1418 W Marquette Rd, Chicago, IL 60636",
+            "shortName": "D 1418 W Marquette",
+            "tokenPrice": 50.36,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe5b46b4c5c7f974e55ded0b0099c02774f0023c1": {
+            "fullName": "14329 Strathmoor St, Detroit, MI 48227",
+            "shortName": "14329 Strathmoor",
+            "tokenPrice": 49.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3b22445411b429f665d12f7a55dd16dfac22c6ae": {
+            "fullName": "19535 Fairport St, Detroit, MI 48205",
+            "shortName": "19535 Fairport",
+            "tokenPrice": 59.92,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7ad92301442b73bed8d9696d704ac24a0fef3b69": {
+            "fullName": "8056 E Hollywood St, Detroit, MI 48234",
+            "shortName": "8056 E Hollywood",
+            "tokenPrice": 54.67,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2f3640655d076b45d1fa10da0f6d880329c9d553": {
+            "fullName": "15240 Edmore Dr, Detroit, MI 48205",
+            "shortName": "15240 Edmore",
+            "tokenPrice": 49.98,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xdcfe90e59b574839e028ec28e78018b84b6fcdab": {
+            "fullName": "14622 Hubbell Ave, Detroit, MI 48227",
+            "shortName": "14622 Hubbell",
+            "tokenPrice": 53.06,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x27c30545dc2ba4b3bfdcb9f807a0214f4b06f034": {
+            "fullName": "8003 S Ingleside Ave, Chicago, IL 60619",
+            "shortName": "8003 S Ingleside",
+            "tokenPrice": 50.64,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9ea9b45a500dd4346163ce7483dea2294ae88d1d": {
+            "fullName": "10099 Greensboro St, Detroit, MI 48224",
+            "shortName": "10099 Greensboro",
+            "tokenPrice": 50.1,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7facb63afb928ac5a4650acc6eab701d7a8becb5": {
+            "fullName": "15894 Tacoma St, Detroit, MI 48205",
+            "shortName": "15894 Tacoma",
+            "tokenPrice": 50.96,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x43ab521302ff36039be6b425ddaea5ec30a0f8b5": {
+            "fullName": "5760 Lakepointe St, Detroit, MI 48224",
+            "shortName": "5760 Lakepointe",
+            "tokenPrice": 50.11,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa14d2507a2b96adc13cb19642802fd4eaf9a8a32": {
+            "fullName": "16810 Bringard Dr, Detroit, MI 48205",
+            "shortName": "16810 Bringard",
+            "tokenPrice": 50.19,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa3bb6ea63c0fbf259e16ffe0586d84b2c83d7229": {
+            "fullName": "14511 Houston-Whittier St, Detroit, MI 48205",
+            "shortName": "14511 Houston-Whittier",
+            "tokenPrice": 50.3,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x10cde9d1e1a2d3b703f037a6788e04bc139cdf6f": {
+            "fullName": "19530 Hickory St, Detroit, MI 48205",
+            "shortName": "19530 Hickory",
+            "tokenPrice": 50.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xea91a67a23943984bc8017e20c9fd2e40fd38c3d": {
+            "fullName": "19539 Hickory St, Detroit, MI 48205",
+            "shortName": "19539 Hickory",
+            "tokenPrice": 50.64,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1106d8755ffafb1f1820b3668e354336d9085a12": {
+            "fullName": "9201 Longacre St, Detroit, MI 48228",
+            "shortName": "9201 Longacre",
+            "tokenPrice": 52.02,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7085c30b97f1af202f8dfec174f1e07d8f8f887d": {
+            "fullName": "13430 Tacoma St, Detroit, MI 48205",
+            "shortName": "13430 Tacoma",
+            "tokenPrice": 50.64,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4c0c0fe9ca9ad4bc748eb8f596ddcfd8707a5cd4": {
+            "fullName": "13445 Tacoma St, Detroit, MI 48205",
+            "shortName": "13445 Tacoma",
+            "tokenPrice": 52.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe1c4610477da28f6852ced5666aa6f3ccbd73b02": {
+            "fullName": "13628 Tacoma St, Detroit, MI 48205",
+            "shortName": "13628 Tacoma",
+            "tokenPrice": 50.61,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbf1a3181167e4979fd121ef247d9af4fc884cc46": {
+            "fullName": "19400 Hickory St, Detroit, MI 48205",
+            "shortName": "19400 Hickory",
+            "tokenPrice": 50.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x940b60023484d593b8391521704abb063b5cccf0": {
+            "fullName": "18515-18517 Kelly Rd, Detroit, MI 48224",
+            "shortName": "18515-18517 Kelly",
+            "tokenPrice": 49.1,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd84d9c58a93e3d4b0acc5ab5a5aa5e2fa6b7ab75": {
+            "fullName": "18527-18529 Kelly Rd, Detroit, MI 48224",
+            "shortName": "18527-18529 Kelly",
+            "tokenPrice": 48.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa48ddf8d4f9b03c63d6340b5e0d2af293ab516ea": {
+            "fullName": "18608-18612 Moross Rd, Detroit, MI 48224",
+            "shortName": "18608-18612 Moross",
+            "tokenPrice": 49.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2f4974a3be7355cf8915ab34099f35ed44293128": {
+            "fullName": "15611 E Seven Mile Rd, Detroit, MI 48205",
+            "shortName": "15611 E Seven Mile",
+            "tokenPrice": 48.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2e1db155a7b812f3fcb0dbc8ed3164b4705213b4": {
+            "fullName": "10610 Balfour Rd, Detroit, MI 48224",
+            "shortName": "10610 Balfour",
+            "tokenPrice": 49.81,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2a7c9f7719367006e9bd20d0555025efb86d7d5d": {
+            "fullName": "8809 Beckman Ave, Cleveland, OH 44104",
+            "shortName": "8809 Beckman",
+            "tokenPrice": 51.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x06cc12368fa6a3d4dc0872c60331156a21cdcc9c": {
+            "fullName": "12318 Imperial Ave, Cleveland, OH 44120",
+            "shortName": "12318 Imperial",
+            "tokenPrice": 49.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x06246100ba403608b98adfb006d82a7484f5d9ff": {
+            "fullName": "22512 W McNichols Rd, Detroit, MI 48219",
+            "shortName": "22512 W McNichols",
+            "tokenPrice": 50.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3c5654362fa005393ad9c793fe0fa74f0cd95bbb": {
+            "fullName": "8744 Homer St, Detroit, MI 48209",
+            "shortName": "8744 Homer",
+            "tokenPrice": 48.93,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x377d14927bbc274771daa9ffab0722935dafaffa": {
+            "fullName": "13523 Glenside Rd, Cleveland, OH 44110",
+            "shortName": "13523 Glenside",
+            "tokenPrice": 50.54,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf3c4c10ab96f9b6d7719de63f4219f69078df976": {
+            "fullName": "14881 Greenfield Rd, Detroit, MI 48227",
+            "shortName": "14881 Greenfield",
+            "tokenPrice": 50.46,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa12a334f563c1a9fef29cf11fac7e148fd54463b": {
+            "fullName": "11830 Camden Ave, Detroit, MI 48213",
+            "shortName": "11830 Camden",
+            "tokenPrice": 47.43,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9642a2379bc359c8b10ead2e06c4a4156bbb3f57": {
+            "fullName": "14745 Plymouth Rd, Detroit, MI 48227",
+            "shortName": "14745 Plymouth",
+            "tokenPrice": 48.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xedcddc374c78bb8596352a28faf1eba9874aa2e1": {
+            "fullName": "11701 Morang Ave, Detroit, MI 48224",
+            "shortName": "11701 Morang",
+            "tokenPrice": 49.28,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd67ba795ca466a85be46b13763adcb729be49a82": {
+            "fullName": "11845 Camden Ave, Detroit, MI 48213",
+            "shortName": "11845 Camden",
+            "tokenPrice": 48.32,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x87b2fb660f790b936e42093036e0b519f0b50b24": {
+            "fullName": "3588 Oakman Blvd, Detroit, MI 48204",
+            "shortName": "3588 Oakman",
+            "tokenPrice": 50.19,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd79e63912dbeb409ea350138503a9eb29d73728f": {
+            "fullName": "10862 Marne St, Detroit, MI 48224",
+            "shortName": "10862 Marne",
+            "tokenPrice": 50.29,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbabc257b4958556bda696e7705cf535f400d8b09": {
+            "fullName": "10717-10719 Bryant Ave, Cleveland, OH 44108",
+            "shortName": "10717-10719 Bryant",
+            "tokenPrice": 50.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x954f393ff46da9cfc07a9052d7c669710cf48ed4": {
+            "fullName": "305 Moss St, Highland Park, MI 48203",
+            "shortName": "305 Moss",
+            "tokenPrice": 55.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x59de64861ddf9309be2d03d647d21c7a7609e384": {
+            "fullName": "12580 Maiden St, Detroit, MI 48213",
+            "shortName": "12580 Maiden",
+            "tokenPrice": 50.77,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa6231a14bdb99ba817c211558fa8ebb2a74b959a": {
+            "fullName": "7501 Stockton St, Detroit, MI 48234",
+            "shortName": "7501 Stockton",
+            "tokenPrice": 50.51,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x458b169d6d9d5d021d61013e3a01bf7dee29dd90": {
+            "fullName": "18438 Morang Ave, Detroit, MI 48205",
+            "shortName": "18438 Morang",
+            "tokenPrice": 50.24,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3ac16e7177a55d5fd8f8ab58263d1c764d462fde": {
+            "fullName": "4239 Alter Rd, Detroit, MI 48215",
+            "shortName": "4239 Alter",
+            "tokenPrice": 50.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2f5bb131614d6c2be8520e355752576ad55416b4": {
+            "fullName": "625 Virginia St, Toledo, OH 43620",
+            "shortName": "625 Virginia",
+            "tokenPrice": 50.64,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x12413a603d16893d8f406925289f206b3b974cf0": {
+            "fullName": "3280 W Boston Blvd, Detroit, MI 48206",
+            "shortName": "3280 W Boston",
+            "tokenPrice": 50.62,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x0c84153fdcafd65a4536c2d8d4856e6a6457fb21": {
+            "fullName": "10059 Britain St, Detroit, MI 48224",
+            "shortName": "10059 Britain",
+            "tokenPrice": 49.69,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1d9fd5c3fbfd4758f22438a336068b813872cefc": {
+            "fullName": "12050 Bryden St, Detroit, MI 48204",
+            "shortName": "12050 Bryden",
+            "tokenPrice": 50.36,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x88f37cee57b669cc1557d4f353dc11c113873f0b": {
+            "fullName": "10511 Whittier Ave, Detroit, MI 48224",
+            "shortName": "10511 Whittier",
+            "tokenPrice": 49.9,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb7c1c306bff953df8997cc8d91949b7aff36772b": {
+            "fullName": "1 Holdings Holcomb St, Detroit, MI 48214",
+            "shortName": "1 Holdings Holcomb",
+            "tokenPrice": 50.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x86b4f8135a39dc349a963969f33c3d030726cf61": {
+            "fullName": "6582 Bewick St, Detroit, MI 48213",
+            "shortName": "6582 Bewick",
+            "tokenPrice": 49.17,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7524d382373c1a091789978a8b2c1dc707d2b213": {
+            "fullName": "1890 Marloes Ave, East Cleveland, OH 44112",
+            "shortName": "1890 Marloes",
+            "tokenPrice": 51.96,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6f0e040d9f02830c6eea5b287ad74369a9e5f1e1": {
+            "fullName": "1 Holdings Rohns St, Detroit, MI 48214",
+            "shortName": "1 Holdings Rohns",
+            "tokenPrice": 50.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x016e0081fcaad345691027908d5044534bca1946": {
+            "fullName": "1 Holdings Belvidere St, Detroit, MI 48214",
+            "shortName": "1 Holdings Belvidere",
+            "tokenPrice": 54.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa9e20a86d66493fd146abb9a1f946864773ce0ae": {
+            "fullName": "3784 Seneca St, Detroit, MI 48214",
+            "shortName": "3784 Seneca",
+            "tokenPrice": 50.09,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x820629db01bb56a62bc75aeef6eb8dfb0eec1d04": {
+            "fullName": "4407 McClellan, Detroit, MI 48214",
+            "shortName": "4407 McClellan",
+            "tokenPrice": 50.07,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb5fb9e224a5cc76e61928ea7985d251520a5579c": {
+            "fullName": "3851 McClellan Ave, Detroit, MI 48214",
+            "shortName": "3851 McClellan",
+            "tokenPrice": 50.08,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x47a544a460ed29d6622a6f6e68de7f873cc30e67": {
+            "fullName": "4101 McClellan Ave, Detroit, MI 48214",
+            "shortName": "4101 McClellan",
+            "tokenPrice": 50.08,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9afdd1e3eec7985b9dcc3da1ed030498ea031a6c": {
+            "fullName": "12641 Elmdale St, Detroit, MI 48213",
+            "shortName": "12641 Elmdale",
+            "tokenPrice": 51.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x591882dc0581a69f377df4cad2cee4e9855ef34d": {
+            "fullName": "80 Colser Dr, Covington, GA 30016",
+            "shortName": "80 Colser",
+            "tokenPrice": 50.43,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf9a932df2010bd3d0e0f47bc61b7104ab82874da": {
+            "fullName": "18286 Oakfield Ave, Detroit, MI 48235",
+            "shortName": "18286 Oakfield",
+            "tokenPrice": 49.97,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x032f0e16b729210551642f3249f6e0b1b52a63be": {
+            "fullName": "15040 Harper Ave, Detroit, MI 48224",
+            "shortName": "15040 Harper",
+            "tokenPrice": 50.7,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x60888b47eb7290eaa8823568fcffa17da1a853d9": {
+            "fullName": "1 Holdings French Rd, Detroit, MI 48214",
+            "shortName": "1 Holdings French",
+            "tokenPrice": 50.3,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8236067c1b6dc176ebda95531168e93bbcee25b0": {
+            "fullName": "1 Holdings Conner St, Detroit, MI 48215",
+            "shortName": "1 Holdings Conner",
+            "tokenPrice": 50.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd8b9c3c10ba1d9f926b94b45859b65b2900e49bb": {
+            "fullName": "1 Holdings Montclair St, Detroit, MI 48214",
+            "shortName": "1 Holdings Montclair",
+            "tokenPrice": 50.91,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6c76cb9ff41b40f75fe8424268370a6c58f8468a": {
+            "fullName": "14102 Marlowe St, Detroit, MI 48227",
+            "shortName": "14102 Marlowe",
+            "tokenPrice": 50.5,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x717bfbfa88859ac34f9772d92749c4b384c6b479": {
+            "fullName": "1 Holdings Harding St, Detroit, MI 48214",
+            "shortName": "1 Holdings Harding",
+            "tokenPrice": 50.53,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7804e5ae01bb68e5a07a40b109ece66a66772d5e": {
+            "fullName": "1 Holdings Kitchener St, Detroit, MI 48215",
+            "shortName": "1 Holdings Kitchener",
+            "tokenPrice": 50.93,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3e98281a3dc794799159732d5a488e6cea645c37": {
+            "fullName": "1 Holdings Tennessee St, Detroit, MI 48215",
+            "shortName": "1 Holdings Tennessee",
+            "tokenPrice": 50.43,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd63265bbe136deff4f26e5976d21840c25df5e7a": {
+            "fullName": "1 Holdings Navahoe St, Detroit, MI 48215",
+            "shortName": "1 Holdings Navahoe",
+            "tokenPrice": 50.66,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x92ea0f03b611e7e6d056371a3c6b2bb188199c47": {
+            "fullName": "15930 Monica St, Detroit, MI 48238",
+            "shortName": "15930 Monica",
+            "tokenPrice": 50.73,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5cc180bf9091a2284624567ee3c5a2a465656301": {
+            "fullName": "19003-19005 Moross Rd, Detroit, MI 48224",
+            "shortName": "19003-19005 Moross",
+            "tokenPrice": 50.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcb2928d422cc2f349bfb67ee74113a3101a58cb4": {
+            "fullName": "2518 Glendale Ave, Detroit, MI 48238",
+            "shortName": "2518 Glendale",
+            "tokenPrice": 50.51,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x20c1216e14cb307a0987eaeae4b7c7f3888ad538": {
+            "fullName": "18613 Oakfield Ave, Detroit, MI 48235",
+            "shortName": "18613 Oakfield",
+            "tokenPrice": 50.54,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5c001ccc6340421590a200a328b1d7fc7d454964": {
+            "fullName": "1 Holdings Kinafremoha St, Detroit, MI 48215",
+            "shortName": "1 Holdings Kinafremoha",
+            "tokenPrice": 50.88,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x02b5d51e29fa35c9228cfa3ff968da6aaf1048dd": {
+            "fullName": "14606 Kentucky St, Detroit, MI 48238",
+            "shortName": "14606 Kentucky",
+            "tokenPrice": 49.74,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x19d01c13e6e5a1a990db9821358a591583f63234": {
+            "fullName": "10110 Cadieux Rd, Detroit, MI 48224",
+            "shortName": "10110 Cadieux",
+            "tokenPrice": 51.64,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4637aa1a13aa4050c6e4bcd6dde9c39e80e9dd54": {
+            "fullName": "10410 Cadieux Rd, Detroit, MI 48224",
+            "shortName": "10410 Cadieux",
+            "tokenPrice": 50.91,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x01b4ea64e4204b51cbc8463ffc8e6046c9d70371": {
+            "fullName": "12091 Montrose St, Detroit, MI 48227",
+            "shortName": "12091 Montrose",
+            "tokenPrice": 50.17,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x550a0c95fe1762d9cb553402ccc65bcd71594692": {
+            "fullName": "3522-3526 Harding St, Detroit, MI 48214",
+            "shortName": "3522-3526 Harding",
+            "tokenPrice": 50.69,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x67f685a20fb55ac5e7d128d66a13bdbe77599136": {
+            "fullName": "9131 Quincy St, Detroit, MI 48204",
+            "shortName": "9131 Quincy",
+            "tokenPrice": 50.72,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd018c66416f3fb6e96f1ad2a758677e1e019e3fb": {
+            "fullName": "16644 Rossini Dr, Detroit, MI 48205",
+            "shortName": "16644 Rossini",
+            "tokenPrice": 50.4,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe4c74c3852cb088e49a010fb0b79159859623da2": {
+            "fullName": "11420 Montrose St, Detroit, MI 48227",
+            "shortName": "11420 Montrose",
+            "tokenPrice": 50.67,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x40074c412154562fb16441106c95900467e9c173": {
+            "fullName": "14481 Hazelridge St, Detroit, MI 48205",
+            "shortName": "14481 Hazelridge",
+            "tokenPrice": 50.76,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc49297c99f880f5f19df4ac988eba4df03ef6333": {
+            "fullName": "10924 Balfour Rd, Detroit, MI 48224",
+            "shortName": "10924 Balfour",
+            "tokenPrice": 50.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xdd79587c22d7b2a68c0aa0752a6f83b1d77556cd": {
+            "fullName": "10756 Balfour Rd, Detroit, MI 48224",
+            "shortName": "10756 Balfour",
+            "tokenPrice": 51.97,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9dfaa0b7b69f39632ad514cfaba2997cf5b58360": {
+            "fullName": "10764 Balfour Rd, Detroit, MI 48224",
+            "shortName": "10764 Balfour",
+            "tokenPrice": 52.41,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc4a58f3746663bc22a0da17846b5f9c6b8ab4876": {
+            "fullName": "8106 Faith Ct, Montgomery, AL 36117",
+            "shortName": "8106 Faith",
+            "tokenPrice": 48.02,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1cc42015d1e4c97d8739d8fe663c47f0a49e9a38": {
+            "fullName": "16049-16081 E Seven Mile, Detroit, MI 48205",
+            "shortName": "16049-16081 E Seven Mile",
+            "tokenPrice": 50.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc38e84bcc2d2693dd77d89f2b86a83e7fe98afa5": {
+            "fullName": "Villa Marina 514, Playa Venao, Los Santos, Panama",
+            "shortName": "Villa Marina 514",
+            "tokenPrice": 50.92,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x56aa13dd3b1e3f6ec9281b36ce2fe943a217ceb4": {
+            "fullName": "4456 Fairview St, Detroit, MI 48214",
+            "shortName": "4456 Fairview",
+            "tokenPrice": 51.13,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3c20f694df207edd49408cf722898bc9002287b9": {
+            "fullName": "4444 Lillibridge St, Detroit, MI 48214",
+            "shortName": "4444 Lillibridge",
+            "tokenPrice": 50.28,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb87798476389475cbc96d63aa801b7d25c50d5f1": {
+            "fullName": "3953 Fairview St, Detroit, MI 48214",
+            "shortName": "3953 Fairview",
+            "tokenPrice": 51.99,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2b86741b2fbb1ddb8e7387965cf22ec656a38dc1": {
+            "fullName": "3955 Lillibridge St, Detroit, MI 48214",
+            "shortName": "3955 Lillibridge",
+            "tokenPrice": 51.14,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8f0ef86efe4f2eba5f7a7bf4d0f3b6bc5681a7a7": {
+            "fullName": "3965 Fairview St, Detroit, MI 48214",
+            "shortName": "3965 Fairview",
+            "tokenPrice": 50.27,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf96bcf8a5d9fa5258bcf243feb43500a2174abd6": {
+            "fullName": "3996 Lillibridge St, Detroit, MI 48214",
+            "shortName": "3996 Lillibridge",
+            "tokenPrice": 50.72,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4326972a016d707c5c6bc854398aabb6780c62e9": {
+            "fullName": "4025 Fairview St, Detroit, MI 48214",
+            "shortName": "4025 Fairview",
+            "tokenPrice": 50.27,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x053b0bd329dc21bd4fa278f62310f668c5f1a6ed": {
+            "fullName": "3947 Fairview St, Detroit, MI 48214",
+            "shortName": "3947 Fairview",
+            "tokenPrice": 51.13,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x34a1a58de8ff7ea0a690888d9b8ae646a8480fa4": {
+            "fullName": "4421 Lillibridge St, Detroit, MI 48214",
+            "shortName": "4421 Lillibridge",
+            "tokenPrice": 51.14,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x14b0d23238c5277f8243d2739c005480d8022fe0": {
+            "fullName": "4526 Lillibridge St, Detroit, MI 48214",
+            "shortName": "4526 Lillibridge",
+            "tokenPrice": 50.71,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2c12648dfa8d69c441b6b308c7d76661c1e6d1e7": {
+            "fullName": "3880 Fairview St, Detroit, MI 48214",
+            "shortName": "3880 Fairview",
+            "tokenPrice": 50.7,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3f8ecb2d158cde11587270ab3f9744e0f3108354": {
+            "fullName": "3888 Fairview St, Detroit, MI 48214",
+            "shortName": "3888 Fairview",
+            "tokenPrice": 51.13,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x22c9f21f3be50863997e4e2e4f8f2686be79ec93": {
+            "fullName": "3946 Fairview St, Detroit, MI 48214",
+            "shortName": "3946 Fairview",
+            "tokenPrice": 50.28,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7318c373695f8f3c8987a158d41d65eed4badb25": {
+            "fullName": "4628 Lillibridge St, Detroit, MI 48214",
+            "shortName": "4628 Lillibridge",
+            "tokenPrice": 50.29,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x969e3e55c8a4d9c4cd5e2660a2000ae12aad9e3e": {
+            "fullName": "4437 Lillibridge St, Detroit, MI 48214",
+            "shortName": "4437 Lillibridge",
+            "tokenPrice": 50.71,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2010c480b73fd0865b6d2f164660da852d178d5d": {
+            "fullName": "3728 Atkinson St, Detroit, MI 48206",
+            "shortName": "3728 Atkinson",
+            "tokenPrice": 50.28,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9dfd50ac7cb60832bf7b1c7c46204efcbd2cc959": {
+            "fullName": "3406 Medbury St, Detroit, MI 48211",
+            "shortName": "3406 Medbury",
+            "tokenPrice": 50.83,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc2fb83f45c53d2194a9ee82e4bda3ee2120141f5": {
+            "fullName": "5837 Moran St, Detroit, MI 48211",
+            "shortName": "5837 Moran",
+            "tokenPrice": 51.53,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x140d6cfde793f1a2eed5274454aa6f463ec8c075": {
+            "fullName": "10993 Worden St, Detroit, MI 48224",
+            "shortName": "10993 Worden",
+            "tokenPrice": 50.9,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x72f1d0719d8ce0b03d35def98e5dbb17854ab285": {
+            "fullName": "11924 Wayburn St, Detroit, MI 48224",
+            "shortName": "11924 Wayburn",
+            "tokenPrice": 50.1,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x712d9c2b3077111493b8867c218f0d24a8aaf059": {
+            "fullName": "18524 Patton St, Detroit, MI 48219",
+            "shortName": "18524 Patton",
+            "tokenPrice": 49.73,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x80effd75fa30b8b89997d2522b3283a1e768f1bc": {
+            "fullName": "8821 Prairie St, Detroit, MI 48204",
+            "shortName": "8821 Prairie",
+            "tokenPrice": 50.82,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x16b18b9836fd01f1413b1bca28935ac00a1f43ce": {
+            "fullName": "16012 Maddelein St, Detroit, MI 48205",
+            "shortName": "16012 Maddelein",
+            "tokenPrice": 50.16,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x53279e01efda8c67404ce98462b831611d5dcca2": {
+            "fullName": "18613 Anglin St, Detroit, MI 48234",
+            "shortName": "18613 Anglin",
+            "tokenPrice": 50.82,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5d0f382a64acb0fff716bf2f786b9df4dc8dad0c": {
+            "fullName": "12145 Kentucky St, Detroit, MI 48204",
+            "shortName": "12145 Kentucky",
+            "tokenPrice": 50.98,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x80d2956433a1622c336480ba5357350a30644c0a": {
+            "fullName": "9244 Mendota St, Detroit, MI 48204",
+            "shortName": "9244 Mendota",
+            "tokenPrice": 50.36,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb061e8da0b08c8647516921af6a49b81d425f09f": {
+            "fullName": "11380 Pinehurst St, Detroit, MI 48204",
+            "shortName": "11380 Pinehurst",
+            "tokenPrice": 50.85,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x90d280b6456f8233e115e6aabb2ca89249dafd39": {
+            "fullName": "8034 Faith Ln, Montgomery, AL 36117",
+            "shortName": "8034 Faith",
+            "tokenPrice": 51.14,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x30107f6f95b946c4ea0eaeb9f7ae436078f971b1": {
+            "fullName": "433 Kitchener St, Detroit, MI 48215",
+            "shortName": "433 Kitchener",
+            "tokenPrice": 51.97,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x79a956cf468ee592d6aef9ce06920989654b1ce3": {
+            "fullName": "450 Kitchener St, Detroit, MI 48215",
+            "shortName": "450 Kitchener",
+            "tokenPrice": 51.22,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbd42a15a05d51158ca3c46cfd26fb19476f91ce6": {
+            "fullName": "13000 Promenade St, Detroit, MI 48213",
+            "shortName": "13000 Promenade",
+            "tokenPrice": 50.51,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcc21b161171b181aa9cd7226a2c484175afd1fed": {
+            "fullName": "17310 Bentler St, Detroit, MI 48219",
+            "shortName": "17310 Bentler",
+            "tokenPrice": 50.84,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x60677266d8bedd6147e7070adfd8c681e2d88324": {
+            "fullName": "15110 Freeland St, Detroit, MI 48227",
+            "shortName": "15110 Freeland",
+            "tokenPrice": 50.16,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x18cc3ce7ed17e47c669982b6c94a0fe2a0b9606e": {
+            "fullName": "14916 Hubbell St, Detroit, MI 48227",
+            "shortName": "14916 Hubbell",
+            "tokenPrice": 50.32,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x3fe8dda02a469043c36a45ca74d624d9362ec2fc": {
+            "fullName": "14260 Roselawn St, Detroit, MI 48238",
+            "shortName": "14260 Roselawn",
+            "tokenPrice": 50.85,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xfb260178c2c0e5f920adea3dcc906bee4fea8a27": {
+            "fullName": "18933 Fairport St, Detroit, MI 48205",
+            "shortName": "18933 Fairport",
+            "tokenPrice": 50.39,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4df8c0990e1f02810d6a27c452cd70b39f2e0a2c": {
+            "fullName": "15824 Cheyenne St, Detroit, MI 48235",
+            "shortName": "15824 Cheyenne",
+            "tokenPrice": 50.32,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x30d0e37cd8c87153d56e85bb4a45a0afdb1df4e5": {
+            "fullName": "9117 Manor St, Detroit, MI 48204",
+            "shortName": "9117 Manor",
+            "tokenPrice": 50,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x883646e436238811d2ebc309891779dbacb0e917": {
+            "fullName": "17326 Albion St, Detroit, MI 48234",
+            "shortName": "17326 Albion",
+            "tokenPrice": 50.84,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf552ac17a396487f233a696bf52b82bf53080c6d": {
+            "fullName": "4021 E Outer Dr, Detroit, MI 48234",
+            "shortName": "4021 E Outer",
+            "tokenPrice": 53.43,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xae3713ac3717fa539e98618a03e99a68443f5789": {
+            "fullName": "15084 Lesure St, Detroit, MI 48227",
+            "shortName": "15084 Lesure",
+            "tokenPrice": 51.05,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x19f824662ba9df78e368022f085b708fccc201c8": {
+            "fullName": "1769 Cheryl Ave, Griffin, GA 30224",
+            "shortName": "1769 Cheryl",
+            "tokenPrice": 49.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe90e02790f5070fb89b15863e2dbc3c22532b43e": {
+            "fullName": "1 Holdings S Arcola St, Detroit, MI 48234",
+            "shortName": "1 Holdings S Arcola",
+            "tokenPrice": 50.53,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe7e80e20ce71acd578b18c54382567385771cc37": {
+            "fullName": "1 Holdings Palmetto St, Detroit, MI 48234",
+            "shortName": "1 Holdings Palmetto",
+            "tokenPrice": 50.6,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5f51b44cdbdd5dc9aecabc2ed80e2b2a8c002866": {
+            "fullName": "19643 Rogge St, Detroit, MI 48234",
+            "shortName": "19643 Rogge",
+            "tokenPrice": 50.55,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7231cafcb32d2ad7072b7bee71ca9d4e5ebffafa": {
+            "fullName": "1 Holdings Tappan St, Detroit, MI 48234",
+            "shortName": "1 Holdings Tappan",
+            "tokenPrice": 50.26,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5a7715cf01a08ff1903a240c339fe5e884c01dcf": {
+            "fullName": "1 Holdings Milton St, Detroit, MI 48234",
+            "shortName": "1 Holdings Milton",
+            "tokenPrice": 50.79,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa6662b6c605afb2cd635b2511efb10a04a08e79b": {
+            "fullName": "1 Holdings N Arcola St, Detroit, MI 48234",
+            "shortName": "1 Holdings N Arcola",
+            "tokenPrice": 50.29,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x632fac8692861960b0d928cf6e91ff703ef5c9f5": {
+            "fullName": "2 Holdings Milton St, Detroit, MI 48234",
+            "shortName": "2 Holdings Milton",
+            "tokenPrice": 50.47,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xdfdc10a5dbb68d36782a0933678dc187ec1c2ea4": {
+            "fullName": "2 Holdings Tappan St, Detroit, MI 48234",
+            "shortName": "2 Holdings Tappan",
+            "tokenPrice": 50.63,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8e1de7a9fd1b1b2d761a448d63c4429377624843": {
+            "fullName": "2 Holdings Arcola St, Detroit, MI 48234",
+            "shortName": "2 Holdings Arcola",
+            "tokenPrice": 50.78,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x70724f4332d7ee1918f71236c1746cdda732d90a": {
+            "fullName": "5733 Neely Ln, Montgomery, AL 36116",
+            "shortName": "5733 Neely",
+            "tokenPrice": 48.96,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x60139f99ddb56b846b998a655de2d775acd936a1": {
+            "fullName": "1991 Ewald Cir, Detroit, MI 48238",
+            "shortName": "1991 Ewald",
+            "tokenPrice": 50.47,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xaee6ded2c8723c1d81d1b5325a2e620fb055b77b": {
+            "fullName": "13700 Dexter Ave, Detroit, MI 48238",
+            "shortName": "13700 Dexter",
+            "tokenPrice": 50.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd0ef2feeef879eb6ceb23a7809f6bb39e13ff0a8": {
+            "fullName": "10822 Whitehill St, Detroit, MI 48224",
+            "shortName": "10822 Whitehill",
+            "tokenPrice": 50.04,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb0bd62447ec79ae63407f34d27cb7e536c28179e": {
+            "fullName": "14903 Promenade St, Detroit, MI 48213",
+            "shortName": "14903 Promenade",
+            "tokenPrice": 50.4,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x0e6a3fa67194ae6594edbe96153e28eefd2982f0": {
+            "fullName": "16051 E State Fair St, Detroit, MI 48205",
+            "shortName": "16051 E State Fair",
+            "tokenPrice": 49.65,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xec72022809156fb57564c8c3412e62dbc46298c3": {
+            "fullName": "13595 Griggs St, Detroit, MI 48238",
+            "shortName": "13595 Griggs",
+            "tokenPrice": 50.97,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x617e80813da122f0a25e09a731664b5530b8745c": {
+            "fullName": "15225 Bringard Dr, Detroit, MI 48205",
+            "shortName": "15225 Bringard",
+            "tokenPrice": 50.72,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1a1ec5ef70a643cd35376214e8a8f2ea0d92931d": {
+            "fullName": "5344-5346 Belvidere St, Detroit, MI 48213",
+            "shortName": "5344-5346 Belvidere",
+            "tokenPrice": 50.91,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x988b40198194ea79fd650d1c61db996b7dcd0780": {
+            "fullName": "12236 Sorrento Ave, Detroit, MI 48227",
+            "shortName": "12236 Sorrento",
+            "tokenPrice": 50.7,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7505ecf9cef3bc8c34f02bf7547921d2058f3d35": {
+            "fullName": "2476 Clements St, Detroit, MI 48238",
+            "shortName": "2476 Clements",
+            "tokenPrice": 50.45,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd1bf0f64eba2f8babfdf71de3e5cc9e33f97a46a": {
+            "fullName": "13510 Dale St, Detroit, MI 48223",
+            "shortName": "13510 Dale",
+            "tokenPrice": 50.63,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x4d6876bd8d2f44d64b13a83a58cef81860329ef4": {
+            "fullName": "15015 Ward Ave, Detroit, MI 48227",
+            "shortName": "15015 Ward",
+            "tokenPrice": 50.63,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xab269dcd4a424cb8fa9432adc37d021c3d183578": {
+            "fullName": "19731 Shields St, Detroit, MI 48234",
+            "shortName": "19731 Shields",
+            "tokenPrice": 50.89,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x69075fe74ea11c5da9d32af3d8d6971b11b55d88": {
+            "fullName": "1 Holdings Helen St, Detroit, MI 48234",
+            "shortName": "1 Holdings Helen",
+            "tokenPrice": 50.06,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xce0ef526bdc57064fe556a9b2614eeb66608892f": {
+            "fullName": "9950 Beaconsfield St, Detroit, MI 48224",
+            "shortName": "9950 Beaconsfield",
+            "tokenPrice": 50.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7d3f9309822a47e41dd4756dbe162580e2546f33": {
+            "fullName": "1 Holdings Strasburg St, Detroit, MI 48205",
+            "shortName": "1 Holdings Strasburg",
+            "tokenPrice": 50.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x423cc18b75c8a2331b2abb14d8bad8db84635870": {
+            "fullName": "15800 Tacoma St, Detroit, MI 48205",
+            "shortName": "15800 Tacoma",
+            "tokenPrice": 50.86,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x14082eef0e5ccc9d2d36cf627c45f07f3b0a54dd": {
+            "fullName": "17335 Bradford St, Detroit, MI 48205",
+            "shortName": "17335 Bradford",
+            "tokenPrice": 50.69,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5a722eda908e3db61c9a14cce757ce673f5e3a17": {
+            "fullName": "7913 Faith Ln, Montgomery, AL 36117",
+            "shortName": "7913 Faith",
+            "tokenPrice": 52.1,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5d1cdfb3038f25c331fef652f75b3339ac4c52a1": {
+            "fullName": "11401 Winthrop St, Detroit, MI 48227",
+            "shortName": "11401 Winthrop",
+            "tokenPrice": 50.66,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd54cc5999d383254334926c06405e5b800ffa1db": {
+            "fullName": "17157 Rowe St, Detroit, MI 48205",
+            "shortName": "17157 Rowe",
+            "tokenPrice": 50.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5128828a7a92583ec46cefecb8b4e127ef5f9e2c": {
+            "fullName": "20240 Rogge St, Detroit, MI 48234",
+            "shortName": "20240 Rogge",
+            "tokenPrice": 50.6,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7ca0118b50432d0a5c69f854ff017b6f22a10f88": {
+            "fullName": "11125 Craft St, Detroit, MI 48224",
+            "shortName": "11125 Craft",
+            "tokenPrice": 50.21,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x870cb517bede293cde2593ad97c0316dcea9a36b": {
+            "fullName": "9576 Grandmont Ave, Detroit, MI 48227",
+            "shortName": "9576 Grandmont",
+            "tokenPrice": 50.23,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc25d2de29428d0f5869b6b951e0f9fa19c414156": {
+            "fullName": "18415 Fielding St, Detroit, MI 48219",
+            "shortName": "18415 Fielding",
+            "tokenPrice": 50.34,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6607908da701d27f206b360fa46d5b00ceeb4b40": {
+            "fullName": "3015 Northwestern St, Detroit, MI 48206",
+            "shortName": "3015 Northwestern",
+            "tokenPrice": 50.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf070fbec84004ff48ca17bd6523f4d4448cd656f": {
+            "fullName": "18662 Blackmoor St, Detroit, MI 48234",
+            "shortName": "18662 Blackmoor",
+            "tokenPrice": 50.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf6e71d448e612341b21cc537cfbd87290d760926": {
+            "fullName": "12130 Manor St, Detroit, MI 48204",
+            "shortName": "12130 Manor",
+            "tokenPrice": 51.79,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xeb3b5f86904d671747d8c41e6dbdfa2aadcdf72f": {
+            "fullName": "1 Holdings W Arizona St, Highland Park, MI 48203",
+            "shortName": "1 Holdings W Arizona",
+            "tokenPrice": 50.11,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa3947ea22a8200b217885a7e9c9bcbf704349509": {
+            "fullName": "1 Holdings Monterey St, Detroit, MI 48206",
+            "shortName": "1 Holdings Monterey",
+            "tokenPrice": 50.92,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x707d18db2f7ffdb79d99dedf8f2110cb8966d7ff": {
+            "fullName": "15860 Steel Ave, Detroit, MI 48227",
+            "shortName": "15860 Steel",
+            "tokenPrice": 50.38,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x11d2b6613cbebb4172ef9507286e47c99e3a4b37": {
+            "fullName": "15019 Steel Ave, Detroit, MI 48227",
+            "shortName": "15019 Steel",
+            "tokenPrice": 50.31,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x99b9150b78968bf6d8a03723931b86caf632395a": {
+            "fullName": "15003 Appoline St, Detroit, MI 48227",
+            "shortName": "15003 Appoline",
+            "tokenPrice": 50.73,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc7697f5e86a102eaf4000719a2dc477d65beea7d": {
+            "fullName": "16728-16730 Woodingham Dr, Detroit, MI 48221",
+            "shortName": "16728-16730 Woodingham",
+            "tokenPrice": 50.49,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf580651ba2090fd8ba5a6bdc999f46dc6532f894": {
+            "fullName": "14872 Ilene St, Detroit, MI 48238",
+            "shortName": "14872 Ilene",
+            "tokenPrice": 50.91,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8e282bcc52ef32273ccdc4efdb5b207888f173e6": {
+            "fullName": "8644 Greenview Ave, Detroit, MI 48228",
+            "shortName": "8644 Greenview",
+            "tokenPrice": 50.2,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x921db869845dfea51c7c9eb0395b8d6563ebeb5d": {
+            "fullName": "15285 Fordham St, Detroit, MI 48205",
+            "shortName": "15285 Fordham",
+            "tokenPrice": 50.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x076c82295af54a4507fa80c73a928c5703b845ee": {
+            "fullName": "18429 Fielding St, Detroit, MI 48219",
+            "shortName": "18429 Fielding",
+            "tokenPrice": 50.46,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe68de6869bb58acf8ce4dbdccf1b26c5d1b6050c": {
+            "fullName": "12047 Nashville St, Detroit, MI 48205",
+            "shortName": "12047 Nashville",
+            "tokenPrice": 50.21,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x041cc71b3bce05d06179f05ef7a9a20bd0815515": {
+            "fullName": "6515-6517 Boxwood St, Detroit, MI 48210",
+            "shortName": "6515-6517 Boxwood",
+            "tokenPrice": 50.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa918027e8e41152ca3420e78a09000ab40adb99b": {
+            "fullName": "3742-3746 Whitney St, Detroit, MI 48206",
+            "shortName": "3742-3746 Whitney",
+            "tokenPrice": 50.14,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbfe5ea655166328db63e58c9a683d44b0e769a04": {
+            "fullName": "10048 Grayton St, Detroit, MI 48224",
+            "shortName": "10048 Grayton",
+            "tokenPrice": 51.76,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1d315b60ede11012ff8c980acd7cad65ac7ebdee": {
+            "fullName": "20521 Hull St, Detroit, MI 48203",
+            "shortName": "20521 Hull",
+            "tokenPrice": 50.19,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x478a4a6b4b864b0e633d15c73573877b0154e286": {
+            "fullName": "19335 Rutherford St, Detroit, MI 48235",
+            "shortName": "19335 Rutherford",
+            "tokenPrice": 51.41,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf14cfe2ab33ee647f9f59ef99e45891c6ad55f2f": {
+            "fullName": "18605 Orleans St, Detroit, MI 48203",
+            "shortName": "18605 Orleans",
+            "tokenPrice": 50.42,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xff4cfb758c8bc84ecc76968e82cb949ba22401d3": {
+            "fullName": "19555 Barlow St, Detroit, MI 48205",
+            "shortName": "19555 Barlow",
+            "tokenPrice": 50.11,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xb10a25660abeb2b9d5a9abd8044687b648e7f1d0": {
+            "fullName": "13885 Bringard Dr, Detroit, MI 48205",
+            "shortName": "13885 Bringard",
+            "tokenPrice": 50.28,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5ff86216bac301010d471e4b0f659a68cca4f0c6": {
+            "fullName": "12789 Birwood St, Detroit, MI 48238",
+            "shortName": "12789 Birwood",
+            "tokenPrice": 50.07,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd590ab93067c473fb0647e7a8271979447519db0": {
+            "fullName": "20013 Revere St, Detroit, MI 48234",
+            "shortName": "20013 Revere",
+            "tokenPrice": 50.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc84842aa7578924962e48f39c4ebfb5d52e5dfd8": {
+            "fullName": "18703 Gilchrist St, Detroit, MI 48235",
+            "shortName": "18703 Gilchrist",
+            "tokenPrice": 50.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x5767851017f7849f6cd3b4b76bd58b727293116e": {
+            "fullName": "15011 Monte Vista St, Detroit, MI 48238",
+            "shortName": "15011 Monte Vista",
+            "tokenPrice": 50.33,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x7e66a381cee09e1dc8cc489734c186ca6217cb33": {
+            "fullName": "15720 Snowden St, Detroit, MI 48227",
+            "shortName": "15720 Snowden",
+            "tokenPrice": 50.32,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x038eb5001b6a7050fed40816321138e69f8f885b": {
+            "fullName": "11441-11443 Flanders St, Detroit, MI 48205",
+            "shortName": "11441-11443 Flanders",
+            "tokenPrice": 50.35,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xeffc3018fe9da6ca48f384d512da972217c596c3": {
+            "fullName": "9164 Longridge Dr, St. Louis, MO 63137",
+            "shortName": "9164 Longridge",
+            "tokenPrice": 50.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc9eb6e26bb3d773eb085827f62a162f570af92a7": {
+            "fullName": "1760 Elkins Dr, St. Louis, MO 63136",
+            "shortName": "1760 Elkins",
+            "tokenPrice": 50.4,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xef72555b093563ca00fb3493a165787f19e8dbb6": {
+            "fullName": "22 Lamar Dr, Jennings, MO 63136",
+            "shortName": "22 Lamar",
+            "tokenPrice": 50.31,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1bac3cd502cafe965a26f30fd1512a0800fdb9b7": {
+            "fullName": "Lucero Club 1R4, Boquete, Chiriqui, Panama",
+            "shortName": "Lucero Club 1R4",
+            "tokenPrice": 50.73,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x09106ba56f708b353fe252dd0749c913a3e8a5e1": {
+            "fullName": "1 Holdings McCracken Rd, Garfield Heights, OH 44125",
+            "shortName": "1 Holdings McCracken",
+            "tokenPrice": 50.29,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x6bb5e9cc5fd37cc3f1fcb3f5ebf465a453518501": {
+            "fullName": "18014 North Blvd, Maple Heights, OH 44137",
+            "shortName": "18014 North",
+            "tokenPrice": 50.51,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x347892d4cd347d546ec6ba9f70e77a7c03257e66": {
+            "fullName": "5250 Philip Ave, Maple Heights, OH 44137",
+            "shortName": "5250 Philip",
+            "tokenPrice": 50.11,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x16bea6810b951b647427983ed14710fd1c6a36e1": {
+            "fullName": "10807 Wadsworth Ave, Garfield Heights, OH 44125",
+            "shortName": "10807 Wadsworth",
+            "tokenPrice": 50.01,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x9636b0af2bfef88c1de3c35b21c0fa58f5e1a38e": {
+            "fullName": "16704 Talford Ave, Cleveland, OH 44128",
+            "shortName": "16704 Talford",
+            "tokenPrice": 50.44,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1117ee7306c82190109869a1721021b96d6a249d": {
+            "fullName": "857 E 222nd St, Euclid, OH 44123",
+            "shortName": "857 E 222nd",
+            "tokenPrice": 50.3,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x25042768d3cb2bfb5f8757dd151bb91fad727d46": {
+            "fullName": "295 E 238th St, Euclid, OH 44123",
+            "shortName": "295 E 238th",
+            "tokenPrice": 50.37,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x676af6cbfd595fe9a3c392e551082def6e6bb397": {
+            "fullName": "4638 Blythin Rd, Garfield Heights, OH 44125",
+            "shortName": "4638 Blythin",
+            "tokenPrice": 50.05,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf87749b95a5179f36ce75b52c7d3d5a6dd28fe19": {
+            "fullName": "10621 Vernon Ave, Garfield Heights, OH 44125",
+            "shortName": "10621 Vernon",
+            "tokenPrice": 50.81,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x24442006539fbf90f394cf162fcc2bc98c91d9a2": {
+            "fullName": "15715 Talford Ave, Cleveland, OH 44128",
+            "shortName": "15715 Talford",
+            "tokenPrice": 50.42,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x41117a12a97268906623e241590a1bbe6608275e": {
+            "fullName": "4252 E 163rd St, Cleveland, OH 44128",
+            "shortName": "4252 E 163rd",
+            "tokenPrice": 51.01,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x693eb3a103cf5ecc0bc8790392c6bebd95b0a8b4": {
+            "fullName": "4315 E 119th St, Cleveland, OH 44105",
+            "shortName": "4315 E 119th",
+            "tokenPrice": 49.94,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x15f3197d43600720531bc92d6a55827b82da56bb": {
+            "fullName": "1220 E 173rd St, Cleveland, OH 44119",
+            "shortName": "1220 E 173rd",
+            "tokenPrice": 49.96,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd46f25e687b6cbdf71a6981b9937baece791decf": {
+            "fullName": "3544 E 133rd St, Cleveland, OH 44120",
+            "shortName": "3544 E 133rd",
+            "tokenPrice": 50.17,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa5f2a5bcd08ddf43a06bc835de8754257e2788ff": {
+            "fullName": "19396 Westphalia St, Detroit, MI 48205",
+            "shortName": "19396 Westphalia",
+            "tokenPrice": 50.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xc73abb210b1ee3304987c310626f19432b2e17b4": {
+            "fullName": "14256 Montrose St, Detroit, MI 48227",
+            "shortName": "14256 Montrose",
+            "tokenPrice": 50.95,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xbcb0ce83aa0898fbd26c35f38d8a448bcadf7333": {
+            "fullName": "14176 Plainview Ave, Detroit, MI 48223",
+            "shortName": "14176 Plainview",
+            "tokenPrice": 50.67,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x2f4d0bb24bec3c57b65c1589b1d696bc6c1822d1": {
+            "fullName": "1174 Chalmers St, Detroit, MI 48123",
+            "shortName": "1174 Chalmers",
+            "tokenPrice": 50.98,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xe5c68e1acae47251fa2edb795b9ddb18cddecc52": {
+            "fullName": "15303 Liberal St, Detroit, MI 48205",
+            "shortName": "15303 Liberal",
+            "tokenPrice": 50.31,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xa1f40b6f4df7d9ba5978a0cdb5ab31d6446dce21": {
+            "fullName": "16910 Grovewood Ave, Cleveland, OH 44110",
+            "shortName": "16910 Grovewood",
+            "tokenPrice": 50.86,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xf1e9d68db090bd79151bfbfca323e00177decce0": {
+            "fullName": "1866 Reyburn Rd, Cleveland, OH 44112",
+            "shortName": "1866 Reyburn",
+            "tokenPrice": 50.48,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x78f5268a7d646ef04c9d5869adae6b7654bdb725": {
+            "fullName": "8308 Denison Ave, Cleveland, OH 44102",
+            "shortName": "8308 Denison",
+            "tokenPrice": 50.07,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8f1bedf87b6382f80da197dde690d8ff7455d19a": {
+            "fullName": "4218 Denison Ave, Cleveland, OH 44109",
+            "shortName": "4218 Denison",
+            "tokenPrice": 50.34,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8980070153a3f76128122a20837f84b2b1513665": {
+            "fullName": "2953 E 120th St, Cleveland, OH 44120",
+            "shortName": "2953 E 120th",
+            "tokenPrice": 50.9,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xd8fb5b929b08a60fc50d319d6c5ce21d61c7fd83": {
+            "fullName": "5933 Moran St, Detroit, MI 48211",
+            "shortName": "5933 Moran",
+            "tokenPrice": 50.56,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xfdac8839e977bb556c85cea620cdee02339a6893": {
+            "fullName": "8565 Northlawn St, Detroit, MI 48204",
+            "shortName": "8565 Northlawn",
+            "tokenPrice": 50.49,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x696140e761afb57d7f2adc970c2b0e200975ee63": {
+            "fullName": "3514 Medbury St, Detroit, MI 48211",
+            "shortName": "3514 Medbury",
+            "tokenPrice": 50.24,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xcbbb0da4bfe47876e977f3c1f40ebce23315e8d4": {
+            "fullName": "927 Buckeye Dr, St. Louis, MO 63135",
+            "shortName": "927 Buckeye",
+            "tokenPrice": 50.18,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0xeda173774c85319f1823ecbc593940567a7b254f": {
+            "fullName": "2411 Caverhill Dr, St. Louis, MO 63136",
+            "shortName": "2411 Caverhill",
+            "tokenPrice": 50.14,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x851535916a25b08933891ba1f2f6daa86f309a4d": {
+            "fullName": "1 Holdings Crowley Dr, St. Louis, MO 63136",
+            "shortName": "1 Holdings Crowley",
+            "tokenPrice": 50.33,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x558686234a9cdc02358a8e0b32a81787a1401334": {
+            "fullName": "10465 Decker Ave, St. Louis, MO 63114",
+            "shortName": "10465 Decker",
+            "tokenPrice": 50,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x8f2f4650ec6464cf1bb060755a76e67fa2c30f24": {
+            "fullName": "1559 Hudson Rd, St. Louis, MO 63136",
+            "shortName": "1559 Hudson",
+            "tokenPrice": 50.05,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x1eb856a1359495cda8f18cac8785342b23dd84bf": {
+            "fullName": "11949 Del Reo Ct, St. Louis, MO 63138",
+            "shortName": "11949 Del Reo",
+            "tokenPrice": 50.63,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        },
+        "0x37615845672006267d9c6ac070edc5623b9a9695": {
+            "fullName": "528 Thurston Ave, St. Louis, MO 63134",
+            "shortName": "528 Thurston",
+            "tokenPrice": 50.28,
+            "currency": "USD",
+            "productType": "real_estate_rental"
+        }
+    }
+}

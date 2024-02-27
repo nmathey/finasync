@@ -59,7 +59,11 @@ Known limitations:
 -	Single wallet only
 
 Usage (once signin):
+- For syncing as indvidual real estate property in "real estates" Finary category (API Key needed)
 	`poetry run python -m finasync realt rent`
+
+- For syncing as a single portfolio line in "others assets" category (API Key NOT NEEDED but way less details)
+  	`poetry run python -m finasync realt other`
 
 It will sync your RealT portfolio hosted on the blockchain to your Finary account.
 

@@ -14,14 +14,21 @@ from finary_uapi.user_real_estates import (
     update_user_real_estates,
     add_user_real_estates,
     add_user_real_estates_with_currency,
+
 )
 
-from finary_uapi.user_me import get_display_currency_code
+from finary_uapi.user_me import get_display_currency_code, update_display_currency_by_code
+
+from finary_uapi.user_generic_assets import (
+    get_user_generic_assets,
+    add_user_generic_asset,
+)
 
 from .constants import (
     GNOSIS_API_TOKENLIST_URI,
     REALT_API_TOKENLIST_URI,
     REALT_OFFLINE_TOKENS_LIST,
+    REALT_OFFLINE_TOKENS_LIST_FREE,
 )
 from .utils import convert_currency
 
@@ -428,5 +435,102 @@ def delete_all_realt_rentals_finary(session: requests.Session):
     for key in myFinary_realT:
         delete_user_real_estates(session, myFinary_realT[key]["finary_id"])
         logging.info("Deleting " + myFinary_realT[key]["description"])
+
+    return 0
+
+def get_realtportfolio_other_finary_id(session: requests.Session):
+    myFinary_realt_portfolio = get_user_generic_assets(session)
+    myFinary_realt_portfolio = list(
+        filter(
+            lambda x: re.match("^RealT Portfolio", x["name"]),
+            myFinary_realt_portfolio["result"],
+        )
+    )
+    logging.debug("My RealT Finary portfolio")
+    logging.debug(myFinary_realt_portfolio)
+    
+    if myFinary_realt_portfolio:
+        return myFinary_realt_portfolio[0]["id"]
+    else:
+        return None
+
+def get_realt_token_details_free(realt_token_contractAdress):
+    Now_Time = datetime.today()
+    RealT_OfflineTokensList_Path = Path(REALT_OFFLINE_TOKENS_LIST_FREE)
+    RealT_OfflineTokensList_Path.touch(exist_ok=True)
+    with open(RealT_OfflineTokensList_Path) as json_file:
+        try:
+            RealT_OfflineTokensList = json.load(json_file)
+        except JSONDecodeError:
+            RealT_OfflineTokensList = {
+                "info": {
+                    "last_sync": str(datetime.timestamp(Now_Time - timedelta(weeks=2)))
+                },
+                "data": {},
+            }
+
+    # Update offlineTokensList from RealT API only if more than 1 week old
+    if float(RealT_OfflineTokensList["info"]["last_sync"]) < datetime.timestamp(
+        Now_Time - timedelta(weeks=1)
+    ):
+        MyRealT_API_Header = {
+            "Accept": "*/*",
+        }
+
+        TokensListReq = requests.get(
+            REALT_API_TOKENLIST_URI, headers=MyRealT_API_Header
+        )
+
+        TokensList = TokensListReq.json()
+        logging.debug("Tokens list details from API RealT - Free call")
+        logging.debug(TokensList)
+        for item in TokensList:
+            RealT_OfflineTokensList["data"].update(
+                {
+                    item.get("uuid").lower(): {
+                        "fullName": item.get("fullName"),
+                        "shortName": item.get("shortName"),
+                        "tokenPrice": item.get("tokenPrice"),
+                        "currency": item.get("currency"),
+                        "productType": item.get("productType"),
+                    }
+                }
+            )
+
+        RealT_OfflineTokensList["info"]["last_sync"] = str(datetime.timestamp(Now_Time))
+        with open(RealT_OfflineTokensList_Path, "w") as outfile:
+            json.dump(RealT_OfflineTokensList, outfile, indent=4)
+
+    return RealT_OfflineTokensList["data"][realt_token_contractAdress]
+
+def get_realtportfolio_value(wallet_address):
+    myRealT_rentals = json.loads(get_realt_rentals_blockchain(wallet_address))
+
+    myRealT_portfolio_value = 0
+    for key in myRealT_rentals:
+        token_details_free = get_realt_token_details_free(key)
+        myRealT_portfolio_value = myRealT_portfolio_value + myRealT_rentals[key]['balance'] * token_details_free['tokenPrice']
+
+    return myRealT_portfolio_value
+
+def sync_realtportfolio_other(session: requests.Session, wallet_address):
+
+    # Get current RealT Portfolio from Finary
+    myFinary_RealTPortfolio_id = get_realtportfolio_other_finary_id(session)
+    myRealT_Portfolio_value = get_realtportfolio_value(wallet_address)
+    
+    if myFinary_RealTPortfolio_id is not None:
+        print("updating RealtT Portfolio id " + str(myFinary_RealTPortfolio_id))
+    else:
+        myFinary_displaycurrency = get_display_currency_code(session)
+        if myFinary_displaycurrency != "USD":
+            update_display_currency_by_code(session, "USD")
+            add_user_generic_asset(session, "RealT Portfolio", "other", 1 , myRealT_Portfolio_value , myRealT_Portfolio_value)
+            time.sleep(0.02)
+            update_display_currency_by_code(session, myFinary_displaycurrency)
+        else:
+            add_user_generic_asset(session, "RealT Portfolio", "other", 1 , myRealT_Portfolio_value , myRealT_Portfolio_value)
+
+    print("adding RealtT Portfolio in other assets category for a value of " + str(myRealT_Portfolio_value))
 
     return 0

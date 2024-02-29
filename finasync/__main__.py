@@ -25,6 +25,7 @@ from .realt import (
     sync_realtportfolio_other, 
     delete_realtportfolio_other_finary,
     sync_realtproperties_other,
+    delete_realtproperties_other_finary,
 )
 
 
@@ -68,7 +69,7 @@ def main() -> int:  # pragma: nocover
                     )
             if args["other-detailed"]:
                 if args["delete"]:
-                    print ("delete")
+                    result = delete_realtproperties_other_finary(session)
                 else:
                     result = sync_realtproperties_other(session, os.environ["MYREALT_WALLET_ADDRESS"])
     if result:

@@ -551,3 +551,136 @@ def delete_realtportfolio_other_finary(session: requests.Session):
     logging.info("Deleting " + str(myFinary_RealTPortfolio['id']))
 
     return 0
+
+def get_realt_others_finary(session: requests.Session):
+    myFinary_realT_generic_assets = get_user_generic_assets(session)
+    myFinary_realT_generic_assets = list(
+        filter(
+            lambda x: re.match("^RealT -", x["name"]),
+            myFinary_realT_generic_assets["result"],
+        )
+    )
+    logging.debug("My RealT Finary portfolio")
+    logging.debug(myFinary_realT_generic_assets)
+    myFinary_realT_others = {}
+    for item in myFinary_realT_generic_assets:
+        contractAddress = re.findall(r"0x.+", str(item.get("name")))
+        name = re.findall(r"- (.*) -", str(item.get("name")))
+        myFinary_realT_others.update(
+            {
+                contractAddress[0].lower(): {
+                    "name": name[0],
+                    "contractAddress": contractAddress[0].lower(),
+                    "finary_id": item.get("id"),
+                    "buying_price": item.get("buying_price"),
+                    "balance": item.get("quantity"),
+                }
+            }
+        )
+
+    return json.dumps(myFinary_realT_others)
+
+## A FAIRE ##
+def sync_realtproperties_other(session: requests.Session, wallet_address):
+    # Get current Finary RealT others assets portfolio
+    myFinary_realT_others = json.loads(get_realt_others_finary(session))
+
+    # Get current RealT rent from wallet
+    myRealT_rentals = json.loads(get_realt_rentals_blockchain(wallet_address))
+
+    # If finary RealT rentals not in RealT wallet then delete otherwise update
+    myFinary_displaycurrency = get_display_currency_code(session)
+    logging.debug("UI Display currency: " + myFinary_displaycurrency)
+    for key in myFinary_realT_others:
+        if key not in myRealT_rentals:
+            delete_user_generic_asset(session, myFinary_realT_others[key]["fianry_id"])
+            logging.info("Deleting " + myFinary_realT_others[key]["name"])
+        else:
+            token_details_free = get_realt_token_details_free(key)
+
+            # Handling currency
+            logging.debug("UI Display currency: " + myFinary_displaycurrency)
+            logging.info(
+                "updating "
+                + myFinary_realT_others[key]["name"]
+                + " balance to "
+                + str(myRealT_rentals[key]["balance"])
+            )
+            update_user_generic_asset(
+                session,
+                myFinary_realT_others[key]['finary_id'],
+                "RealT - " + token_details["fullName"] + " - " + key,
+                "other",
+                myRealT_rentals[key]["balance"],
+                myFinary_realT_others[key]['buying_price'],
+                token_details_free["tokenPrice"]
+            )
+
+    # If Realt token in wallet not in Finary then add
+    for key in myRealT_rentals:
+        if key not in myFinary_realT_others:
+            token_details_free = get_realt_token_details_free(key)
+
+            logging.info(
+                    "add "
+                    + str(myRealT_rentals[key]["balance"])
+                    + " "
+                    + token_details_free["shortName"]
+                    + " @ "
+                    + str(token_details_free["tokenPrice"])
+                )
+            # Handling currency
+            if token_details_free["currency"] == myFinary_displaycurrency:
+                # if property currency same as display currency
+                logging.debug("Property with same currency as display currency : just add it")
+                add_user_generic_asset(
+                    session,
+                    "RealT - " + token_details_free["fullName"] + " - " + key,
+                    "other",
+                    myRealT_rentals[key]["balance"],
+                    token_details_free["tokenPrice"],
+                    token_details_free["tokenPrice"]
+                )
+            elif (
+                token_details_free["currency"] == "EUR"
+                or "USD"
+                or "SGD"
+                or "CHF"
+                or "GBP"
+                or "CAD"
+            ):
+                # if property currency different than display currency but Finary compatible
+                logging.debug("Property with compatible Finary currency: swicthing display currency")
+                if myFinary_displaycurrency != "USD":
+                    update_display_currency_by_code(session, "USD")
+                    add_user_generic_asset(
+                        session,
+                        "RealT - " + token_details_free["fullName"] + " - " + key,
+                        "other",
+                        myRealT_rentals[key]["balance"],
+                        token_details_free["tokenPrice"],
+                        token_details_free["tokenPrice"]
+                    )
+                time.sleep(0.2)
+                update_display_currency_by_code(session, myFinary_displaycurrency)
+            else:
+                # if property currency not USD then convert in display currency
+                logging.debug("Property not in USD: converting in display currency")
+                add_user_generic_asset(
+                        session,
+                        "RealT - " + token_details_free["fullName"] + " - " + key,
+                        "other",
+                        myRealT_rentals[key]["balance"],
+                        convert_currency(
+                            token_details_free["tokenPrice"],
+                            token_details_fre["currency"],
+                            myFinary_displaycurrency,
+                        ),
+                        convert_currency(
+                            token_details_free["tokenPrice"],
+                            token_details_free["currency"],
+                            myFinary_displaycurrency,
+                        )
+                    )
+
+    return 0

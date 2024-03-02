@@ -62,8 +62,17 @@ Usage (once signin):
 - For syncing as indvidual real estate property in "real estates" Finary category (API Key needed)
 	`poetry run python -m finasync realt rent`
 
+	To delete everything created with this command: `finasync realt rent deleteall`
+
+- For syncing as a single portfolio line in "others assets" category (API Key NOT NEEDED but less properties details)
+  	`poetry run python -m finasync realt other-detailed`
+
+	To delete everything created with this command: `finasync realt other-detailed delete`
+
 - For syncing as a single portfolio line in "others assets" category (API Key NOT NEEDED but way less details)
   	`poetry run python -m finasync realt other`
+
+	To delete everything created with this command: `finasync realt other delete`
 
 It will sync your RealT portfolio hosted on the blockchain to your Finary account.
 

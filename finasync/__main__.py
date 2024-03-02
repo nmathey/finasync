@@ -8,6 +8,7 @@ Usage:
     finasync realt other
     finasync realt other delete
     finasync realt other-detailed
+    finasync realt other-detailed delete
 """
 import json
 import sys

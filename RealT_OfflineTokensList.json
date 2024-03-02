@@ -1,6 +1,6 @@
 {
     "info": {
-        "last_sync": "1708218432.479467"
+        "last_sync": "1709181288.340666"
     },
     "data": {
         "0xe5f7ef61443fc36ae040650aa585b0395aef77c8": {
@@ -1686,7 +1686,7 @@
         "0xa29ae272bc89e5f315b2793925f700045f845d82": {
             "fullName": "581-587 Jefferson Ave, Rochester, NY 14611",
             "shortName": "581-587 Jefferson",
-            "tokenPrice": 58.48,
+            "tokenPrice": 41.5,
             "currency": "USD",
             "rentStartDate": {
                 "date": "2020-11-30 00:00:00.000000",
@@ -1695,7 +1695,7 @@
             },
             "squareFeet": 9326,
             "totalTokens": 10000,
-            "totalInvestment": 584800,
+            "totalInvestment": 415000,
             "grossRentMonth": null,
             "propertyManagement": 0,
             "realtPlatform": null,
@@ -13706,8 +13706,8 @@
             "netRentMonth": 623.5,
             "netRentMonthPerToken": 0.41566666666667,
             "coordinate": {
-                "lat": "42.400502",
-                "lng": "-83.734822"
+                "lat": "42.399019",
+                "lng": "-83.161336"
             },
             "propertyType": 1,
             "rentalType": "long_term",
@@ -15178,6 +15178,216 @@
             "coordinate": {
                 "lat": "42.376204",
                 "lng": "-83.036159"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xcbbb0da4bfe47876e977f3c1f40ebce23315e8d4": {
+            "fullName": "927 Buckeye Dr, St. Louis, MO 63135",
+            "shortName": "927 Buckeye",
+            "tokenPrice": 50.18,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-05-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1092,
+            "totalTokens": 1730,
+            "totalInvestment": 86811.4,
+            "grossRentMonth": null,
+            "propertyManagement": 91.2,
+            "realtPlatform": null,
+            "insurance": 80,
+            "propertyTaxes": 144,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 682,
+            "netRentMonthPerToken": 0.39421965317919,
+            "coordinate": {
+                "lat": "38.761331",
+                "lng": "-90.315924"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0xeda173774c85319f1823ecbc593940567a7b254f": {
+            "fullName": "2411 Caverhill Dr, St. Louis, MO 63136",
+            "shortName": "2411 Caverhill",
+            "tokenPrice": 50.14,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-05-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 938,
+            "totalTokens": 1730,
+            "totalInvestment": 86742.2,
+            "grossRentMonth": null,
+            "propertyManagement": 88.8,
+            "realtPlatform": null,
+            "insurance": 80,
+            "propertyTaxes": 140,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 659,
+            "netRentMonthPerToken": 0.38092485549133,
+            "coordinate": {
+                "lat": "38.737321",
+                "lng": "-90.244422"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x851535916a25b08933891ba1f2f6daa86f309a4d": {
+            "fullName": "1 Holdings Crowley Dr, St. Louis, MO 63136",
+            "shortName": "1 Holdings Crowley",
+            "tokenPrice": 50.33,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-05-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1775,
+            "totalTokens": 3560,
+            "totalInvestment": 179174.8,
+            "grossRentMonth": null,
+            "propertyManagement": 168.32,
+            "realtPlatform": null,
+            "insurance": 80,
+            "propertyTaxes": 310,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 1383.6,
+            "netRentMonthPerToken": 0.38865168539326,
+            "coordinate": {
+                "lat": "38.766100",
+                "lng": "-90.269615"
+            },
+            "propertyType": 10,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x558686234a9cdc02358a8e0b32a81787a1401334": {
+            "fullName": "10465 Decker Ave, St. Louis, MO 63114",
+            "shortName": "10465 Decker",
+            "tokenPrice": 50,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-05-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 882,
+            "totalTokens": 1850,
+            "totalInvestment": 92500,
+            "grossRentMonth": null,
+            "propertyManagement": 96,
+            "realtPlatform": null,
+            "insurance": 80,
+            "propertyTaxes": 175,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 705,
+            "netRentMonthPerToken": 0.38108108108108,
+            "coordinate": {
+                "lat": "38.708917",
+                "lng": "-90.388552"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x8f2f4650ec6464cf1bb060755a76e67fa2c30f24": {
+            "fullName": "1559 Hudson Rd, St. Louis, MO 63136",
+            "shortName": "1559 Hudson",
+            "tokenPrice": 50.05,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-05-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1014,
+            "totalTokens": 1840,
+            "totalInvestment": 92092,
+            "grossRentMonth": null,
+            "propertyManagement": 101.6,
+            "realtPlatform": null,
+            "insurance": 80,
+            "propertyTaxes": 217,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 726,
+            "netRentMonthPerToken": 0.3945652173913,
+            "coordinate": {
+                "lat": "38.761015",
+                "lng": "-90.275742"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x1eb856a1359495cda8f18cac8785342b23dd84bf": {
+            "fullName": "11949 Del Reo Ct, St. Louis, MO 63138",
+            "shortName": "11949 Del Reo",
+            "tokenPrice": 50.63,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-05-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1040,
+            "totalTokens": 1750,
+            "totalInvestment": 88602.5,
+            "grossRentMonth": null,
+            "propertyManagement": 95.6,
+            "realtPlatform": null,
+            "insurance": 80,
+            "propertyTaxes": 200,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 675.5,
+            "netRentMonthPerToken": 0.386,
+            "coordinate": {
+                "lat": "38.786413",
+                "lng": "-90.193396"
+            },
+            "propertyType": 1,
+            "rentalType": "long_term",
+            "productType": "real_estate_rental"
+        },
+        "0x37615845672006267d9c6ac070edc5623b9a9695": {
+            "fullName": "528 Thurston Ave, St. Louis, MO 63134",
+            "shortName": "528 Thurston",
+            "tokenPrice": 50.28,
+            "currency": "USD",
+            "rentStartDate": {
+                "date": "2024-05-01 00:00:00.000000",
+                "timezone_type": 3,
+                "timezone": "UTC"
+            },
+            "squareFeet": 1554,
+            "totalTokens": 1850,
+            "totalInvestment": 93018,
+            "grossRentMonth": null,
+            "propertyManagement": 94.8,
+            "realtPlatform": null,
+            "insurance": 80,
+            "propertyTaxes": 132,
+            "propertyMaintenanceMonthly": 120,
+            "utilities": 0,
+            "netRentMonth": 734.5,
+            "netRentMonthPerToken": 0.39702702702703,
+            "coordinate": {
+                "lat": "38.754791",
+                "lng": "-90.318550"
             },
             "propertyType": 1,
             "rentalType": "long_term",

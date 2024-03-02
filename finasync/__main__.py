@@ -7,6 +7,8 @@ Usage:
     finasync realt rent deleteall
     finasync realt other
     finasync realt other delete
+    finasync realt other-detailed
+    finasync realt other-detailed delete
 """
 import json
 import sys
@@ -18,7 +20,14 @@ from finary_uapi.auth import prepare_session
 from finary_uapi.signin import signin
 from finary_uapi.user_me import get_user_me
 
-from .realt import sync_realt_rent, delete_all_realt_rentals_finary, sync_realtportfolio_other, delete_realtportfolio_other_finary
+from .realt import (
+    sync_realt_rent, 
+    delete_all_realt_rentals_finary, 
+    sync_realtportfolio_other, 
+    delete_realtportfolio_other_finary,
+    sync_realtproperties_other,
+    delete_realtproperties_other_finary,
+)
 
 
 def main() -> int:  # pragma: nocover
@@ -59,6 +68,11 @@ def main() -> int:  # pragma: nocover
                     result = sync_realtportfolio_other(
                         session, os.environ["MYREALT_WALLET_ADDRESS"]
                     )
+            if args["other-detailed"]:
+                if args["delete"]:
+                    result = delete_realtproperties_other_finary(session)
+                else:
+                    result = sync_realtproperties_other(session, os.environ["MYREALT_WALLET_ADDRESS"])
     if result:
         print(json.dumps(result, indent=4))
 

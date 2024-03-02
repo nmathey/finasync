@@ -62,12 +62,12 @@ Usage (once signin):
 - For syncing as indvidual real estate property in "real estates" Finary category (API Key needed)
 	`poetry run python -m finasync realt rent`
 
-	To delete everything created with this command: `finasync realt rent deleteall`
+	To delete everything created with this command: `poetry run finasync realt rent deleteall`
 
 - For syncing every each properties in "others assets" category (API Key NOT NEEDED but less properties details)
   	`poetry run python -m finasync realt other-detailed`
 
-	To delete everything created with this command: `finasync realt other-detailed delete`
+	To delete everything created with this command: `poetry run finasync realt other-detailed delete`
 
 - For syncing as a single portfolio line in "others assets" category (API Key NOT NEEDED but way less details)
   	`poetry run python -m finasync realt other`

@@ -182,7 +182,9 @@ def get_real_tokens_rmm_by_address_query():
             amount
             token {
                 symbol
+                name
                 address
+                price
             }
         }
     }
@@ -192,9 +194,14 @@ def get_realt_rentals_blockchain(wallet_address):
     realT_rentals_rmm = get_realt_rentals_rmm(wallet_address)
     for token_info in realT_rentals_rmm:
         realt_token_amount = int(token_info['amount']) / 1e18
-        approx_usd_value = realt_token_amount * 50
-        log_message = f"RMM Property found: {token_info['token']['symbol']}, Amount: {realt_token_amount} tokens, Approximate value: ${approx_usd_value:.2f}"
-        print(log_message)
+        token_price = int(token_info['token']['price']) / 1e8
+        total_value = realt_token_amount * token_price
+
+        log_message = f"RMM Property found: {token_info['token']['name']}, " \
+                    f"Amount: {realt_token_amount} tokens, " \
+                    f"Price per token: ${token_price:.2f}, " \
+                    f"Total value: ${total_value:.2f}"
+        logging.info(log_message)
 
     myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)
     myRealT_rentals = {}

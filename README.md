@@ -39,6 +39,12 @@ Try `poetry run python -m finasync me`
 
 If you get errors about being unauthorized, you need to signin again.
 
+You may be prompted to provide a two-factor authentication code during sign-in. If so, replace `YOUR_AUTH_CODE` with the code from your authenticator app:
+
+```bash
+poetry run python -m finasync signin YOUR_AUTH_CODE
+```
+
 ## Current integrated platform
 
 **RealT**:

@@ -4,38 +4,48 @@
 </p>
 
 
-# Finary unofficial portfolio sync tool
+# Finary Unofficial Portfolio Sync Tool
 
-A simple tool to sync your Finary portfolio values with sources platforms not yet officially integrated by Finary teams.
+## Overview
+This tool enables synchronization of your Finary portfolio with platforms that are not yet officially supported by Finary. Finary is an all-encompassing portfolio tracker, offering real-time updates on a variety of assets including precious metals, real estate, cryptocurrencies, and stocks.
 
-Finary is a real time portfolio & stocks tracker. It supports precious metals, real estates, cryptos, stocks and a lot more.
-If you don't already have an account, here is a referral link to sign up: https://finary.com/referral/7aeff70ac86f973c6c1e
+If you're new to Finary, sign up with this referral link: [Join Finary](https://finary.com/referral/7aeff70ac86f973c6c1e).
 
-:warning: **Use at your own risk. I'm not responsible if you trash your account**. :warning:
-
-(I'm not a dev so forgive the quick and dirty style ;))
-
-## BIG thanks!
-
-This won't be possible without:
-* Finary keeping open its API ;)
-* The great work of @lasconic for his Finary Unofficial API wrapper (https://github.com/lasconic/finary_uapi)
-* The great work of RealT Community API (https://api.realt.community/)
-* Exchange Rate API (https://www.exchangerate-api.com)
-* The great idea from @MadeInPierre author of Finalynx, bringing an alternative for your Finary portfolio views and much more (https://github.com/MadeInPierre/finalynx)
+## Disclaimer
+:warning: Use this tool at your own risk. The author is not liable for any disruptions caused to your Finary account. :warning:
 
 ## Installation
 
-Once you clone this repo, you need to install its dependencies:
+This project uses Poetry for dependency management. To set up your environment and install the required dependencies, follow these steps:
+
+1. **Install Poetry**  
+   If you don't have Poetry installed, you can install it by following the instructions from the official Poetry documentation: [Poetry Installation](https://python-poetry.org/docs/#installation).
+
+2. **Clone the Repository**  
+   Clone the repository to your local machine using the following command:
+
+   ```shell
+   git clone https://github.com/nmathey/finasync
+   cd finasync
+3. **Install dependencies**
+   ```shell
+   poetry install
+   
+4. **Fill your informations**  
+Copy paste the **my_info.json.tpl** file to **my_info.json** and fill your informations
+   ```shell
+   cp my_info.json.tpl my_info.json
+
+5. **Run**  
+`poetry run python -m finasync signin`
+or
+`poetry run python -m finasync me`
+
+You may be prompted to provide a two-factor authentication code during sign-in. If so, replace `YOUR_AUTH_CODE` with the code from your authenticator app:
+
 ```bash
-cd finasync
-poetry install
+poetry run python -m finasync signin YOUR_AUTH_CODE
 ```
-Copy paste the my_info.json.tpl file to my_info.json and file your Finary username and password (at least), and other personal data.
-
-Run `poetry run python -m finasync signin`
-
-Try `poetry run python -m finasync me`
 
 If you get errors about being unauthorized, you need to signin again.
 
@@ -62,12 +72,12 @@ Usage (once signin):
 - For syncing as indvidual real estate property in "real estates" Finary category (API Key needed)
 	`poetry run python -m finasync realt rent`
 
-	To delete everything created with this command: `poetry run finasync realt rent deleteall`
+	To delete everything created with this command: `poetry run python -m finasync realt rent deleteall`
 
 - For syncing every each properties in "others assets" category (API Key NOT NEEDED but less properties details)
   	`poetry run python -m finasync realt other-detailed`
 
-	To delete everything created with this command: `poetry run finasync realt other-detailed delete`
+	To delete everything created with this command: `poetry run python -m finasync realt other-detailed delete`
 
 - For syncing as a single portfolio line in "others assets" category (API Key NOT NEEDED but way less details)
   	`poetry run python -m finasync realt other`
@@ -75,6 +85,15 @@ Usage (once signin):
 	To delete everything created with this command: `finasync realt other delete`
 
 It will sync your RealT portfolio hosted on the blockchain to your Finary account.
+
+## BIG thanks!
+
+This won't be possible without:
+* Finary keeping open its API ;)
+* The great work of @lasconic for his Finary Unofficial API wrapper (https://github.com/lasconic/finary_uapi)
+* The great work of RealT Community API (https://api.realt.community/)
+* Exchange Rate API (https://www.exchangerate-api.com)
+* The great idea from @MadeInPierre author of Finalynx, bringing an alternative for your Finary portfolio views and much more (https://github.com/MadeInPierre/finalynx)
 
 ## 💌 Donations
 

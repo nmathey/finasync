@@ -191,22 +191,25 @@ def get_real_tokens_rmm_by_address_query():
     """
 
 def get_realt_rentals_blockchain(wallet_address):
-    realT_rentals_rmm = get_realt_rentals_rmm(wallet_address)
-    for token_info in realT_rentals_rmm:
-        realt_token_amount = int(token_info['amount']) / 1e18
-        token_price = int(token_info['token']['price']) / 1e8
-        total_value = realt_token_amount * token_price
+    myRealT_rentals = {}
 
-        log_message = f"RMM Property found: {token_info['token']['name']}, " \
-                    f"Amount: {realt_token_amount} tokens, " \
-                    f"Price per token: ${token_price:.2f}, " \
-                    f"Total value: ${total_value:.2f}"
-        logging.info(log_message)
+    realt_rentals_rmm = get_realt_rentals_rmm(wallet_address)
+    for token_info in realt_rentals_rmm:
+        contract_address = token_info['token']['address'].lower()
+        realt_token_amount = int(token_info['amount']) / 1e18
+        symbol = token_info['token']['symbol']
+
+        myRealT_rentals.update({
+            contract_address: {
+                "name": symbol,
+                "balance": realt_token_amount,
+                "contractAddress": contract_address,
+            }
+        })
+
+    logging.info(f"Number of properties from RMM: {len(realt_rentals_rmm)}")
 
     myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)
-    myRealT_rentals = {}
-    logging.debug("My wallet details")
-    logging.debug(myWallet)
     for item in myWallet["result"]:
         if re.match(r"^REALTOKEN", str(item.get("symbol")), re.IGNORECASE):
             logging.debug("Updating RealT Token to Finary: " + item["symbol"])
@@ -245,11 +248,20 @@ def get_realt_rentals_blockchain(wallet_address):
                     }
                 }
             )
-    logging.debug("My RealT portfolio from the blockchain")
-    logging.debug(myRealT_rentals)
+
+    log_realt_rentals_info(myRealT_rentals)
 
     return json.dumps(myRealT_rentals)
 
+def log_realt_rentals_info(my_real_t_rentals):
+    token_count = len(my_real_t_rentals)
+    logging.info(f"Number of RealT properties: {token_count}")
+
+    total_balance = sum(rental_info["balance"] for rental_info in my_real_t_rentals.values())
+    logging.info(f"Total RealT tokens in wallet: {total_balance}")
+
+    portfolio_value = total_balance * 50 # Token price is approximately 50$
+    logging.info(f"Approximate portfolio value: ${portfolio_value:.2f}")
 
 def get_building_type(realT_propertyType):
     # building type: house, building, apartment, land, commercial, parking_box, or other

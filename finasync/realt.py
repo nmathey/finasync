@@ -136,12 +136,46 @@ def get_realt_rentals_finary(session: requests.Session):
     return json.dumps(myFinary_realT)
 
 
-def get_realt_rentals_rmm(wallet_address):    
+
+def get_realt_rentals_rmm(wallet_address):
     if not GRAPH_API_TOKENLIST_URI:
         logging.error("The GRAPH_API_TOKENLIST_URI environment variable is not set or is empty.")
         return []
 
-    query = """
+    payload = {
+        "query": get_real_tokens_rmm_by_address_query().strip(),
+        "variables": {"userAddress": wallet_address}
+    }
+
+    headers = {'Content-Type': 'application/json'}
+
+    with requests.Session() as session:
+        try:
+            response = session.post(GRAPH_API_TOKENLIST_URI, headers=headers, json=payload)
+            response.raise_for_status()
+
+            response_json = response.json()
+            real_token_data = response_json.get('data', {}).get('userRealTokens')
+
+            if 'errors' in response_json:
+                logging.error('GraphQL errors: %s', response_json['errors'])
+                return []
+
+            if real_token_data is None:
+                logging.error('No userRealTokens field in the response.')
+                return []
+
+            return real_token_data
+
+        except requests.exceptions.RequestException as e:
+            logging.exception('Request exception: %s', e)
+        except json.JSONDecodeError as e:
+            logging.exception('JSON decode error: %s', e)
+
+    return []
+
+def get_real_tokens_rmm_by_address_query():
+    return """
     query getUserBalance($userAddress: String!) {
         userRealTokens(where: {user: $userAddress}, first: 1000) {
             id
@@ -154,38 +188,12 @@ def get_realt_rentals_rmm(wallet_address):
     }
     """
 
-    payload = {
-        "query": query.strip(),
-        "variables": {"userAddress": wallet_address}
-    }
-
-    headers = {'Content-Type': 'application/json'}
-
-    try:
-        response = requests.post(GRAPH_API_TOKENLIST_URI, headers=headers, data=json.dumps(payload))
-        response.raise_for_status()
-
-        response_json = response.json()
-        if 'errors' in response_json:
-            print('GraphQL errors:', response_json['errors'])
-            return []
-
-        return response_json.get('data', {}).get('userRealTokens', [])
-
-    except requests.exceptions.HTTPError as e:
-        print('HTTP request failed:', e)
-    except requests.exceptions.RequestException as e:
-        print('Request exception:', e)
-    except json.JSONDecodeError as e:
-        print('JSON decode error:', e)
-
-    return []
-
 def get_realt_rentals_blockchain(wallet_address):
     realT_rentals_rmm = get_realt_rentals_rmm(wallet_address)
     for token_info in realT_rentals_rmm:
-        amount_in_ether = int(token_info['amount']) / 1e18
-        log_message = f"RMM Property found: {token_info['token']['symbol']}, Amount: {amount_in_ether} tokens"
+        realt_token_amount = int(token_info['amount']) / 1e18
+        approx_usd_value = realt_token_amount * 50
+        log_message = f"RMM Property found: {token_info['token']['symbol']}, Amount: {realt_token_amount} tokens, Approximate value: ${approx_usd_value:.2f}"
         print(log_message)
 
     myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)

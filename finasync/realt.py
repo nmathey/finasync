@@ -28,6 +28,7 @@ from finary_uapi.user_generic_assets import (
 
 from .constants import (
     GNOSIS_API_TOKENLIST_URI,
+    GRAPH_API_TOKENLIST_URI,
     REALT_API_TOKENLIST_URI,
     REALT_OFFLINE_TOKENS_LIST,
     REALT_OFFLINE_TOKENS_LIST_FREE,
@@ -135,7 +136,58 @@ def get_realt_rentals_finary(session: requests.Session):
     return json.dumps(myFinary_realT)
 
 
+def get_realt_rentals_rmm(wallet_address):    
+    if not GRAPH_API_TOKENLIST_URI:
+        logging.error("The GRAPH_API_TOKENLIST_URI environment variable is not set or is empty.")
+        return []
+
+    query = """
+    query getUserBalance($userAddress: String!) {
+        userRealTokens(where: {user: $userAddress}, first: 1000) {
+            id
+            amount
+            token {
+                symbol
+                address
+            }
+        }
+    }
+    """
+
+    payload = {
+        "query": query.strip(),
+        "variables": {"userAddress": wallet_address}
+    }
+
+    headers = {'Content-Type': 'application/json'}
+
+    try:
+        response = requests.post(GRAPH_API_TOKENLIST_URI, headers=headers, data=json.dumps(payload))
+        response.raise_for_status()
+
+        response_json = response.json()
+        if 'errors' in response_json:
+            print('GraphQL errors:', response_json['errors'])
+            return []
+
+        return response_json.get('data', {}).get('userRealTokens', [])
+
+    except requests.exceptions.HTTPError as e:
+        print('HTTP request failed:', e)
+    except requests.exceptions.RequestException as e:
+        print('Request exception:', e)
+    except json.JSONDecodeError as e:
+        print('JSON decode error:', e)
+
+    return []
+
 def get_realt_rentals_blockchain(wallet_address):
+    realT_rentals_rmm = get_realt_rentals_rmm(wallet_address)
+    for token_info in realT_rentals_rmm:
+        amount_in_ether = int(token_info['amount']) / 1e18
+        log_message = f"RMM Property found: {token_info['token']['symbol']}, Amount: {amount_in_ether} tokens"
+        print(log_message)
+
     myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)
     myRealT_rentals = {}
     logging.debug("My wallet details")

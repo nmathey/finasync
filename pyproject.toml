@@ -11,7 +11,7 @@ python = "^3.10"
 docopt = "^0.6.2"
 requests = "^2.30.0"
 # finary_uapi = "^0.1.9"
-finary-uapi = { git = "https://github.com/lasconic/finary_uapi.git" }
+finary-uapi = { git = "https://github.com/lasconic/finary_uapi.git", branch= "main" }
 
 [build-system]
 requires = ["poetry-core"]

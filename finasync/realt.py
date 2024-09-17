@@ -28,6 +28,7 @@ from finary_uapi.user_generic_assets import (
 
 from .constants import (
     GNOSIS_API_TOKENLIST_URI,
+    GRAPH_API_TOKENLIST_URI,
     REALT_API_TOKENLIST_URI,
     REALT_OFFLINE_TOKENS_LIST,
     REALT_OFFLINE_TOKENS_LIST_FREE,
@@ -135,11 +136,80 @@ def get_realt_rentals_finary(session: requests.Session):
     return json.dumps(myFinary_realT)
 
 
+
+def get_realt_rentals_rmm(wallet_address):
+    if not GRAPH_API_TOKENLIST_URI:
+        logging.error("The GRAPH_API_TOKENLIST_URI environment variable is not set or is empty.")
+        return []
+
+    payload = {
+        "query": get_real_tokens_rmm_by_address_query().strip(),
+        "variables": {"userAddress": wallet_address}
+    }
+
+    headers = {'Content-Type': 'application/json'}
+
+    with requests.Session() as session:
+        try:
+            response = session.post(GRAPH_API_TOKENLIST_URI, headers=headers, json=payload)
+            response.raise_for_status()
+
+            response_json = response.json()
+            real_token_data = response_json.get('data', {}).get('userRealTokens')
+
+            if 'errors' in response_json:
+                logging.error('GraphQL errors: %s', response_json['errors'])
+                return []
+
+            if real_token_data is None:
+                logging.error('No userRealTokens field in the response.')
+                return []
+
+            return real_token_data
+
+        except requests.exceptions.RequestException as e:
+            logging.exception('Request exception: %s', e)
+        except json.JSONDecodeError as e:
+            logging.exception('JSON decode error: %s', e)
+
+    return []
+
+def get_real_tokens_rmm_by_address_query():
+    return """
+    query getUserBalance($userAddress: String!) {
+        userRealTokens(where: {user: $userAddress}, first: 1000) {
+            id
+            amount
+            token {
+                symbol
+                name
+                address
+                price
+            }
+        }
+    }
+    """
+
 def get_realt_rentals_blockchain(wallet_address):
-    myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)
     myRealT_rentals = {}
-    logging.debug("My wallet details")
-    logging.debug(myWallet)
+
+    realt_rentals_rmm = get_realt_rentals_rmm(wallet_address)
+    for token_info in realt_rentals_rmm:
+        contract_address = token_info['token']['address'].lower()
+        realt_token_amount = int(token_info['amount']) / 1e18
+        symbol = token_info['token']['symbol']
+
+        myRealT_rentals.update({
+            contract_address: {
+                "name": symbol,
+                "balance": realt_token_amount,
+                "contractAddress": contract_address,
+            }
+        })
+
+    logging.info(f"Number of properties from RMM: {len(realt_rentals_rmm)}")
+
+    myWallet = json.loads(requests.get(GNOSIS_API_TOKENLIST_URI + wallet_address).text)
     for item in myWallet["result"]:
         if re.match(r"^REALTOKEN", str(item.get("symbol")), re.IGNORECASE):
             logging.debug("Updating RealT Token to Finary: " + item["symbol"])
@@ -178,11 +248,20 @@ def get_realt_rentals_blockchain(wallet_address):
                     }
                 }
             )
-    logging.debug("My RealT portfolio from the blockchain")
-    logging.debug(myRealT_rentals)
+
+    log_realt_rentals_info(myRealT_rentals)
 
     return json.dumps(myRealT_rentals)
 
+def log_realt_rentals_info(my_real_t_rentals):
+    token_count = len(my_real_t_rentals)
+    logging.info(f"Number of RealT properties: {token_count}")
+
+    total_balance = sum(rental_info["balance"] for rental_info in my_real_t_rentals.values())
+    logging.info(f"Total RealT tokens in wallet: {total_balance}")
+
+    portfolio_value = total_balance * 50 # Token price is approximately 50$
+    logging.info(f"Approximate portfolio value: ${portfolio_value:.2f}")
 
 def get_building_type(realT_propertyType):
     # building type: house, building, apartment, land, commercial, parking_box, or other

@@ -1,6 +1,7 @@
 GNOSIS_API_TOKENLIST_URI = (
     "https://blockscout.com/xdai/mainnet/api?module=account&action=tokenlist&address="
 )
+GRAPH_API_TOKENLIST_URI = "https://api.studio.thegraph.com/query/48997/rmm-v3-wrapper-gnosis/version/latest"
 REALT_API_TOKENLIST_URI = "https://api.realt.community/v1/token"
 REALT_OFFLINE_TOKENS_LIST = "RealT_OfflineTokensList.json"
 REALT_OFFLINE_TOKENS_LIST_FREE = "RealT_OfflineTokensList_Free.json"
